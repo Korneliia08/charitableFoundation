@@ -1,5 +1,6 @@
 import style from "./ComponentForBackgroundImage.module.css";
 import backGroundImage from "../../../../assets/images/header.png";
+import ComponentMainButton from "../../../../components/ComponentMainButton/ComponentMainButton";
 
 const ComponentForBackgroundImage = () => {
     return (
@@ -10,8 +11,8 @@ const ComponentForBackgroundImage = () => {
                     УКРАЇНА-БУДІВНИЦТВО
                     МАЙБУТНЬОГО</h1>
                 <div className={style.blockForBtns}>
-                    <button className={style.btnKnowMore}>Дізнатися більше</button>
-                    <button className={style.btnMakeADonation}>Зробити пожертву</button>
+                    <ComponentMainButton content="Дізнатися більше" color="#FAC000"/>
+                    <ComponentMainButton content="Зробити пожертву" color="#1265A8"/>
                 </div>
             </div>
         </div>

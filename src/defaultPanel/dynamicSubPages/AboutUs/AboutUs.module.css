@@ -1,5 +1,10 @@
 .container {
-  background-color: #e82323;
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px;
+}
+.container img {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=AboutUs.module.css.map */

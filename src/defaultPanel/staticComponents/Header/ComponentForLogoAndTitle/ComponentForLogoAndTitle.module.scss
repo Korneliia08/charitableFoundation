@@ -1,9 +1,10 @@
 .container {
   width: 40%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   column-gap: 5px;
+  padding-left: 70px;
 
   img {
     height: 60px;
@@ -12,7 +13,7 @@
   h1 {
     color: #003680;
     width: 50%;
-    font-size: 18px;
+    font-size: 1.1rem;
     text-transform: uppercase;
   }
 }

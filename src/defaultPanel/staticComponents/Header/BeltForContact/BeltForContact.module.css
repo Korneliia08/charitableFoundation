@@ -11,13 +11,13 @@
   column-gap: 10px;
 }
 .container .blockForContact .iconPhone {
-  font-size: 15px;
+  font-size: 0.95rem;
   opacity: 0.5;
   color: #ffffff;
 }
 .container .blockForContact .spanForContact {
   color: white;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=BeltForContact.module.css.map */

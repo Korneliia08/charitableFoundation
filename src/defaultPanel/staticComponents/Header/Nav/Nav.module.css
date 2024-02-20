@@ -6,7 +6,7 @@
   align-items: center;
 }
 .container a {
-  font-size: 19px;
+  font-size: 1.2rem;
   color: #3a3a3a;
   transition: all 200ms ease-in-out;
   text-decoration: underline;
