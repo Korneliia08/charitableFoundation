@@ -1,0 +1,34 @@
+button {
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 400ms;
+  position: relative;
+  overflow: hidden;
+
+
+  .emptyBlock {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.09);
+    position: absolute;
+    top: -40px;
+    left: 0;
+    transition: all 400ms ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .emptyBlock {
+      top: 0;
+      opacity: 1;
+    }
+  }
+}

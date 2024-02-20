@@ -1,0 +1,23 @@
+.container {
+  width: 50%;
+  padding: 0 40px 0 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h2 {
+    width: 100%;
+    text-align: start;
+    color: #003680;
+    font-size: 2rem;
+  }
+
+  p {
+    width: 100%;
+    color: black;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.4;
+  }
+}

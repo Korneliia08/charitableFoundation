@@ -1,0 +1,15 @@
+.container {
+  background-image: url("../../assets/images/makeAdonat.png");
+  background-repeat: no-repeat;
+  padding: 40px 10px;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-around;
+
+  h3 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}
