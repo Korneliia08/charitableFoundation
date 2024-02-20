@@ -1,0 +1,65 @@
+.mainContainer {
+  $divWithImageHight: 700px;
+  min-height: $divWithImageHight;
+  height: $divWithImageHight;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+
+  .container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 80px;
+
+    h1 {
+      color: white;
+      font-size: 35px;
+      width: 50%;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: #FED800;
+    }
+
+    .blockForBtns {
+      padding: 20px 0;
+      display: flex;
+      column-gap: 20px;
+
+      button {
+        color: white;
+        border: none;
+        font-size: 18px;
+        padding: 10px 25px;
+        box-sizing: border-box;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: 400ms;
+      }
+
+      .btnKnowMore {
+        background-color: #FAC000;
+
+        &:hover {
+          background-color: #d7a502;
+          cursor: pointer;
+        }
+      }
+
+      .btnMakeADonation {
+        background-color: #1265A8;
+
+        &:hover {
+          background-color: #0a528c;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
