@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .blockForLogoAndNav {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0;
+  }
+}
+

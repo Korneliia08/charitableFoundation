@@ -1,0 +1,21 @@
+.container {
+  background-color: #003680;
+  padding: 10px 50px;
+  display: flex;
+
+  .blockForContact {
+    display: flex;
+    column-gap: 10px;
+
+    .iconPhone {
+      font-size: 15px;
+      opacity: 0.5;
+      color: #ffffff;
+    }
+
+    .spanForContact {
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
