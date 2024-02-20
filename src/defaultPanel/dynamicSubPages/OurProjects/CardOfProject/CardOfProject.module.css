@@ -1,0 +1,14 @@
+.container {
+  background-color: #003680;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 40px;
+}
+.container h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=CardOfProject.module.css.map */
