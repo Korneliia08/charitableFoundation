@@ -1,5 +1,20 @@
 .container {
-  background-color: #e82323;
+  background-image: url("../../../assets/images/makeAdonat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 25px;
+  display: flex;
+  justify-content: center;
+  z-index: 400;
+  position: relative;
+}
+.container .blueBackground {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #003680;
+  z-index: 500;
+  position: relative;
 }
 
 /*# sourceMappingURL=Advice.module.css.map */
