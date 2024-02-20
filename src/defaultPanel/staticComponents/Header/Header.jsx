@@ -2,6 +2,7 @@ import style from "./Header.module.css";
 import Nav from "./Nav/Nav";
 import BeltForContact from "./BeltForContact/BeltForContact";
 import ComponentForLogoAndTitle from "./ComponentForLogoAndTitle/ComponentForLogoAndTitle";
+import ComponentForBackgroundImage from "./ComponentForBackgroundImage/ComponentForBackgroundImage";
 
 const Header = () => {
     return (
@@ -11,6 +12,7 @@ const Header = () => {
                 <ComponentForLogoAndTitle/>
                 <Nav/>
             </div>
+            <ComponentForBackgroundImage/>
         </div>
     )
 }

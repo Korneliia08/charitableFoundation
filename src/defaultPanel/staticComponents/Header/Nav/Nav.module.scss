@@ -1,12 +1,13 @@
 .container {
   display: flex;
-  column-gap: 20px;
+  column-gap: 40px;
   width: 60%;
   justify-content: center;
+  align-items: center;
 
   a {
-    font-size: 18px;
-    color: black;
+    font-size: 19px;
+    color: #3a3a3a;
     transition: all 200ms ease-in-out;
     text-decoration: underline;
     text-decoration-color: transparent;
