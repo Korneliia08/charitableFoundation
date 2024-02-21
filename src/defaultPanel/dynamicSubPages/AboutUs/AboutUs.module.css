@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  justify-content: center;
-  padding: 40px 10px;
+  justify-content: space-between;
+  padding: 40px 250px;
 }
 .container img {
   margin-left: 10px;

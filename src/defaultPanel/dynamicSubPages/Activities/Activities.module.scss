@@ -1,5 +1,8 @@
+@import "../../../assets/globalVariables";
+
 .container {
-  background-color: #e82323;
+  background-color: #FFFFFF;
+  padding: 40px $leftAndRightPadding;
 
   h2 {
     width: 100%;
@@ -12,5 +15,10 @@
   .containerForActivities {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 25px;
+    row-gap: 25px;
+    width: 100%;
+    padding: 40px 0;
   }
 }

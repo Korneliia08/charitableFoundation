@@ -1,7 +1,9 @@
+@import "../../assets/globalVariables";
+
 .container {
   background-image: url("../../assets/images/makeAdonat.png");
   background-repeat: no-repeat;
-  padding: 40px 385px 40px 180px;
+  padding: 40px 385px 40px $leftAndRightPadding;
   background-size: cover;
   background-attachment: fixed;
   display: flex;

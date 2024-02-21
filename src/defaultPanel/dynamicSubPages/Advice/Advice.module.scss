@@ -1,8 +1,10 @@
+@import "../../../assets/globalVariables";
+
 .container {
   background-image: url("../../../assets/images/makeAdonat.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 25px;
+  padding: 50px $leftAndRightPadding;
   display: flex;
   justify-content: center;
   z-index: 400;
