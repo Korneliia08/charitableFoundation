@@ -25,9 +25,19 @@
       bottom: -5px;
     }
   }
+
   p {
     color: #003680;
     font-size: 1.1rem;
     text-shadow: 0px 0px 1px #6c6c6c;
+  }
+
+  .icon {
+    color: #003680;
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }

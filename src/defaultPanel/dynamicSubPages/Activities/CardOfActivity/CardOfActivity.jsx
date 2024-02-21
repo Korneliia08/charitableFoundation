@@ -7,7 +7,7 @@ const CardOfActivity = () => {
         <div className={style.container}>
             <h4>Здійснення благодійної діяльності</h4>
             <p>В інтересах суспільства та окремій категорій осіб, надання благодійної допомоги</p>
-            <FontAwesomeIcon icon={faArrowDown}/>
+            <FontAwesomeIcon icon={faArrowDown} className={style.icon}/>
         </div>
     )
 }
