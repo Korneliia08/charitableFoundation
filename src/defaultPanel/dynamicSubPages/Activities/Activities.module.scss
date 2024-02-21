@@ -1,3 +1,16 @@
 .container {
   background-color: #e82323;
+
+  h2 {
+    width: 100%;
+    text-align: start;
+    color: #003680;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .containerForActivities {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

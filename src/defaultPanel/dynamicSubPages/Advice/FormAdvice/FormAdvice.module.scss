@@ -1,3 +1,72 @@
 .container {
-  background-color: #e82323;
+  width: 50%;
+  padding: 40px 0 40px 0;
+  position: relative;
+  z-index: 600;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 20px;
+
+    select, input, textarea {
+      background-color: #F2F2F2;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 35px;
+
+      &:hover {
+        cursor: text;
+      }
+    }
+
+    .blockForGroup {
+      display: flex;
+      width: 75%;
+      column-gap: 10px;
+
+      select {
+        width: 25%;
+        padding: 5px;
+      }
+
+      input {
+        width: 100%;
+      }
+    }
+
+    .blockForInput {
+      display: flex;
+      width: 75%;
+      justify-content: space-between;
+      position: relative;
+
+
+      input {
+        width: 80%;
+      }
+
+      textarea {
+        width: 100%;
+        resize: none;
+      }
+
+      .icon {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding: 0 7px;
+
+        .iconStyle {
+          font-size: 18px;
+          color: #C4C4C4;
+        }
+      }
+
+    }
+  }
 }

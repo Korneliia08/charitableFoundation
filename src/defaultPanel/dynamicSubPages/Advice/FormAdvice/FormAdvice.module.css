@@ -1,5 +1,61 @@
 .container {
-  background-color: #e82323;
+  width: 50%;
+  padding: 40px 0 40px 0;
+  position: relative;
+  z-index: 600;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+.container form select, .container form input, .container form textarea {
+  background-color: #F2F2F2;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 35px;
+}
+.container form select:hover, .container form input:hover, .container form textarea:hover {
+  cursor: text;
+}
+.container form .blockForGroup {
+  display: flex;
+  width: 75%;
+  column-gap: 10px;
+}
+.container form .blockForGroup select {
+  width: 25%;
+  padding: 5px;
+}
+.container form .blockForGroup input {
+  width: 100%;
+}
+.container form .blockForInput {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  position: relative;
+}
+.container form .blockForInput input {
+  width: 80%;
+}
+.container form .blockForInput textarea {
+  width: 100%;
+  resize: none;
+}
+.container form .blockForInput .icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 0 7px;
+}
+.container form .blockForInput .icon .iconStyle {
+  font-size: 18px;
+  color: #C4C4C4;
 }
 
 /*# sourceMappingURL=FormAdvice.module.css.map */
