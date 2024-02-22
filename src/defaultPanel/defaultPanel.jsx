@@ -1,27 +1,40 @@
-import Header from "./staticComponents/Header/Header";
 import Footer from "./staticComponents/Footer/Footer";
-import AboutUs from "./dynamicSubPages/AboutUs/AboutUs";
-import DonationAndAdvice from "../components/DonationAndAdvice/DonationAndAdvice";
-import Activities from "./dynamicSubPages/Activities/Activities";
-import OurProjects from "./dynamicSubPages/OurProjects/OurProjects";
-import Advice from "./dynamicSubPages/Advice/Advice";
-import Map from "./dynamicSubPages/Map/Map";
 import ArrowToTop from "../components/ArrowToTop/ArrowToTop";
+import {Outlet} from "react-router-dom";
+import BeltForContact from "./staticComponents/Header/BeltForContact/BeltForContact";
+import BlockForLogoAndNav from "./staticComponents/Header/BlockForLogoAndNav/BlockForLogoAndNav";
+import {useEffect, useState} from "react";
 
-const defaultPanel = () => {
+
+const DefaultPanel = () => {
+
+    const [belt, setBelt] = useState(true);
+
+    function checkY() {
+
+        if (window.pageYOffset > 15) {
+            setBelt(false);
+            return;
+        }
+        setBelt(true);
+
+    }
+
+    useEffect(() => {
+        document.addEventListener("scroll", checkY);
+        return () => {
+            document.removeEventListener("scroll", checkY);
+        }
+    }, []);
+
     return (
         <>
-            <Header/>
-            <AboutUs/>
-            <DonationAndAdvice title="Консультація онлайн"/>
-            <Activities/>
-            <DonationAndAdvice title="Зробити пожертвування"/>
-            <OurProjects/>
-            <Advice/>
-            <Map/>
+            <BeltForContact/>
+            <BlockForLogoAndNav belt={belt}/>
+            <Outlet/>
             <Footer/>
             <ArrowToTop/>
         </>
     )
 }
-export default defaultPanel;
+export default DefaultPanel;

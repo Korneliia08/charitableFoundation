@@ -1,7 +1,7 @@
 import style from "./FormAdvice.module.css";
 import {faEnvelope, faPen, faPhone, faUser} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import ComponentMainButton from "../../../../components/ComponentMainButton/ComponentMainButton";
+import ComponentMainButton from "../../../../../components/ComponentMainButton/ComponentMainButton";
 
 const FormAdvice = () => {
     return (

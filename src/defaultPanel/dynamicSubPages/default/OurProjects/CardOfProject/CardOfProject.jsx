@@ -1,5 +1,5 @@
 import style from "./CardOfProject.module.css";
-import ComponentMainButton from "../../../../components/ComponentMainButton/ComponentMainButton";
+import ComponentMainButton from "../../../../../components/ComponentMainButton/ComponentMainButton";
 
 const CardOfProject = (props) => {
     const title = props.title;

@@ -1,9 +1,9 @@
 .container {
-  background-image: url("../../../assets/images/makeAdonat.png");
+  background-image: url("../../../../assets/images/makeAdonat.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 50px 250px;
+  padding: 50px 120px;
   display: flex;
   justify-content: center;
   z-index: 400;

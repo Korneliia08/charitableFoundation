@@ -1,7 +1,14 @@
 import style from "./Content.module.css";
-import ComponentMainButton from "../../../../components/ComponentMainButton/ComponentMainButton";
+import ComponentMainButton from "../../../../../components/ComponentMainButton/ComponentMainButton";
+import {useNavigate} from "react-router-dom";
 
 const Content = () => {
+    const navigate = useNavigate();
+
+    function displaySubPage() {
+        navigate("/aboutUs");
+    }
+
     return (
         <div className={style.container}>
             <h2>ПРО БЛАГОДІЙНИЙ ФОНД</h2>
@@ -19,7 +26,7 @@ const Content = () => {
                 сприяння у поліпшенню медичного обслуговування та медикаментозного забезпечення учасників бойових дій;
                 організація документування та оцінки збитків, допомога з тимчасовим консервуванням та відновленням
                 житла.</p>
-            <ComponentMainButton content="Детальніше" color="#FFD801"/>
+            <ComponentMainButton content="Детальніше" color="#FFD801" clickEvent={displaySubPage}/>
         </div>
     )
 }

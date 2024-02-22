@@ -4,7 +4,7 @@ const ComponentMainButton = (props) => {
     const content = props.content;
     const color = props.color;
     return (
-        <button className={style.btnKnowMore} style={{backgroundColor: color}}>
+        <button className={style.btnKnowMore} style={{backgroundColor: color}} onClick={props.clickEvent}>
             {content}
             <div className={style.emptyBlock}></div>
         </button>

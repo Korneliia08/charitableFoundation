@@ -3,12 +3,24 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import DefaultPanel from "./defaultPanel/defaultPanel";
 import {Provider} from "react-redux";
 import store from "./data/store";
+import Default from "./defaultPanel/dynamicSubPages/default/Default";
+import AboutUsFully from "./defaultPanel/dynamicSubPages/AboutUsFully/AboutUsFully";
 
 function App() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <DefaultPanel/>
+            element: <DefaultPanel/>,
+            children: [
+                {
+                    path: "/",
+                    element: <Default/>
+                },
+                {
+                    path: "/aboutUs",
+                    element: <AboutUsFully/>
+                }
+            ],
         },
     ], {basename: "/charitableFoundation"});
     return (

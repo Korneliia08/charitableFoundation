@@ -5,7 +5,7 @@ const LogoOfWebsite = () => {
     return (
         <div className={style.container}>
             <img src={imgLogo} alt="logo"/>
-            <h4>Благодійний фонд - майбутність народу</h4>
+            <h4>Благодійний фонд - могутність народу</h4>
         </div>
     )
 }

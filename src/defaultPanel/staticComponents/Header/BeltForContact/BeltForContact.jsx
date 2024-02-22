@@ -3,6 +3,7 @@ import {faPhone} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const BeltForContact = () => {
+
     return (
         <div className={style.container}>
             <div className={style.blockForContact}>

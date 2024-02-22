@@ -19,10 +19,10 @@ const ArrowToTop = () => {
     }
 
     useEffect(() => {
-        document.addEventListener("scroll", checkY)
+        document.addEventListener("scroll", checkY);
 
         return () => {
-            document.removeEventListener("scroll", checkY)
+            document.removeEventListener("scroll", checkY);
         };
     }, []);
     return (

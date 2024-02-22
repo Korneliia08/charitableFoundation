@@ -1,6 +1,6 @@
 import style from "./AboutUs.module.css";
 import Content from "./Content/Content";
-import aboutImage from "../../../assets/images/aboutUs.png";
+import aboutImage from "../../../../assets/images/aboutUs.png";
 
 
 const AboutUs = () => {
