@@ -2,7 +2,7 @@ import style from "./QrCode.module.css";
 import QRCode from "react-qr-code";
 
 const QrCode = () => {
-    const value = "sss";
+    const value = "https://korneliia08.github.io/charitableFoundation/";
     return (
         <div className={style.container}>
             <h4>Мобільна версія:</h4>

@@ -10,7 +10,7 @@ function App() {
             path: "/",
             element: <DefaultPanel/>
         },
-    ]);
+    ], {basename: "/charitableFoundation"});
     return (
         <div className="App">
             <Provider store={store}>
