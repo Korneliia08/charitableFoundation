@@ -4,6 +4,7 @@ import OpenHours from "./OpenHours/OpenHours";
 import VisitCounter from "./VisitCounter/VisitCounter";
 import QrCode from "./QrCode/QrCode";
 import {useEffect, useState} from "react";
+import LogoOfWebsite from "./LogoOfWebsite/LogoOfWebsite";
 
 const Footer = () => {
     const [year, setYear] = useState();
@@ -16,7 +17,10 @@ const Footer = () => {
     return (
         <div className={style.container}>
             <div className={style.mainContainer}>
-                <Contacts/>
+                <div className={style.blockForLogoAndContact}>
+                    <Contacts/>
+                    <LogoOfWebsite/>
+                </div>
                 <OpenHours/>
                 <VisitCounter/>
                 <QrCode/>
