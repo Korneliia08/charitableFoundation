@@ -9,7 +9,7 @@
   padding: 15px 0;
   position: fixed;
   width: 100vw;
-  z-index: 200;
+  z-index: 1000;
   top: 35px;
   box-shadow: 0px 0px 5px 2px inset #949dbd;
 }

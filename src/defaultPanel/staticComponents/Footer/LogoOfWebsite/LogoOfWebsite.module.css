@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  column-gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container img {
+  width: 50px;
+}
+.container h4 {
+  color: white;
+  font-size: 1.4rem;
+  width: 160px;
+}
+
+/*# sourceMappingURL=LogoOfWebsite.module.css.map */
