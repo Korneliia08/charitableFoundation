@@ -2,6 +2,27 @@
 
 .container {
   background-color: #00295F;
-  padding: 250px $leftAndRightPadding;
   margin-top: 500px;
+
+  .mainContainer {
+    padding: 250px $leftAndRightPadding;
+    background-color: #00295F;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .grayBelt {
+    padding: 35px $leftAndRightPadding;
+    background-color: #20222E;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    span {
+      color: white;
+      text-shadow: 0px 1px 1px black;
+    }
+  }
 }
+
+
