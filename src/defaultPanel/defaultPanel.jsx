@@ -6,6 +6,7 @@ import Activities from "./dynamicSubPages/Activities/Activities";
 import OurProjects from "./dynamicSubPages/OurProjects/OurProjects";
 import Advice from "./dynamicSubPages/Advice/Advice";
 import Map from "./dynamicSubPages/Map/Map";
+import ArrowToTop from "../components/ArrowToTop/ArrowToTop";
 
 const defaultPanel = () => {
     return (
@@ -19,6 +20,7 @@ const defaultPanel = () => {
             <Advice/>
             <Map/>
             <Footer/>
+            <ArrowToTop/>
         </>
     )
 }

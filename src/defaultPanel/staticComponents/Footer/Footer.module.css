@@ -6,7 +6,9 @@
   background-color: #00295F;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: flex-start;
+  column-gap: 10px;
 }
 .container .mainContainer .blockForLogoAndContact {
   display: flex;

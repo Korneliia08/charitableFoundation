@@ -1,6 +1,7 @@
 import style from "./FormAdvice.module.css";
 import {faEnvelope, faPen, faPhone, faUser} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import ComponentMainButton from "../../../../components/ComponentMainButton/ComponentMainButton";
 
 const FormAdvice = () => {
     return (
@@ -30,11 +31,12 @@ const FormAdvice = () => {
                     </div>
                 </div>
                 <div className={style.blockForInput}>
-                    <div className={style.icon}>
+                    <div className={style.icon} style={{alignItems: "flex-start", padding: " 12px 7px"}}>
                         <FontAwesomeIcon icon={faPen} className={style.iconStyle}/>
                     </div>
                     <textarea placeholder="Текст повідомлення"></textarea>
                 </div>
+                <ComponentMainButton content="Надіслати" color="#E5C201"/>
             </form>
         </div>
     )
