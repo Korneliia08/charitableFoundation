@@ -9,3 +9,4 @@
 * [react-redux](https://www.npmjs.com/package/react-redux)
 * [redux-toolkit](https://www.npmjs.com/package/@reduxjs/toolkit)
 * [react-qr-code](https://www.npmjs.com/package/react-qr-code)
+* [react-leaflet](https://react-leaflet.js.org/docs/start-installation/)
