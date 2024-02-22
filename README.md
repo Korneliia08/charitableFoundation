@@ -8,3 +8,4 @@
 * [react-router-hash-link](https://www.npmjs.com/package/react-router-hash-link)
 * [react-redux](https://www.npmjs.com/package/react-redux)
 * [redux-toolkit](https://www.npmjs.com/package/@reduxjs/toolkit)
+* [react-qr-code](https://www.npmjs.com/package/react-qr-code)
