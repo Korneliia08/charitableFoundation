@@ -1,9 +1,8 @@
 .container {
   background-color: #00295F;
-  margin-top: 500px;
 }
 .container .mainContainer {
-  padding: 180px 250px;
+  padding: 100px 250px;
   background-color: #00295F;
   display: flex;
   justify-content: space-between;
