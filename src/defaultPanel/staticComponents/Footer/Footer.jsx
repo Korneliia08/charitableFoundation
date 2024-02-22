@@ -22,7 +22,10 @@ const Footer = () => {
                 <QrCode/>
             </div>
             <div className={style.grayBelt}>
-                <span> &copy; Всі права захищені {year}</span>
+                <div>
+                    <span> &copy; Всі права захищені {year} <a
+                        href="https://t.me/korneliia0808">Веб-розробник:Корнелія Мушак</a></span>
+                </div>
             </div>
         </div>
     )
