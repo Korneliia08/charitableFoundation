@@ -1,15 +1,17 @@
 import style from "./Nav.module.css";
+import {HashLink} from "react-router-hash-link";
+import toScroll from "../../../../pipes/toScroll";
 
 const Nav = () => {
     return (
         <div className={style.container}>
-            <a href="#">Головна</a>
-            <a href="#">Про нас</a>
-            <a href="#">Діяльність</a>
-            <a href="#">Наші проекти</a>
-            <a href="#">Консультація</a>
-            <a href="#">Реквізити</a>
-            <a href="#">Контакти</a>
+            <HashLink scroll={(element) => toScroll(element)} to={"/#body"}>Головна</HashLink>
+            <HashLink scroll={(element) => toScroll(element)} to={"#aboutUs"}>Про нас</HashLink>
+            <HashLink scroll={(element) => toScroll(element)} to={"#activities"}>Діяльність</HashLink>
+            <HashLink scroll={(element) => toScroll(element)} to={"#ourProjects"}>Наші проекти</HashLink>
+            <HashLink scroll={(element) => toScroll(element)} to={"#advice"}>Консультація</HashLink>
+            <HashLink scroll={(element) => toScroll(element)} to={"/details"}>Реквізити</HashLink>
+            <HashLink scroll={(element) => toScroll(element)} to={"#footer"}>Контакти</HashLink>
         </div>
     )
 }

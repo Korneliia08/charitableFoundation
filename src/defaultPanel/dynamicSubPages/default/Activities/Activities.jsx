@@ -3,7 +3,7 @@ import CardOfActivity from "./CardOfActivity/CardOfActivity";
 
 const Activities = () => {
     return (
-        <div className={style.container}>
+        <div className={style.container} id="activities">
             <h2>ВИДИ ДІЯЛЬНОСТІ</h2>
             <div className={style.containerForActivities}>
                 <CardOfActivity/>

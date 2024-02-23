@@ -4,7 +4,7 @@ import FormAdvice from "./FormAdvice/FormAdvice";
 
 const Advice = () => {
     return (
-        <div className={style.container}>
+        <div className={style.container} id="advice">
             <Content/>
             <FormAdvice/>
             <div className={style.blueBackground}></div>

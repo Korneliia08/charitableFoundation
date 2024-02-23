@@ -3,7 +3,7 @@ import CardOfProject from "./CardOfProject/CardOfProject";
 
 const OurProjects = () => {
     return (
-        <div className={style.container}>
+        <div className={style.container} id="ourProjects">
             <h2>Наші проекти</h2>
             <div className={style.containerForCards}>
                 <CardOfProject title="Проект допомоги Збройним Силам України"/>

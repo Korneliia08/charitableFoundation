@@ -15,7 +15,7 @@ const Footer = () => {
         setYear(year);
     }, []);
     return (
-        <div className={style.container}>
+        <div className={style.container} id="footer">
             <div className={style.mainContainer}>
                 <div className={style.blockForLogoAndContact}>
                     <Contacts/>
