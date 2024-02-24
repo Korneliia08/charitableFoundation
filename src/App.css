@@ -17,6 +17,9 @@ html {
   flex-grow: 10;
   position: relative;
 }
+.containerForSubPage.withImage {
+  padding-top: 0;
+}
 
 .flexibleBlock {
   display: flex;

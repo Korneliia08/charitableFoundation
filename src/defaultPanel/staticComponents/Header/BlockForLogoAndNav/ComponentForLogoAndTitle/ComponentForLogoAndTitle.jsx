@@ -1,5 +1,5 @@
 import style from "./ComponentForLogoAndTitle.module.css";
-import herb from "../../../../assets/images/herb.png";
+import herb from "../../../../../assets/images/herb.png";
 
 const ComponentForLogoAndTitle = (props) => {
 

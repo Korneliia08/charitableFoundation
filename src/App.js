@@ -6,6 +6,7 @@ import store from "./data/store";
 import Default from "./defaultPanel/dynamicSubPages/default/Default";
 import AboutUsFully from "./defaultPanel/dynamicSubPages/AboutUsFully/AboutUsFully";
 import Details from "./defaultPanel/dynamicSubPages/Details/Details";
+import ChoosedActivity from "./defaultPanel/dynamicSubPages/ChoosedActivity/ChoosedActivity";
 
 function App() {
     const router = createBrowserRouter([
@@ -23,6 +24,7 @@ function App() {
                 },
                 {
                     path: "/activity/:id",
+                    element: <ChoosedActivity/>
                 },
                 {
                     path: "/details",
