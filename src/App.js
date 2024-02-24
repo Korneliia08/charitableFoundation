@@ -22,6 +22,9 @@ function App() {
                     element: <AboutUsFully/>
                 },
                 {
+                    path: "/activity/:id",
+                },
+                {
                     path: "/details",
                     element: <Details/>
                 }

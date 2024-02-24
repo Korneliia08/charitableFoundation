@@ -4,6 +4,9 @@ import {Outlet} from "react-router-dom";
 import BeltForContact from "./staticComponents/Header/BeltForContact/BeltForContact";
 import BlockForLogoAndNav from "./staticComponents/Header/BlockForLogoAndNav/BlockForLogoAndNav";
 import {useEffect, useState} from "react";
+import {useDispatch} from "react-redux";
+import axios from "axios";
+import {setActivities} from "../data/reducers/activityReducer";
 
 
 const DefaultPanel = () => {
@@ -19,6 +22,15 @@ const DefaultPanel = () => {
         setBelt(true);
 
     }
+
+    const dispatch = useDispatch();
+    useEffect(() => {
+        axios('http://10.68.6.106:3000/activities').then(
+            resp => {
+                dispatch(setActivities(resp.data));
+            }
+        )
+    }, []);
 
     useEffect(() => {
         document.addEventListener("scroll", checkY);

@@ -1,9 +1,11 @@
+import {useParams} from "react-router-dom";
 import style from "./ChoosedActivity.module.css";
 
-const ChoosedActivity = () => {
+const ChoosedActivity = (props) => {
+    const {id} = useParams();
     return (
-        <div className={style.container}>
-            ChoosedActivity
+        <div className="containerForSubPage">
+            <div className={style.container}></div>
         </div>
     )
 }
