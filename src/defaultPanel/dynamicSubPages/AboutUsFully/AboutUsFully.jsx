@@ -7,7 +7,7 @@ import {useNavigate} from "react-router-dom";
 const AboutUsFully = () => {
     const navigate = useNavigate();
 
-    function displaySubPage() {
+    function displayOneStepAgo() {
         navigate("/");
     }
 
@@ -17,7 +17,7 @@ const AboutUsFully = () => {
                 <ContentAboutUsFully/>
                 <img src={aboutImage} alt="aboutUs"/>
             </div>
-            <ArrowBack onClickEvent={displaySubPage}/>
+            <ArrowBack onClickEvent={displayOneStepAgo}/>
         </div>
     )
 }
