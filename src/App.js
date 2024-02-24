@@ -7,6 +7,8 @@ import Default from "./defaultPanel/dynamicSubPages/default/Default";
 import AboutUsFully from "./defaultPanel/dynamicSubPages/AboutUsFully/AboutUsFully";
 import Details from "./defaultPanel/dynamicSubPages/Details/Details";
 import ChoosedActivity from "./defaultPanel/dynamicSubPages/ChoosedActivity/ChoosedActivity";
+import Activities from "./defaultPanel/dynamicSubPages/default/Activities/Activities";
+import OurProjects from "./defaultPanel/dynamicSubPages/default/OurProjects/OurProjects";
 
 function App() {
     const router = createBrowserRouter([
@@ -21,6 +23,14 @@ function App() {
                 {
                     path: "/aboutUs",
                     element: <AboutUsFully/>
+                },
+                {
+                    path: "/activities",
+                    element: <Activities allActivities={true}/>
+                },
+                {
+                    path: "/projects",
+                    element: <OurProjects allProjects={true}/>
                 },
                 {
                     path: "/activity/:id",

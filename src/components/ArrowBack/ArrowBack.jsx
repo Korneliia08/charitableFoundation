@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const ArrowBack = (props) => {
     return (
-        <button className={style.container} onClick={props.onClickEvent}>
+        <button className={style.container} onClick={props.onClickEvent} style={{top: props.top}}>
             <FontAwesomeIcon icon={faCircleArrowLeft}/>
         </button>
     )
