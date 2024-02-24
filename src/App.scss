@@ -17,9 +17,16 @@ html {
 }
 
 .containerForSubPage {
-  background-color: #FFFFFF;
-  padding: 25px $leftAndRightPadding;
+  padding: 180px $leftAndRightPadding 40px $leftAndRightPadding;
   display: flex;
+  flex-grow: 10;
+  position: relative;
 }
 
+.flexibleBlock {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
+}
 

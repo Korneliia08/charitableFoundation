@@ -2,7 +2,7 @@
   background-color: #00295F;
 }
 .container .mainContainer {
-  padding: 100px 120px;
+  padding: 50px 120px;
   background-color: #00295F;
   display: flex;
   justify-content: space-between;
@@ -17,7 +17,7 @@
   row-gap: 50px;
 }
 .container .grayBelt {
-  padding: 35px 120px;
+  padding: 20px 120px;
   background-color: #20222E;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@
 }
 .container .grayBelt div span, .container .grayBelt div a {
   letter-spacing: 1px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
   text-shadow: 0px 1px 1px black;
 }

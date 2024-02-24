@@ -1,5 +1,15 @@
 .container {
-  background-color: #e82323;
+  background-color: transparent;
+  padding: 5px 10px;
+  position: absolute;
+  right: 15px;
+  top: 140px;
+  font-size: 2rem;
+  color: #003680;
+  transition: 250ms ease-in-out;
+}
+.container:hover {
+  color: #012960;
 }
 
 /*# sourceMappingURL=ArrowBack.module.css.map */

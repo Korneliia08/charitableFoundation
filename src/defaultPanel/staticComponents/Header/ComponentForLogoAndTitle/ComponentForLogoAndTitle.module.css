@@ -7,13 +7,21 @@
   padding-left: 120px;
 }
 .container img {
+  transition: 350ms ease-in-out;
   height: 60px;
 }
 .container h1 {
+  transition: 350ms ease-in-out;
   color: #003680;
   width: 50%;
   font-size: 1.1rem;
   text-transform: uppercase;
+}
+.container.min img {
+  height: 45px;
+}
+.container.min h1 {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=ComponentForLogoAndTitle.module.css.map */

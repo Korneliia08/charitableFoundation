@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container img {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=AboutUsFully.module.css.map */

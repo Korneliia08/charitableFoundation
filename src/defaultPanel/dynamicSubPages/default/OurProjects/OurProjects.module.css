@@ -15,5 +15,10 @@
   flex-direction: column;
   row-gap: 20px;
 }
+.container .blockForBtn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=OurProjects.module.css.map */

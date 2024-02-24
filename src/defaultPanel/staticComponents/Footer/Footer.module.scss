@@ -4,13 +4,13 @@
   background-color: #00295F;
 
   .mainContainer {
-    padding: 100px $leftAndRightPadding;
+    padding: 50px $leftAndRightPadding;
     background-color: #00295F;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    
+
 
     .blockForLogoAndContact {
       display: flex;
@@ -22,7 +22,7 @@
   }
 
   .grayBelt {
-    padding: 35px $leftAndRightPadding;
+    padding: 20px $leftAndRightPadding;
     background-color: #20222E;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@
 
       span, a {
         letter-spacing: 1px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: white;
         text-shadow: 0px 1px 1px black;
       }

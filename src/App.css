@@ -12,9 +12,17 @@ html {
 }
 
 .containerForSubPage {
-  background-color: #FFFFFF;
-  padding: 25px 120px;
+  padding: 180px 120px 40px 120px;
   display: flex;
+  flex-grow: 10;
+  position: relative;
+}
+
+.flexibleBlock {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=App.css.map */

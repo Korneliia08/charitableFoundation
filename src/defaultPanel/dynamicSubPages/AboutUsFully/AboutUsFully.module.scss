@@ -1,11 +1,9 @@
-@import "../../../../assets/globalVariables";
-
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 40px $leftAndRightPadding;
 
   img {
     margin-left: 10px;
   }
 }
+

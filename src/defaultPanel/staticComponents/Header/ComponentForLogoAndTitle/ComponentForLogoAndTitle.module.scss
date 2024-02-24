@@ -7,15 +7,30 @@
   align-items: center;
   column-gap: 5px;
   padding-left: $leftAndRightPadding;
+  $time: 350ms;
 
   img {
+    transition: $time ease-in-out;
+
     height: 60px;
   }
 
   h1 {
+    transition: $time ease-in-out;
     color: #003680;
     width: 50%;
     font-size: 1.1rem;
     text-transform: uppercase;
+  }
+
+  &.min {
+    img {
+      height: 45px;
+    }
+
+    h1 {
+
+      font-size: 0.9rem;
+    }
   }
 }

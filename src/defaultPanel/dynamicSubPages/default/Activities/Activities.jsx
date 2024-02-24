@@ -1,5 +1,6 @@
 import style from "./Activities.module.css";
 import CardOfActivity from "./CardOfActivity/CardOfActivity";
+import ComponentMainButton from "../../../../components/ComponentMainButton/ComponentMainButton";
 
 const Activities = () => {
     return (
@@ -15,6 +16,9 @@ const Activities = () => {
                 <CardOfActivity/>
                 <CardOfActivity/>
                 <CardOfActivity/>
+            </div>
+            <div className={style.blockForBtn}>
+                <ComponentMainButton content="Усі  діяльності" color="#1265A8"/>
             </div>
         </div>
     )

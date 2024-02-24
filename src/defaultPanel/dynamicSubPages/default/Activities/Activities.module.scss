@@ -1,4 +1,4 @@
-@import "../../../assets/globalVariables";
+@import "../../../../assets/globalVariables";
 
 .container {
   background-color: #FFFFFF;
@@ -20,5 +20,11 @@
     row-gap: 25px;
     width: 100%;
     padding: 40px 0;
+  }
+
+  .blockForBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }

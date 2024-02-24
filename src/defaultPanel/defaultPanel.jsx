@@ -28,13 +28,13 @@ const DefaultPanel = () => {
     }, []);
 
     return (
-        <>
+        <div className="flexibleBlock">
             <BeltForContact/>
             <BlockForLogoAndNav belt={belt}/>
             <Outlet/>
             <Footer/>
             <ArrowToTop/>
-        </>
+        </div>
     )
 }
 export default DefaultPanel;

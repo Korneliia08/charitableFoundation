@@ -18,5 +18,10 @@
   width: 100%;
   padding: 40px 0;
 }
+.container .blockForBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=Activities.module.css.map */

@@ -1,4 +1,4 @@
-@import "../../../assets/globalVariables";
+@import "../../../../assets/globalVariables";
 
 .container {
   padding: 40px $leftAndRightPadding;
@@ -17,5 +17,11 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+  }
+
+  .blockForBtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 }
