@@ -3,7 +3,7 @@
   flex-direction: column;
   height: 450px;
   justify-content: center;
-  row-gap: 100px;
+  row-gap: 80px;
   align-content: space-between;
 }
 .container h3 {

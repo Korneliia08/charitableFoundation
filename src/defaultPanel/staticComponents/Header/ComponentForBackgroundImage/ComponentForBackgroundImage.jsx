@@ -3,8 +3,9 @@ import backGroundImage from "../../../../assets/images/header.png";
 import ComponentMainButton from "../../../../components/ComponentMainButton/ComponentMainButton";
 import {useNavigate} from "react-router-dom";
 
-const ComponentForBackgroundImage = () => {
+const ComponentForBackgroundImage = (props) => {
     const navigate = useNavigate();
+    const data = props.data;
 
     function displaySubpage() {
         navigate('/aboutUs');
@@ -13,8 +14,8 @@ const ComponentForBackgroundImage = () => {
     return (
         <div className={style.mainContainer} style={{backgroundImage: `url(${backGroundImage})`}}>
             <div className={style.container}>
-                <h2>Благодійна організація</h2>
-                <h1>Благодійний фонд - могутність народу</h1>
+                <h2>{data.titleOfCategoryOfWebsite}</h2>
+                <h1>{data.titleOfWebsite}</h1>
                 <div className={style.blockForBtns}>
                     <ComponentMainButton content="Дізнатися більше" color="#FAC000" clickEvent={displaySubpage}/>
                     <ComponentMainButton content="Зробити пожертву" color="#1265A8"/>

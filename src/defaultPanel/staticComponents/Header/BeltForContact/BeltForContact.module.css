@@ -5,6 +5,7 @@
   width: 100%;
   position: fixed;
   z-index: 2000;
+  top: 0px;
 }
 .container .blockForContact {
   display: flex;
@@ -15,9 +16,10 @@
   opacity: 0.5;
   color: #ffffff;
 }
-.container .blockForContact .spanForContact {
+.container .blockForContact .tegForContact {
   color: white;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=BeltForContact.module.css.map */

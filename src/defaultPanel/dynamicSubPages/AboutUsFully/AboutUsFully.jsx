@@ -3,6 +3,7 @@ import aboutImage from "../../../assets/images/aboutUs.png";
 import ContentAboutUsFully from "./ContentAboutUsFully/ContentAboutUsFully";
 import style from "./AboutUsFully.module.css";
 import {useNavigate} from "react-router-dom";
+import ScrollToTop from "../../../components/scrollToTop";
 
 const AboutUsFully = () => {
     const navigate = useNavigate();
@@ -13,6 +14,7 @@ const AboutUsFully = () => {
 
     return (
         <div className="containerForSubPage">
+            <ScrollToTop/>
             <div className={style.container}>
                 <ContentAboutUsFully/>
                 <img src={aboutImage} alt="aboutUs"/>

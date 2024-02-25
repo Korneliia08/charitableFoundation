@@ -1,12 +1,16 @@
 import style from "./ComponentForLogoAndTitle.module.css";
 import herb from "../../../../../assets/images/herb.png";
+import {useSelector} from "react-redux";
 
 const ComponentForLogoAndTitle = (props) => {
-
+    const title = useSelector(state => state.websiteDates.websiteDates?.header?.titleOfWebsite);
+    if (!title) {
+        return <h2>Loading....</h2>;
+    }
     return (
         <div className={`${style.container} ${props.belt ? '' : style.min}`}>
             <img src={herb} alt="herb"/>
-            <h1>Благодійний фонд - могутність народу</h1>
+            <h1>{title}</h1>
         </div>
     )
 }
