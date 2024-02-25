@@ -4,6 +4,7 @@ import imageTeg from "../../../assets/images/aboutUs.png";
 import ArrowBack from "../../../components/ArrowBack/ArrowBack";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import ComponentMainButton from "../../../components/ComponentMainButton/ComponentMainButton";
 
 const ChoosedAspect = (props) => {
     const navigate = useNavigate();
@@ -38,7 +39,7 @@ const ChoosedAspect = (props) => {
                     <div className={style.containerForContentAndBtn}>
                         <p>{data.content}</p>
                         <div className={style.blockForBtn}>
-                            <button>Долучитися до пожертви</button>
+                            <ComponentMainButton content="Долучитися до пожертви" color="#F3CE03"/>
                         </div>
                     </div>
                     <img src={imageTeg} alt="imageTeg"/>

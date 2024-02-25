@@ -36,20 +36,6 @@
   display: flex;
   justify-content: center;
 }
-.container .containerForContentAndBtn .blockForBtn button {
-  background-color: #D5D5D5;
-  text-transform: uppercase;
-  color: #1a1a1a;
-  font-size: 0.8rem;
-  border: 1px solid black;
-  border-radius: 5px;
-  transition: 400ms ease-in-out;
-}
-.container .containerForContentAndBtn .blockForBtn button:hover {
-  cursor: pointer;
-  background-color: #01132a;
-  color: white;
-}
 .container img {
   height: 400px;
 }

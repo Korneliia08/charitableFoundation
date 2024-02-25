@@ -38,22 +38,6 @@
       width: 100%;
       display: flex;
       justify-content: center;
-
-      button {
-        background-color: #D5D5D5;
-        text-transform: uppercase;
-        color: #1a1a1a;
-        font-size: 0.8rem;
-        border: 1px solid black;
-        border-radius: 5px;
-        transition: 400ms ease-in-out;
-
-        &:hover {
-          cursor: pointer;
-          background-color: #01132a;
-          color: white;
-        }
-      }
     }
   }
 
