@@ -1,9 +1,11 @@
 import {configureStore} from "@reduxjs/toolkit";
-import activityReducer from "./reducers/activityReducer";
+import aspectReducer from "./reducers/aspectReducer";
+import projectReducer from "./reducers/projectReducer";
 
 const store = configureStore({
     reducer: {
-        activities: activityReducer,
+        aspects: aspectReducer,
+        projects: projectReducer,
     }
 });
 export default store;

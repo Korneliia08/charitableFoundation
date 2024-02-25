@@ -1,6 +1,6 @@
 import AboutUs from "./AboutUs/AboutUs";
 import DonationAndAdvice from "../../../components/DonationAndAdvice/DonationAndAdvice";
-import Activities from "./Activities/Activities";
+import AspectsOfTheProject from "./AspectsOfTheProject/AspectsOfTheProject";
 import OurProjects from "./OurProjects/OurProjects";
 import Advice from "./Advice/Advice";
 import Map from "./Map/Map";
@@ -19,7 +19,7 @@ const DefaultPanel = () => {
             <Header/>
             <AboutUs/>
             <DonationAndAdvice title="Консультація онлайн"/>
-            <Activities/>
+            <AspectsOfTheProject/>
             <DonationAndAdvice title="Зробити пожертвування" onClickEvent={desplaySubPageDetails}/>
             <OurProjects/>
             <Advice/>

@@ -19,7 +19,7 @@
 .container .containerForActivities {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   column-gap: 25px;
   row-gap: 25px;
   width: 100%;
@@ -31,4 +31,4 @@
   justify-content: center;
 }
 
-/*# sourceMappingURL=Activities.module.css.map */
+/*# sourceMappingURL=AspectsOfTheProject.module.css.map */

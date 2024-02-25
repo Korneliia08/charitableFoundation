@@ -6,7 +6,7 @@ import BlockForLogoAndNav from "./staticComponents/Header/BlockForLogoAndNav/Blo
 import {useEffect, useState} from "react";
 import {useDispatch} from "react-redux";
 import axios from "axios";
-import {setActivities} from "../data/reducers/activityReducer";
+import {setAspects} from "../data/reducers/aspectReducer";
 
 
 const DefaultPanel = () => {
@@ -27,7 +27,7 @@ const DefaultPanel = () => {
     useEffect(() => {
         axios('http://10.68.6.106:3000/activities').then(
             resp => {
-                dispatch(setActivities(resp.data));
+                dispatch(setAspects(resp.data));
             }
         )
     }, []);

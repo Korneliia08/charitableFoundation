@@ -2,10 +2,10 @@ import style from "./CardOfProject.module.css";
 import ComponentMainButton from "../../../../../components/ComponentMainButton/ComponentMainButton";
 
 const CardOfProject = (props) => {
-    const title = props.title;
+    const data = props.data;
     return (
         <div className={style.container}>
-            <h3>{title}</h3>
+            <h3>{data.title}</h3>
             <ComponentMainButton content="Пожертвувати" color="#E5C201"/>
         </div>
     )

@@ -6,8 +6,8 @@ import store from "./data/store";
 import Default from "./defaultPanel/dynamicSubPages/default/Default";
 import AboutUsFully from "./defaultPanel/dynamicSubPages/AboutUsFully/AboutUsFully";
 import Details from "./defaultPanel/dynamicSubPages/Details/Details";
-import ChoosedActivity from "./defaultPanel/dynamicSubPages/ChoosedActivity/ChoosedActivity";
-import Activities from "./defaultPanel/dynamicSubPages/default/Activities/Activities";
+import ChoosedAspect from "./defaultPanel/dynamicSubPages/ChoosedAspect/ChoosedAspect";
+import AspectsOfTheProject from "./defaultPanel/dynamicSubPages/default/AspectsOfTheProject/AspectsOfTheProject";
 import OurProjects from "./defaultPanel/dynamicSubPages/default/OurProjects/OurProjects";
 
 function App() {
@@ -25,16 +25,16 @@ function App() {
                     element: <AboutUsFully/>
                 },
                 {
-                    path: "/activities",
-                    element: <Activities allActivities={true}/>
+                    path: "/aspects",
+                    element: <AspectsOfTheProject allAspects={true}/>
                 },
                 {
                     path: "/projects",
                     element: <OurProjects allProjects={true}/>
                 },
                 {
-                    path: "/activity/:id",
-                    element: <ChoosedActivity/>
+                    path: "/aspect/:id",
+                    element: <ChoosedAspect/>
                 },
                 {
                     path: "/details",
