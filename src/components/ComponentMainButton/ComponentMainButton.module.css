@@ -22,12 +22,16 @@ button .emptyBlock {
   opacity: 0;
   pointer-events: none;
 }
-button:hover {
+button:hover:not(:disabled) {
   cursor: pointer;
 }
-button:hover .emptyBlock {
+button:hover:not(:disabled) .emptyBlock {
   top: 0;
   opacity: 1;
+}
+button:disabled {
+  filter: grayscale(0.8);
+  cursor: wait;
 }
 
 /*# sourceMappingURL=ComponentMainButton.module.css.map */

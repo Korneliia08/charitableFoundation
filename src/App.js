@@ -9,6 +9,8 @@ import Details from "./defaultPanel/dynamicSubPages/Details/Details";
 import ChoosedAspect from "./defaultPanel/dynamicSubPages/ChoosedAspect/ChoosedAspect";
 import AspectsOfTheProject from "./defaultPanel/dynamicSubPages/default/AspectsOfTheProject/AspectsOfTheProject";
 import OurProjects from "./defaultPanel/dynamicSubPages/default/OurProjects/OurProjects";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
     const router = createBrowserRouter([
@@ -47,6 +49,7 @@ function App() {
         <div className="App">
             <Provider store={store}>
                 <RouterProvider router={router}/>
+                <ToastContainer/>
             </Provider>
         </div>
     );

@@ -24,12 +24,17 @@ button {
     pointer-events: none;
   }
 
-  &:hover {
+  &:hover:not(:disabled) {
     cursor: pointer;
 
     .emptyBlock {
       top: 0;
       opacity: 1;
     }
+  }
+
+  &:disabled {
+    filter: grayscale(0.8);
+    cursor: wait;
   }
 }

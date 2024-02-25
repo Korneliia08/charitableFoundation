@@ -13,6 +13,8 @@ h3 {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 25px;
 }
 .mainContainer .blockForButton {
   margin-top: 40px;

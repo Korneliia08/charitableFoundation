@@ -2,8 +2,9 @@ import style from "./FormAdvice.module.css";
 import {faEnvelope, faPen, faPhone, faUser} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import ComponentMainButton from "../../../../../components/ComponentMainButton/ComponentMainButton";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import axios from "axios";
+import {toast} from "react-toastify";
 
 const FormAdvice = () => {
     let data = {};
@@ -13,16 +14,22 @@ const FormAdvice = () => {
     const optionPrefixOfPhone = useRef();
     const inputNumberPhone = useRef();
     let numberOfPhone = "";
+    const [blockButton, setBlockButton] = useState(false)
 
     function sendData(event) {
         event.preventDefault();
         numberOfPhone = optionPrefixOfPhone.current.textContent + inputNumberPhone.current.value;
         inputNumberPhone.current.reportValidity();
         data = CreateAObj();
+        setBlockButton(true)
         axios.post('http://10.68.6.106:3000/website-data/contactForm', data).then(resp => {
-            console.log(resp);
+            toast.success("uchty puchty!");
         }).catch(error => {
+
+            toast.error("BUBU");
             console.log(error);
+        }).finally(() => {
+            setBlockButton(false)
         });
     }
 
@@ -79,7 +86,7 @@ const FormAdvice = () => {
                     </div>
                     <textarea placeholder="Текст повідомлення" required={true} ref={inputContent}></textarea>
                 </div>
-                <ComponentMainButton content="Надіслати" color="#E5C201" clickEvent={validate}/>
+                <ComponentMainButton disabled={blockButton} content="Надіслати" color="#E5C201" clickEvent={validate}/>
             </form>
         </div>
     )
