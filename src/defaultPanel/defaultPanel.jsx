@@ -1,15 +1,17 @@
 import Footer from "./staticComponents/Footer/Footer";
 import ArrowToTop from "../components/ArrowToTop/ArrowToTop";
 import {Outlet} from "react-router-dom";
-import BeltForContact from "./staticComponents/Header/BeltForContact/BeltForContact";
 import BlockForLogoAndNav from "./staticComponents/Header/BlockForLogoAndNav/BlockForLogoAndNav";
 import {useEffect, useState} from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import axios from "axios";
 import {setAspects} from "../data/reducers/aspectReducer";
+import BeltForContact from "./staticComponents/Header/BeltForContact/BeltForContact";
+import {setWebsiteData} from "../data/reducers/websiteDataReducer";
 
 
 const DefaultPanel = () => {
+    const dataOfHeader = useSelector(state => state.websiteDates.websiteDates.header);
 
     const [belt, setBelt] = useState(true);
 
@@ -30,6 +32,13 @@ const DefaultPanel = () => {
                 dispatch(setAspects(resp.data));
             }
         )
+        axios('http://10.68.6.106:3000/website-data').then(
+            resp => {
+                dispatch(setWebsiteData(resp.data));
+            }
+        ).catch(error => {
+            console.log(error);
+        })
     }, []);
 
     useEffect(() => {
@@ -41,7 +50,8 @@ const DefaultPanel = () => {
 
     return (
         <div className="flexibleBlock">
-            <BeltForContact/>
+
+            {dataOfHeader && <BeltForContact data={dataOfHeader.blockOfBelt}/>}
             <BlockForLogoAndNav belt={belt}/>
             <Outlet/>
             <Footer/>

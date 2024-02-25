@@ -2,41 +2,84 @@ import style from "./FormAdvice.module.css";
 import {faEnvelope, faPen, faPhone, faUser} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import ComponentMainButton from "../../../../../components/ComponentMainButton/ComponentMainButton";
+import {useRef} from "react";
+import axios from "axios";
 
 const FormAdvice = () => {
+    let data = {};
+    const inputName = useRef();
+    const inputEmail = useRef();
+    const inputContent = useRef();
+    const optionPrefixOfPhone = useRef();
+    const inputNumberPhone = useRef();
+    let numberOfPhone = "";
+
+    function sendData(event) {
+        event.preventDefault();
+        numberOfPhone = optionPrefixOfPhone.current.textContent + inputNumberPhone.current.value;
+        inputNumberPhone.current.reportValidity();
+        data = CreateAObj();
+        axios.post('http://10.68.6.106:3000/website-data/contactForm', data).then(resp => {
+            console.log(resp);
+        }).catch(error => {
+            console.log(error);
+        });
+    }
+
+    function CreateAObj() {
+        return {
+            name: inputName.current.value,
+            email: inputEmail.current.value,
+            numberOfPhone,
+            content: inputContent.current.value,
+        }
+    }
+
+    function validate() {
+        inputNumberPhone.current.setCustomValidity("");
+        if (isNaN(inputNumberPhone.current.value)) {
+            inputNumberPhone.current.setCustomValidity("Номер телефону складається із цифр");
+        }
+    }
+
     return (
         <div className={style.container}>
-            <form>
+            <form onSubmit={sendData}>
                 <div className={style.blockForInput}>
                     <div className={style.icon}>
-                        <FontAwesomeIcon icon={faUser} className={style.iconStyle}/>
+                        <FontAwesomeIcon icon={faUser}
+                                         className={style.iconStyle}/>
                     </div>
-                    <input type="text" placeholder="Ім’я"/>
+                    <input type="text" placeholder="Ім’я" required={true} ref={inputName}/>
                 </div>
                 <div className={style.blockForInput}>
                     <div className={style.icon}>
-                        <FontAwesomeIcon icon={faEnvelope} className={style.iconStyle}/>
+                        <FontAwesomeIcon icon={faEnvelope}
+                                         className={style.iconStyle}/>
                     </div>
-                    <input type="email" placeholder="E-mail"/>
+                    <input type="email" placeholder="E-mail" required={true} ref={inputEmail}/>
                 </div>
                 <div className={style.blockForGroup}>
-                    <select>
+                    <select ref={optionPrefixOfPhone}>
                         <option value="">+380</option>
                     </select>
                     <div className={style.blockForInput}>
                         <div className={style.icon}>
-                            <FontAwesomeIcon icon={faPhone} className={style.iconStyle}/>
+                            <FontAwesomeIcon icon={faPhone}
+                                             className={style.iconStyle}/>
                         </div>
-                        <input type="text" placeholder="Номер телефону"/>
+                        <input type="text" placeholder="Номер телефону" required={true} minLength={9} maxLength={9}
+                               ref={inputNumberPhone}/>
                     </div>
                 </div>
                 <div className={style.blockForInput}>
                     <div className={style.icon} style={{alignItems: "flex-start", padding: " 12px 7px"}}>
-                        <FontAwesomeIcon icon={faPen} className={style.iconStyle}/>
+                        <FontAwesomeIcon icon={faPen}
+                                         className={style.iconStyle}/>
                     </div>
-                    <textarea placeholder="Текст повідомлення"></textarea>
+                    <textarea placeholder="Текст повідомлення" required={true} ref={inputContent}></textarea>
                 </div>
-                <ComponentMainButton content="Надіслати" color="#E5C201"/>
+                <ComponentMainButton content="Надіслати" color="#E5C201" clickEvent={validate}/>
             </form>
         </div>
     )

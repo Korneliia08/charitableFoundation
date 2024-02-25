@@ -1,6 +1,6 @@
 .container {
   width: 70%;
-  padding: 40px 0 40px 0;
+  padding: 80px 0 40px 0;
   position: relative;
   z-index: 600;
 
@@ -17,6 +17,11 @@
       border-radius: 5px;
       border: none;
       padding: 10px 35px;
+
+
+      &.yellowStyle {
+        // border: 2px solid #efb805;
+      }
 
       &:hover {
         cursor: text;
@@ -44,6 +49,18 @@
       justify-content: space-between;
       position: relative;
 
+      &:focus-within {
+        //    outline: 2px solid #efb805;
+        input {
+          outline: 2px solid #efb805;
+        }
+
+
+        svg path {
+          color: #efb805;
+        }
+
+      }
 
       input {
         width: 100%;
@@ -65,6 +82,10 @@
         .iconStyle {
           font-size: 18px;
           color: #C4C4C4;
+
+          &.yellowIcon {
+            color: #EFCB03;
+          }
         }
       }
 
