@@ -7,8 +7,12 @@ const ComponentForBackgroundImage = (props) => {
     const navigate = useNavigate();
     const data = props.data;
 
-    function displaySubpage() {
+    function displaySubpageAbout() {
         navigate('/aboutUs');
+    }
+
+    function displaySubpageDonat() {
+        navigate('/donat');
     }
 
     return (
@@ -17,8 +21,8 @@ const ComponentForBackgroundImage = (props) => {
                 <h2>{data.titleOfCategoryOfWebsite}</h2>
                 <h1>{data.titleOfWebsite}</h1>
                 <div className={style.blockForBtns}>
-                    <ComponentMainButton content="Дізнатися більше" color="#FAC000" clickEvent={displaySubpage}/>
-                    <ComponentMainButton content="Зробити пожертву" color="#1265A8"/>
+                    <ComponentMainButton content="Дізнатися більше" color="#FAC000" clickEvent={displaySubpageAbout}/>
+                    <ComponentMainButton content="Зробити пожертву" color="#1265A8" clickEvent={displaySubpageDonat}/>
                 </div>
             </div>
         </div>

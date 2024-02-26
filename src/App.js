@@ -11,6 +11,7 @@ import AspectsOfTheProject from "./defaultPanel/dynamicSubPages/default/AspectsO
 import OurProjects from "./defaultPanel/dynamicSubPages/default/OurProjects/OurProjects";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import Donat from "./defaultPanel/dynamicSubPages/Donat/Donat";
 
 function App() {
     const router = createBrowserRouter([
@@ -41,6 +42,10 @@ function App() {
                 {
                     path: "/details",
                     element: <Details/>
+                },
+                {
+                    path: "/donat",
+                    element: <Donat/>
                 }
             ],
         },
