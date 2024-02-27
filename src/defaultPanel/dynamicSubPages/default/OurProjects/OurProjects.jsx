@@ -23,7 +23,9 @@ const OurProjects = (props) => {
             resp => {
                 dispatch(setProjects(resp.data));
             }
-        ).catch(error => console.log(error));
+        ).catch(error => {
+            navigate('/error');
+        });
     }, []);
 
     function desplaySubPage() {

@@ -1,6 +1,6 @@
 import Footer from "./staticComponents/Footer/Footer";
 import ArrowToTop from "../components/ArrowToTop/ArrowToTop";
-import {Outlet} from "react-router-dom";
+import {Outlet, useNavigate} from "react-router-dom";
 import BlockForLogoAndNav from "./staticComponents/Header/BlockForLogoAndNav/BlockForLogoAndNav";
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
@@ -11,6 +11,7 @@ import {setWebsiteData} from "../data/reducers/websiteDataReducer";
 
 
 const DefaultPanel = () => {
+    const navigate = useNavigate();
     const dataOfHeader = useSelector(state => state.websiteDates.websiteDates.header);
 
     const [belt, setBelt] = useState(true);
@@ -32,14 +33,14 @@ const DefaultPanel = () => {
                 dispatch(setAspects(resp.data));
             }
         ).catch(error => {
-            console.log(error);
+            navigate('/error');
         })
         axios(process.env.REACT_APP_LINKTOAPI + 'website-data').then(
             resp => {
                 dispatch(setWebsiteData(resp.data));
             }
         ).catch(error => {
-            console.log(error);
+            navigate('/error');
         })
     }, []);
 

@@ -21,7 +21,7 @@ const ChoosedAspect = (props) => {
                 setData(resp.data);
             }
         ).catch(err => {
-            console.log(err);
+            navigate('/error');
         });
     }, [id]);
     if (!data) {

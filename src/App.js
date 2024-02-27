@@ -12,6 +12,7 @@ import OurProjects from "./defaultPanel/dynamicSubPages/default/OurProjects/OurP
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Donat from "./defaultPanel/dynamicSubPages/Donat/Donat";
+import ErrorComponent from "./components/ErrorComponent/ErrorComponent";
 
 function App() {
     const router = createBrowserRouter([
@@ -48,6 +49,10 @@ function App() {
                     element: <Donat/>
                 }
             ],
+        },
+        {
+            path: "/error",
+            element: <ErrorComponent/>
         },
     ], {basename: "/charitableFoundation"});
     return (
