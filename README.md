@@ -11,3 +11,5 @@
 * [react-qr-code](https://www.npmjs.com/package/react-qr-code)
 * [react-leaflet](https://react-leaflet.js.org/docs/start-installation/)
 * [react-toastify](https://www.npmjs.com/package/react-toastify)
+* [react-scroll](https://www.npmjs.com/package/react-scroll)
+  
