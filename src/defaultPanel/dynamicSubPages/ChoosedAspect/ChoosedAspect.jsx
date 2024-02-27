@@ -16,7 +16,7 @@ const ChoosedAspect = (props) => {
     }
 
     useEffect(() => {
-        axios('http://10.68.6.106:3000/activities/' + id).then(
+        axios(process.env.REACT_APP_LINKTOAPI + 'activities/' + id).then(
             resp => {
                 setData(resp.data);
             }

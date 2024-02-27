@@ -19,7 +19,7 @@ const OurProjects = (props) => {
     }
 
     useEffect(() => {
-        axios('http://10.68.6.106:3000/projects').then(
+        axios(process.env.REACT_APP_LINKTOAPI + 'projects').then(
             resp => {
                 dispatch(setProjects(resp.data));
             }

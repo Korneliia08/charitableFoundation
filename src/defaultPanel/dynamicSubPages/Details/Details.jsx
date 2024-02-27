@@ -3,10 +3,7 @@ import {useNavigate} from "react-router-dom";
 import style from "./Details.module.css";
 import ComponentMainButton from "../../../components/ComponentMainButton/ComponentMainButton";
 import ScrollToTop from "../../../components/scrollToTop";
-import {useEffect} from "react";
-import axios from "axios";
 import {useDispatch, useSelector} from "react-redux";
-import {setWebsiteData} from "../../../data/reducers/websiteDataReducer";
 import Detail from "./Detail/Detail";
 
 const Details = () => {
@@ -19,13 +16,6 @@ const Details = () => {
         navigate("/");
     }
 
-    useEffect(() => {
-        axios('http://10.68.6.106:3000/website-data').then(resp => {
-            dispatch(setWebsiteData(resp.data));
-        }).catch(error => {
-            console.log(error);
-        })
-    }, []);
 
     if (!allDetails) {
         return <h2>Loading....</h2>

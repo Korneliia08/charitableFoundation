@@ -27,12 +27,14 @@ const DefaultPanel = () => {
 
     const dispatch = useDispatch();
     useEffect(() => {
-        axios('http://10.68.6.106:3000/activities').then(
+        axios(process.env.REACT_APP_LINKTOAPI + 'activities').then(
             resp => {
                 dispatch(setAspects(resp.data));
             }
-        )
-        axios('http://10.68.6.106:3000/website-data').then(
+        ).catch(error => {
+            console.log(error);
+        })
+        axios(process.env.REACT_APP_LINKTOAPI + 'website-data').then(
             resp => {
                 dispatch(setWebsiteData(resp.data));
             }
