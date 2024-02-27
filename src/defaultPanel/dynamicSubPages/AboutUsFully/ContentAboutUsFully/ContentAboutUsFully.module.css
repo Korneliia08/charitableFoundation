@@ -4,12 +4,12 @@
   flex-direction: column;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-content: center;
   row-gap: 20px;
+  width: 60%;
 }
 .container h2 {
   width: 100%;
-  text-align: start;
   color: #003680;
   font-size: 2rem;
   text-transform: uppercase;

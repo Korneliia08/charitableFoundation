@@ -4,6 +4,7 @@ import ComponentMainButton from "../../../../components/ComponentMainButton/Comp
 import {useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 import ArrowBack from "../../../../components/ArrowBack/ArrowBack";
+import ScrollToTop from "../../../../components/scrollToTop";
 
 const AspectsOfTheProject = (props) => {
     const navigate = useNavigate();
@@ -30,6 +31,7 @@ const AspectsOfTheProject = (props) => {
     }
     return (
         <div className={style.container} style={{paddingTop: areAllAspects ? "100px" : ""}}>
+            <ScrollToTop/>
             {areAllAspects && <ArrowBack onClickEvent={displayOneStepAgo}/>}
             <h2 dangerouslySetInnerHTML={{__html: data.titleOfHeading}}></h2>
             <p className={style.shortDescriptionUnderHeadline}

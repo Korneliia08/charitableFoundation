@@ -15,8 +15,12 @@ const ChoosedAspect = (props) => {
         navigate(-1);
     }
 
+    function displaySubPage() {
+        navigate("/donat");
+    }
+
     useEffect(() => {
-        axios(process.env.REACT_APP_LINKTOAPI + 'activities/' + id).then(
+        axios(process.env.REACT_APP_LINKTOAPI + 'aspects/' + id).then(
             resp => {
                 setData(resp.data);
             }
@@ -24,9 +28,11 @@ const ChoosedAspect = (props) => {
             navigate('/error');
         });
     }, [id]);
+
     if (!data) {
         return <h2>Loading....</h2>
     }
+
 
     return (
         <>
@@ -37,9 +43,10 @@ const ChoosedAspect = (props) => {
                 <ArrowBack top={'-29px'} onClickEvent={displayOneStepAgo}/>
                 <div className={style.container}>
                     <div className={style.containerForContentAndBtn}>
-                        <p>{data.content}</p>
+                        <p dangerouslySetInnerHTML={{__html: data.content}}></p>
                         <div className={style.blockForBtn}>
-                            <ComponentMainButton content="Долучитися до пожертви" color="#F3CE03"/>
+                            <ComponentMainButton content="Долучитися до пожертви" color="#F3CE03"
+                                                 clickEvent={displaySubPage}/>
                         </div>
                     </div>
                     <img src={imageTeg} alt="imageTeg"/>

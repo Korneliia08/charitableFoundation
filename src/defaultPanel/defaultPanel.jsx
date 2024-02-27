@@ -8,6 +8,7 @@ import axios from "axios";
 import {setAspects} from "../data/reducers/aspectReducer";
 import BeltForContact from "./staticComponents/Header/BeltForContact/BeltForContact";
 import {setWebsiteData} from "../data/reducers/websiteDataReducer";
+import {setProjects} from "../data/reducers/projectReducer";
 
 
 const DefaultPanel = () => {
@@ -42,6 +43,15 @@ const DefaultPanel = () => {
         ).catch(error => {
             navigate('/error');
         })
+
+        axios(process.env.REACT_APP_LINKTOAPI + 'projects').then(
+            resp => {
+                dispatch(setProjects(resp.data));
+            }
+        ).catch(error => {
+            navigate('/error');
+        });
+        
     }, []);
 
     useEffect(() => {

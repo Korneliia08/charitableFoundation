@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   row-gap: 15px;
+  width: 100%;
 }
 .mainContainer h4 {
   font-size: 2rem;
@@ -14,7 +15,7 @@
   width: 100%;
   color: black;
   font-size: 1.2rem;
-  text-align: justify;
+  text-align: center;
   line-height: 1.4;
 }
 

@@ -1,11 +1,11 @@
 .container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .container img {
   margin-left: 10px;
-  width: 45%;
-  height: max-content;
+  height: 400px;
 }
 
 /*# sourceMappingURL=AboutUsFully.module.css.map */
