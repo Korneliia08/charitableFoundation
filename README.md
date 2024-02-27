@@ -5,6 +5,7 @@
 * [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 * [font-awesome-icons](https://fontawesome.com/v5/docs/web/use-with/react)
 * [font-awesome-brands-icons](https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons)
+* [font-awesome-regular-icons](https://www.npmjs.com/package/@fortawesome/free-regular-svg-icons)
 * [react-router-hash-link](https://www.npmjs.com/package/react-router-hash-link)
 * [react-redux](https://www.npmjs.com/package/react-redux)
 * [redux-toolkit](https://www.npmjs.com/package/@reduxjs/toolkit)
@@ -12,4 +13,4 @@
 * [react-leaflet](https://react-leaflet.js.org/docs/start-installation/)
 * [react-toastify](https://www.npmjs.com/package/react-toastify)
 * [react-scroll](https://www.npmjs.com/package/react-scroll)
-  
+
