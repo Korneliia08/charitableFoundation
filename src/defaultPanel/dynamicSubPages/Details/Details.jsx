@@ -3,17 +3,20 @@ import {useNavigate} from "react-router-dom";
 import style from "./Details.module.css";
 import ComponentMainButton from "../../../components/ComponentMainButton/ComponentMainButton";
 import ScrollToTop from "../../../components/scrollToTop";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import Detail from "./Detail/Detail";
 
 const Details = () => {
     const navigate = useNavigate();
-    const dispatch = useDispatch();
     const data = useSelector(state => state.websiteDates.websiteDates?.detailSubPage);
     const allDetails = data?.details;
 
     function displayOneStepAgo() {
         navigate("/");
+    }
+
+    function displaySubPage() {
+        navigate("/donat");
     }
 
 
@@ -31,7 +34,7 @@ const Details = () => {
                     {details}
                 </div>
                 <div className={style.blockForButton}>
-                    <ComponentMainButton content="Долучитися до збору" color="#FAC000"/>
+                    <ComponentMainButton content="Долучитися до збору" color="#FAC000" clickEvent={displaySubPage}/>
                 </div>
             </div>
             <ArrowBack onClickEvent={displayOneStepAgo}/>

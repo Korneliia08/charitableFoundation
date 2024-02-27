@@ -3,6 +3,7 @@ import ArrowBack from "../../../components/ArrowBack/ArrowBack";
 import {useNavigate} from "react-router-dom";
 import {faGem} from "@fortawesome/free-regular-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import ScrollToTop from "../../../components/scrollToTop";
 
 const Donat = () => {
     const navigate = useNavigate();
@@ -13,6 +14,7 @@ const Donat = () => {
 
     return (
         <div className="containerForSubPage">
+            <ScrollToTop/>
             <div className={style.mainContainer}>
                 <div className={style.blockForTitleAndOther}>
                     <h4>БЛАГОДІЙНИЙ ФОНД - МОГУТНІСТЬ НАРОДУ</h4>
