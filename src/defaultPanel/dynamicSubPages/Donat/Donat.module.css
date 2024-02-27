@@ -1,0 +1,81 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mainContainer .blockForTitleAndOther {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainContainer .blockForTitleAndOther .blockForDiamond {
+  background-color: #4444ff;
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  border-radius: 40px;
+  margin: 20px 0;
+  border: 1px inset #002977;
+  box-shadow: 0px 0px 10px 4px inset #4d4d4d;
+  padding: 10px 0;
+}
+.mainContainer .blockForTitleAndOther .blockForDiamond .diamondIcon {
+  color: #ffffff;
+  font-size: 8rem;
+  filter: drop-shadow(2px 2px 2px #16161c);
+}
+.mainContainer .blockForTitleAndOther h4 {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.mainContainer .blockForTitleAndOther .blockForHowMoney {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContainer .blockForTitleAndOther .blockForHowMoney .mainSpan {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.mainContainer .blockForTitleAndOther .blockForHowMoney span {
+  font-size: 1.2rem;
+}
+.mainContainer .blockForOnlineDonat {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+.mainContainer .blockForOnlineDonat h5 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.mainContainer .blockForOnlineDonat button {
+  width: 40%;
+  color: white;
+  text-shadow: 1px 0px 1px #2c2c2c;
+  background-color: #4444FF;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px inset blue;
+  font-size: 0.8rem;
+  transition: 250ms;
+}
+.mainContainer .blockForOnlineDonat button:hover {
+  cursor: pointer;
+  background-color: #2828ea;
+}
+.mainContainer .blockForOnlineDonat p {
+  border-top: 1px solid rgba(84, 84, 84, 0.75);
+  padding: 10px 5px;
+  font-size: 1.1rem;
+  color: black;
+}
+
+/*# sourceMappingURL=Donat.module.css.map */
