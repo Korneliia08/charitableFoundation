@@ -9,7 +9,7 @@ const AboutUsFully = () => {
     const navigate = useNavigate();
 
     function displayOneStepAgo() {
-        navigate("/");
+        navigate(-1);
     }
 
     return (
@@ -24,3 +24,4 @@ const AboutUsFully = () => {
     )
 }
 export default AboutUsFully;
+

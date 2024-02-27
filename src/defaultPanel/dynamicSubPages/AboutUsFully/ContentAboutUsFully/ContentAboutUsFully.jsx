@@ -10,7 +10,7 @@ const ContentAboutUsFully = () => {
     return (
         <div className={style.container}>
             <h2>{data.titleOfHeading}</h2>
-            <p>{data.fullDescription}</p>
+            <p dangerouslySetInnerHTML={{__html: data.fullDescription}}></p>
         </div>
     )
 }

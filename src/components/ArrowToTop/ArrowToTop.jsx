@@ -26,7 +26,7 @@ const ArrowToTop = () => {
         };
     }, []);
     return (
-        <div className={style.container} style={{bottom: arrowToTop ? "20px" : "-50px"}} onClick={scrollToTop}>
+        <div className={style.container} style={{bottom: arrowToTop ? "5px" : "-50px"}} onClick={scrollToTop}>
             <FontAwesomeIcon icon={faArrowUp} className={style.arrowToTopIcon}/>
         </div>
     )

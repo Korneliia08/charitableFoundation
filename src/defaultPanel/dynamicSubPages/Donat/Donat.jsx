@@ -9,7 +9,7 @@ const Donat = () => {
     const navigate = useNavigate();
 
     function displayOneStepAgo() {
-        navigate("/");
+        navigate(-1);
     }
 
     return (

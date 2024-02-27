@@ -17,7 +17,10 @@
     color: black;
     line-height: 1.1;
     font-size: 1.2rem;
-    text-align: start;
+
+    > * {
+      text-align: start;
+    }
   }
 
   .containerForActivities {

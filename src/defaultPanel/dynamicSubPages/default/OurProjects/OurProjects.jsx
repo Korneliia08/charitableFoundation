@@ -33,7 +33,7 @@ const OurProjects = (props) => {
     }
 
     function displayOneStepAgo() {
-        navigate("/");
+        navigate(-1);
     }
 
     return (

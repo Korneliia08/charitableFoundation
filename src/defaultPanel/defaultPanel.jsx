@@ -28,7 +28,7 @@ const DefaultPanel = () => {
 
     const dispatch = useDispatch();
     useEffect(() => {
-        axios(process.env.REACT_APP_LINKTOAPI + 'activities').then(
+        axios(process.env.REACT_APP_LINKTOAPI + 'aspects').then(
             resp => {
                 dispatch(setAspects(resp.data));
             }

@@ -7,6 +7,7 @@ import ArrowBack from "../../../../components/ArrowBack/ArrowBack";
 
 const AspectsOfTheProject = (props) => {
     const navigate = useNavigate();
+    const data = useSelector(state => state.websiteDates.websiteDates.aspects);
     const areAllAspects = props.allAspects;
     const allAspects = useSelector(state => state.aspects.aspects);
     let aspectCards = allAspects.map((aspect, index) => <CardOfAspect data={aspect}
@@ -21,24 +22,18 @@ const AspectsOfTheProject = (props) => {
     }
 
     function displayOneStepAgo() {
-        navigate("/");
+        navigate(-1);
     }
 
+    if (!data) {
+        return <h4>Loading....</h4>
+    }
     return (
         <div className={style.container} style={{paddingTop: areAllAspects ? "100px" : ""}}>
             {areAllAspects && <ArrowBack onClickEvent={displayOneStepAgo}/>}
-            <h2>Проект забудови приватного будівництва, інвалідам та сім'ям загиблих воїнів.</h2>
-            <p className={style.shortDescriptionUnderHeadline}>Створення будівельного проекту для воїнів інвалідів війни
-                є дуже важливим завданням з метою забезпечення комфортного та доступного житла для цієї категорії людей.
-                Цей проект повинен враховувати їх унікальні потреби та обмеження, забезпечуючи максимальний рівень
-                зручностей та безпеки.
-
-                <br/> Ось нижче кілька ключових аспектів, які слід врахувати при створенні будівельного проекту для
-                воїнів
-                інвалідів
-                війни. Ці принципи можна використовувати для розробки інноваційних та дружніх до інвалідів будівельних
-                проектів для воїнів інвалідів війни. Додатково важливо проводити консультації зі спеціалістами з
-                інвалідності та ветеранами, щоб врахувати їхні потреби та пропозиції при розробці проекту.</p>
+            <h2 dangerouslySetInnerHTML={{__html: data.titleOfHeading}}></h2>
+            <p className={style.shortDescriptionUnderHeadline}
+               dangerouslySetInnerHTML={{__html: data.mainDescription}}></p>
             <div className={style.containerForActivities}>
                 {aspectCards}
             </div>

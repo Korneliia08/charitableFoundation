@@ -12,7 +12,7 @@ const Details = () => {
     const allDetails = data?.details;
 
     function displayOneStepAgo() {
-        navigate("/");
+        navigate(-1);
     }
 
     function displaySubPage() {

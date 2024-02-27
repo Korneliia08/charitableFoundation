@@ -13,8 +13,8 @@ const CardOfAspect = (props) => {
 
     return (
         <div className={style.container} onClick={displayChoosedAspect}>
-            <h4>{data.title}</h4>
-            <p>{data.content}</p>
+            <h4 dangerouslySetInnerHTML={{__html: data.title}}></h4>
+            <p dangerouslySetInnerHTML={{__html: data.content}}></p>
             <FontAwesomeIcon icon={faArrowDown} className={style.icon}/>
         </div>
     )

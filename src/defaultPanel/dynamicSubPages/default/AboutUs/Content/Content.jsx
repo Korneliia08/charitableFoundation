@@ -13,7 +13,7 @@ const Content = (props) => {
     return (
         <div className={style.container}>
             <h2>{data.titleOfHeading}</h2>
-            <p>{data.shortDescription}</p>
+            <p dangerouslySetInnerHTML={{__html: data.shortDescription}}></p>
             <ComponentMainButton content="Детальніше" color="#FFD801" clickEvent={displaySubPage}/>
         </div>
     )

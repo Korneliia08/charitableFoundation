@@ -12,7 +12,7 @@ const ChoosedAspect = (props) => {
     const {id} = useParams();
 
     function displayOneStepAgo() {
-        navigate("/");
+        navigate(-1);
     }
 
     useEffect(() => {

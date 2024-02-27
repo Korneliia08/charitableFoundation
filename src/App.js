@@ -13,6 +13,7 @@ import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Donat from "./defaultPanel/dynamicSubPages/Donat/Donat";
 import ErrorComponent from "./components/ErrorComponent/ErrorComponent";
+import ChoosedProject from "./defaultPanel/dynamicSubPages/ChoosedProject/ChoosedProject";
 
 function App() {
     const router = createBrowserRouter([
@@ -39,6 +40,10 @@ function App() {
                 {
                     path: "/aspect/:id",
                     element: <ChoosedAspect/>
+                },
+                {
+                    path: "/project/:id",
+                    element: <ChoosedProject/>
                 },
                 {
                     path: "/details",
