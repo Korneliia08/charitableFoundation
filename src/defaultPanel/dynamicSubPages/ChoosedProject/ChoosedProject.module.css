@@ -1,0 +1,21 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+}
+.mainContainer h4 {
+  font-size: 2rem;
+  color: #003680;
+  text-transform: uppercase;
+}
+.mainContainer p {
+  width: 100%;
+  color: black;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+/*# sourceMappingURL=ChoosedProject.module.css.map */
