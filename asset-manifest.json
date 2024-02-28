@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/charitableFoundation/static/css/main.26119167.css",
+    "main.css": "/charitableFoundation/static/css/main.679e865d.css",
     "main.js": "/charitableFoundation/static/js/main.0dcb5f78.js",
     "static/media/header.png": "/charitableFoundation/static/media/header.af5f32fe9b8f88cb9c12.png",
     "static/media/makeAdonat.png": "/charitableFoundation/static/media/makeAdonat.712df73bf4bdb1ef4a19.png",
@@ -8,11 +8,11 @@
     "static/media/aboutUs.png": "/charitableFoundation/static/media/aboutUs.0f4d0c535d0ad7965000.png",
     "static/media/herb.png": "/charitableFoundation/static/media/herb.fa0d0720c01dfe99b49a.png",
     "index.html": "/charitableFoundation/index.html",
-    "main.26119167.css.map": "/charitableFoundation/static/css/main.26119167.css.map",
+    "main.679e865d.css.map": "/charitableFoundation/static/css/main.679e865d.css.map",
     "main.0dcb5f78.js.map": "/charitableFoundation/static/js/main.0dcb5f78.js.map"
   },
   "entrypoints": [
-    "static/css/main.26119167.css",
+    "static/css/main.679e865d.css",
     "static/js/main.0dcb5f78.js"
   ]
 }
