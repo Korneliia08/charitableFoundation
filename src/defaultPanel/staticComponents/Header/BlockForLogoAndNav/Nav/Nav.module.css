@@ -13,6 +13,7 @@
   text-decoration: underline;
   text-decoration-color: transparent;
   font-weight: normal;
+  font-family: robotoBold, cursive;
 }
 .container a:hover {
   cursor: pointer;

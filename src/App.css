@@ -1,4 +1,13 @@
+@font-face {
+  font-family: robotoLight;
+  src: url("./assets/fonts/Roboto_Condensed/static/RobotoCondensed-Light.ttf");
+}
+@font-face {
+  font-family: robotoBold;
+  src: url("./assets/fonts/Roboto_Condensed/static/RobotoCondensed-ExtraBold.ttf");
+}
 h6, h5, h4, h3, h2, h1, p {
+  font-family: robotoLight, cursive;
   margin: 0;
   text-align: center;
 }
@@ -12,7 +21,7 @@ html {
 }
 
 .containerForSubPage {
-  padding: 100px 120px 40px 120px;
+  padding: 100px var(--leftAndRightPadding) 40px var(--leftAndRightPadding);
   display: flex;
   flex-grow: 10;
   position: relative;

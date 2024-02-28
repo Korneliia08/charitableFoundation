@@ -10,7 +10,6 @@ import BeltForContact from "./staticComponents/Header/BeltForContact/BeltForCont
 import {setWebsiteData} from "../data/reducers/websiteDataReducer";
 import {setProjects} from "../data/reducers/projectReducer";
 
-
 const DefaultPanel = () => {
     const navigate = useNavigate();
     const dataOfHeader = useSelector(state => state.websiteDates.websiteDates.header);

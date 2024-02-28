@@ -1,9 +1,18 @@
-@import "./assets/globalVariables";
+@font-face {
+  font-family: robotoLight;
+  src: url("./assets/fonts/Roboto_Condensed/static/RobotoCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: robotoBold;
+  src: url("./assets/fonts/Roboto_Condensed/static/RobotoCondensed-ExtraBold.ttf");
+}
 
 .App {
 }
 
 h6, h5, h4, h3, h2, h1, p {
+  font-family: robotoLight, cursive;
   margin: 0;
   text-align: center;
 }

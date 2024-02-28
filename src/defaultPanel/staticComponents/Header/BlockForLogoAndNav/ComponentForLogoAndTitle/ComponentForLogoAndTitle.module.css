@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   column-gap: 5px;
-  padding-left: 120px;
+  padding-left: var(--leftAndRightPadding);
 }
 .container img {
   transition: 350ms ease-in-out;
@@ -16,12 +16,14 @@
   width: 50%;
   font-size: 1.1rem;
   text-transform: uppercase;
+  font-family: robotoBold, cursive;
 }
 .container.min img {
   height: 45px;
 }
 .container.min h1 {
   font-size: 0.9rem;
+  font-family: robotoBold, cursive;
 }
 
 /*# sourceMappingURL=ComponentForLogoAndTitle.module.css.map */

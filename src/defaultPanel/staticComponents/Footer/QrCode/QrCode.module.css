@@ -6,7 +6,7 @@
 }
 .container h4 {
   color: white;
-  font-size: 1.1rem;
+  font-size: var(--fontSizeInFooterHeadlines);
 }
 
 /*# sourceMappingURL=QrCode.module.css.map */

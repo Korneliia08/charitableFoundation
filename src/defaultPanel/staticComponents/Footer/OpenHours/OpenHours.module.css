@@ -13,7 +13,7 @@
 }
 .container .blockForTitleAndIcon h4 {
   color: white;
-  font-size: 1.1rem;
+  font-size: var(--fontSizeInFooterHeadlines);
 }
 .container .blockForTitleAndIcon .icon {
   color: white;
@@ -27,7 +27,7 @@
 }
 .container .blockForOpeningHours span {
   color: white;
-  font-size: 0.9rem;
+  font-size: var(--fontSizeInFooter);
 }
 
 /*# sourceMappingURL=OpenHours.module.css.map */

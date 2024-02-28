@@ -1,6 +1,6 @@
 .container {
   background-color: #FFFFFF;
-  padding: 40px 120px;
+  padding: 40px var(--leftAndRightPadding);
 }
 .container h2 {
   width: 100%;

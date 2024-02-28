@@ -1,8 +1,10 @@
 .container {
   background-color: #00295F;
+  font-family: robotoBold, cursive;
+  letter-spacing: 1px;
 }
 .container .mainContainer {
-  padding: 50px 120px;
+  padding: 50px var(--leftAndRightPadding);
   background-color: #00295F;
   display: flex;
   justify-content: space-between;
@@ -17,7 +19,7 @@
   row-gap: 50px;
 }
 .container .grayBelt {
-  padding: 20px 120px;
+  padding: 20px var(--leftAndRightPadding);
   background-color: #20222E;
   display: flex;
   justify-content: center;

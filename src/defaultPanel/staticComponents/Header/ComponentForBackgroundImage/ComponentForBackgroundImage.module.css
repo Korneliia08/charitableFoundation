@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  padding: 120px;
+  padding: var(--leftAndRightPadding);
   justify-content: flex-start;
 }
 .mainContainer .container {
@@ -20,15 +20,18 @@
   color: white;
   font-size: 2rem;
   text-align: left;
+  font-family: robotoBold, cursive;
 }
 .mainContainer .container h2 {
   font-size: 1.9rem;
   color: #FED800;
+  font-family: robotoBold, cursive;
 }
 .mainContainer .container .blockForBtns {
   padding: 20px 0;
   display: flex;
   column-gap: 20px;
+  font-family: robotoBold, cursive;
 }
 .mainContainer .container .blockForBtns .btnKnowMore {
   background-color: #FAC000;
