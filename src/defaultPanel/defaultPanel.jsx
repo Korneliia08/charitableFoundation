@@ -50,7 +50,37 @@ const DefaultPanel = () => {
         ).catch(error => {
             navigate('/error');
         });
-        
+        let sessionId = 0;
+        const link = process.env.REACT_APP_LINKTOAPI + 'visits'
+
+
+        const pinger = setInterval(() => {
+
+            function generateMd5() {
+                const date =
+                    new Date().getHours() +
+                    '*' +
+                    new Date().getMinutes() +
+                    '*' +
+                    (Number(new Date().getSeconds()));
+                const value = `${date}` //^${link}
+                var md5 = require('md5');
+                return md5(value)
+            }
+
+            axios(link, {params: {code: generateMd5(), id: sessionId}}).then(data => {
+                console.log(data.data);
+                if (data.data.id) {
+                    sessionId = data.id;
+                }
+            }).catch(error => {
+                console.warn('Pinger error')
+            });
+        }, 3000)
+        return () => {
+            clearInterval(pinger)
+        }
+
     }, []);
 
     useEffect(() => {

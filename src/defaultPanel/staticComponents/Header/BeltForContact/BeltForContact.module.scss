@@ -1,8 +1,7 @@
-@import "../../../../assets/globalVariables";
 
 .container {
   background-color: #003680;
-  padding: 10px $leftAndRightPadding;
+  padding: 10px var(--leftAndRightPadding);
   display: flex;
   width: 100%;
   position: fixed;

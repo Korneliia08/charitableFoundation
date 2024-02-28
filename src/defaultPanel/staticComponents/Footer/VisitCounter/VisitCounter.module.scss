@@ -15,7 +15,7 @@
 
     h4 {
       color: white;
-      font-size: $fontSizeInFooterHeadlines;
+      font-size: var(--fontSizeInFooterHeadlines);
     }
 
     .icon {
@@ -32,7 +32,7 @@
 
     span {
       color: white;
-      font-size: $fontSizeInFooter;
+      font-size: var(--fontSizeInFooter);
     }
   }
 }

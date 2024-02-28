@@ -1,4 +1,3 @@
-@import "../../../assets/globalVariables";
 
 .container {
   background-color: #00295F;
@@ -6,7 +5,7 @@
   letter-spacing: 1px;
 
   .mainContainer {
-    padding: 50px $leftAndRightPadding;
+    padding: 50px var(--leftAndRightPadding);
     background-color: #00295F;
     display: flex;
     justify-content: space-between;
@@ -24,7 +23,7 @@
   }
 
   .grayBelt {
-    padding: 20px $leftAndRightPadding;
+    padding: 20px var(--leftAndRightPadding);;
     background-color: #20222E;
     display: flex;
     justify-content: center;

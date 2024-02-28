@@ -26,7 +26,7 @@ html {
 }
 
 .containerForSubPage {
-  padding: 100px $leftAndRightPadding 40px $leftAndRightPadding;
+  padding: 100px var(--leftAndRightPadding) 40px var(--leftAndRightPadding);
   display: flex;
   flex-grow: 10;
   position: relative;

@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 40px $leftAndRightPadding;
+  padding: 40px var(--leftAndRightPadding);
 
   img {
     margin-left: 10px;

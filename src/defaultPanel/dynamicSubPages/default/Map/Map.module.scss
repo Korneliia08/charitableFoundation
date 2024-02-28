@@ -1,7 +1,6 @@
-@import "../../../assets/globalVariables";
 
 .container {
-  padding: 40px $leftAndRightPadding;
+  padding: 40px var(--leftAndRightPadding);
   display: flex;
   flex-direction: column;
   align-items: flex-start;

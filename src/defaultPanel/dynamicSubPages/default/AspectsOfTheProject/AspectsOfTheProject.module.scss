@@ -1,8 +1,7 @@
-@import "../../../../assets/globalVariables";
 
 .container {
   background-color: #FFFFFF;
-  padding: 40px $leftAndRightPadding;
+  padding: 40px var(--leftAndRightPadding);
 
   h2 {
     width: 100%;

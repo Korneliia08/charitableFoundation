@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 20px $leftAndRightPadding;
+  padding: 20px var(--leftAndRightPadding);;
   display: flex;
   justify-content: center;
   z-index: 400;
