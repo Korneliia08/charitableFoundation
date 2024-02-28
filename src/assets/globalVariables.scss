@@ -1,0 +1,14 @@
+:root {
+  --leftAndRightPadding: 120px;
+  --fontSizeInFooter: 0.9rem;
+  --fontSizeInFooterHeadlines: 1.1rem;
+  @media (max-width: 900px) {
+    --leftAndRightPadding: 150px;
+  }
+  @media (max-width: 800px) {
+    --leftAndRightPadding: 50px !important;
+  }
+}
+
+
+

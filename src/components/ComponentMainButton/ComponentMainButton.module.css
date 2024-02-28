@@ -11,6 +11,16 @@ button {
   overflow: hidden;
   text-transform: uppercase;
 }
+@media (max-width: 800px) {
+  button {
+    padding: 8px 20px;
+  }
+}
+@media (max-width: 600px) {
+  button {
+    padding: 8px 15px;
+  }
+}
 button .emptyBlock {
   width: 100%;
   height: 100%;

@@ -10,6 +10,12 @@ button {
   position: relative;
   overflow: hidden;
   text-transform: uppercase;
+  @media(max-width: 800px) {
+    padding: 8px 20px;
+  }
+  @media(max-width: 600px) {
+    padding: 8px 15px;
+  }
 
 
   .emptyBlock {

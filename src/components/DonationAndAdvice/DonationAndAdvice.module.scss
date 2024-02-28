@@ -2,18 +2,37 @@
 .container {
   background-image: url("../../assets/images/makeAdonat.png");
   background-repeat: no-repeat;
-  padding: 40px 385px 40px var(--leftAndRightPadding);
+  padding: 40px 280px 40px var(--leftAndRightPadding);
   background-size: cover;
   background-attachment: fixed;
   display: flex;
   justify-content: space-between;
-  @media(max-width: 1000px) {
-
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  @media(max-width: 1250px) {
+    padding: 40px 150px 40px var(--leftAndRightPadding);
+  }
+  @media(max-width: 900px) {
+    padding: 20px 150px 20px var(--leftAndRightPadding);
+  }
+  @media(max-width: 750px) {
+    padding: 20px 70px 20px var(--leftAndRightPadding);
+  }
+  @media(max-width: 650px) {
+    padding: 15px 40px 15px var(--leftAndRightPadding);
+  }
+  @media(max-width: 550px) {
+    padding: 10px 40px 10px var(--leftAndRightPadding);
+  }
+  @media(max-width: 450px) {
+    justify-content: center;
   }
 
   h3 {
     color: white;
     font-size: 2rem;
     text-transform: uppercase;
+    margin-right: 10px;
   }
 }
