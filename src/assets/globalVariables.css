@@ -3,9 +3,9 @@
   --fontSizeInFooter: 0.9rem;
   --fontSizeInFooterHeadlines: 1.1rem;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   :root {
-    --leftAndRightPadding: 150px;
+    --leftAndRightPadding: 60px;
   }
 }
 @media (max-width: 800px) {

@@ -9,6 +9,31 @@
   border-radius: 5px;
   min-height: 120px;
 }
+@media (max-width: 1150px) {
+  .container {
+    padding: 25px 15px;
+    min-height: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    min-height: 90px;
+    padding: 15px 15px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    font-size: 7px;
+    padding: 8px 8px;
+  }
+}
 .container:hover {
   cursor: pointer;
 }
@@ -17,6 +42,17 @@
   width: 70%;
   color: white;
   font-size: 1.5rem;
+  margin-right: 10px;
+}
+@media (max-width: 750px) {
+  .container h3 {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .container h3 {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=CardOfProject.module.css.map */
