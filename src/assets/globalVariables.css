@@ -1,0 +1,17 @@
+:root {
+  --leftAndRightPadding: 120px;
+  --fontSizeInFooter: 0.9rem;
+  --fontSizeInFooterHeadlines: 1.1rem;
+}
+@media (max-width: 900px) {
+  :root {
+    --leftAndRightPadding: 150px;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --leftAndRightPadding: 50px !important;
+  }
+}
+
+/*# sourceMappingURL=globalVariables.css.map */
