@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/charitableFoundation/static/css/main.679e865d.css",
-    "main.js": "/charitableFoundation/static/js/main.0dcb5f78.js",
+    "main.css": "/charitableFoundation/static/css/main.1f759a8e.css",
+    "main.js": "/charitableFoundation/static/js/main.35c55760.js",
     "static/media/header.png": "/charitableFoundation/static/media/header.af5f32fe9b8f88cb9c12.png",
     "static/media/makeAdonat.png": "/charitableFoundation/static/media/makeAdonat.712df73bf4bdb1ef4a19.png",
     "static/media/sad500Cat.png": "/charitableFoundation/static/media/sad500Cat.fe2b717bb9507cbe11e6.png",
     "static/media/aboutUs.png": "/charitableFoundation/static/media/aboutUs.0f4d0c535d0ad7965000.png",
     "static/media/herb.png": "/charitableFoundation/static/media/herb.fa0d0720c01dfe99b49a.png",
+    "static/media/RobotoCondensed-ExtraBold.ttf": "/charitableFoundation/static/media/RobotoCondensed-ExtraBold.d53d0c919b0bfa8eef6d.ttf",
+    "static/media/RobotoCondensed-Light.ttf": "/charitableFoundation/static/media/RobotoCondensed-Light.43aa3135f2d0207e6473.ttf",
     "index.html": "/charitableFoundation/index.html",
-    "main.679e865d.css.map": "/charitableFoundation/static/css/main.679e865d.css.map",
-    "main.0dcb5f78.js.map": "/charitableFoundation/static/js/main.0dcb5f78.js.map"
+    "main.1f759a8e.css.map": "/charitableFoundation/static/css/main.1f759a8e.css.map",
+    "main.35c55760.js.map": "/charitableFoundation/static/js/main.35c55760.js.map"
   },
   "entrypoints": [
-    "static/css/main.679e865d.css",
-    "static/js/main.0dcb5f78.js"
+    "static/css/main.1f759a8e.css",
+    "static/js/main.35c55760.js"
   ]
 }
