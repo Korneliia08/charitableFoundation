@@ -13,7 +13,6 @@ const AboutUs = () => {
     }
     return (
         <div className={style.container} id="aboutUs">
-
             <Content data={data}/>
             <img src={aboutImage} alt="aboutUs"/>
         </div>

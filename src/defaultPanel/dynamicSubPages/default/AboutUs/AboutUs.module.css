@@ -1,11 +1,17 @@
 .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 40px 120px;
 }
 .container img {
   margin-left: 10px;
-  height: 500px;
+  height: 450px;
+}
+@media (max-width: 1100px) {
+  .container img {
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=AboutUs.module.css.map */
