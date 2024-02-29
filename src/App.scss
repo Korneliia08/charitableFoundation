@@ -29,15 +29,6 @@ html {
   @media(max-width: 900px) {
     font-size: 10px;
   }
-  @media(max-width: 550px) {
-    font-size: 9px;
-  }
-  @media(max-width: 500px) {
-    font-size: 8px;
-  }
-  @media(max-width: 450px) {
-    font-size: 7px;
-  }
 }
 
 .containerForSubPage {
@@ -49,7 +40,12 @@ html {
   &.withImage {
     padding-top: 0;
   }
+
+  @media (max-width: 800px) {
+    padding: 60px var(--leftAndRightPadding) 40px var(--leftAndRightPadding);
+  }
 }
+
 
 .flexibleBlock {
   display: flex;

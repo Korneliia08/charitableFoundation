@@ -4,12 +4,32 @@
   position: relative;
   z-index: 600;
 }
+@media (max-width: 900px) {
+  .container {
+    padding: 20px 0 10px 0;
+  }
+}
+@media (max-width: 850px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 10px 0 10px 0;
+  }
+}
 .container form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   row-gap: 20px;
+}
+@media (max-width: 900px) {
+  .container form {
+    row-gap: 10px;
+  }
 }
 .container form select, .container form input, .container form textarea {
   background-color: #F2F2F2;
@@ -26,6 +46,11 @@
   width: 75%;
   column-gap: 10px;
 }
+@media (max-width: 900px) {
+  .container form .blockForGroup {
+    width: 100%;
+  }
+}
 .container form .blockForGroup select {
   width: 25%;
   padding: 5px;
@@ -38,6 +63,11 @@
   width: 75%;
   justify-content: space-between;
   position: relative;
+}
+@media (max-width: 900px) {
+  .container form .blockForInput {
+    width: 100%;
+  }
 }
 .container form .blockForInput:focus-within input {
   outline: 2px solid #efb805;

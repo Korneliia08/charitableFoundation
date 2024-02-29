@@ -8,7 +8,7 @@ const QrCode = () => {
             <h4>Мобільна версія:</h4>
             <QRCode
                 size={256}
-                style={{height: "auto", maxWidth: "100%", width: "60%"}}
+                className={style.qrCode}
                 value={window.location.href}
                 fgColor={'#e3c631'}
                 bgColor={'rgba(178,181,187,0.03)'}

@@ -3,6 +3,12 @@
   column-gap: 5px;
   justify-content: flex-start;
   align-items: center;
+  width: 25%;
+  @media (max-width: 900px) {
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+  }
 
   img {
     width: 50px;

@@ -5,6 +5,14 @@
   justify-content: center;
   row-gap: 80px;
   align-content: space-between;
+  @media (max-width: 900px) {
+    height: 330px;
+    row-gap: 45px;
+  }
+  @media (max-width: 700px) {
+    height: 150px;
+    row-gap: 20px;
+  }
 
   h3 {
     width: 60%;
@@ -15,6 +23,9 @@
     position: relative;
     text-align: left;
     z-index: 600;
+    @media (max-width: 700px) {
+      width: 100%;
+    }
 
     &:after {
       display: block;
@@ -24,6 +35,9 @@
       background-color: #e0e0e0;
       position: absolute;
       bottom: -40px;
+      @media (max-width: 700px) {
+        bottom: -10px;
+      }
     }
   }
 
@@ -35,5 +49,8 @@
     text-align: left;
     z-index: 600;
     text-shadow: 0px 1px 1px black;
+    @media (max-width: 700px) {
+      width: 100%;
+    }
   }
 }

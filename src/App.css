@@ -29,21 +29,6 @@ html {
     font-size: 10px;
   }
 }
-@media (max-width: 550px) {
-  html {
-    font-size: 9px;
-  }
-}
-@media (max-width: 500px) {
-  html {
-    font-size: 8px;
-  }
-}
-@media (max-width: 450px) {
-  html {
-    font-size: 7px;
-  }
-}
 
 .containerForSubPage {
   padding: 100px var(--leftAndRightPadding) 40px var(--leftAndRightPadding);
@@ -53,6 +38,11 @@ html {
 }
 .containerForSubPage.withImage {
   padding-top: 0;
+}
+@media (max-width: 800px) {
+  .containerForSubPage {
+    padding: 60px var(--leftAndRightPadding) 40px var(--leftAndRightPadding);
+  }
 }
 
 .flexibleBlock {

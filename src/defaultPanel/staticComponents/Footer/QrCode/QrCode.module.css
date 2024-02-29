@@ -3,10 +3,39 @@
   flex-direction: column;
   align-items: flex-start;
   row-gap: 15px;
+  width: 25%;
+}
+@media (max-width: 100px) {
+  .container {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    left: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    left: 18px;
+  }
 }
 .container h4 {
   color: white;
   font-size: var(--fontSizeInFooterHeadlines);
+}
+
+.qrCode {
+  height: auto;
+  max-width: 100%;
+  width: 60%;
+}
+@media (max-width: 900px) {
+  .qrCode {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=QrCode.module.css.map */
