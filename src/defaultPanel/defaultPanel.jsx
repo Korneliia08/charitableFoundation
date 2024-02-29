@@ -68,10 +68,12 @@ const DefaultPanel = () => {
                 return md5(value)
             }
 
+            console.log("test:", sessionId)
             axios(link, {params: {code: generateMd5(), id: sessionId}}).then(data => {
-                console.log(data.data);
+
                 if (data.data.id) {
-                    sessionId = data.id;
+                    console.log(data.data.id);
+                    sessionId = data.data.id;
                 }
             }).catch(error => {
                 console.warn('Pinger error')
