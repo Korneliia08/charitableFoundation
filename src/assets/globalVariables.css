@@ -2,6 +2,7 @@
   --leftAndRightPadding: 120px;
   --fontSizeInFooter: 0.9rem;
   --fontSizeInFooterHeadlines: 1.1rem;
+  --changeToMobile: (max-width: 700px);
 }
 @media (max-width: 1000px) {
   :root {
@@ -11,6 +12,11 @@
 @media (max-width: 800px) {
   :root {
     --leftAndRightPadding: 50px !important;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --leftAndRightPadding: 18px !important;
   }
 }
 

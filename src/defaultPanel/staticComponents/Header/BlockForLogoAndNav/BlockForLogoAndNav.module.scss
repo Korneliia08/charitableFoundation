@@ -9,6 +9,9 @@
   z-index: 2001;
   top: 35px;
   box-shadow: 0px 0px 5px 2px inset #949dbd;
+  @media (max-width:700px) {
+    top: 0px;
+  }
 }
 
 .emptyBlock {

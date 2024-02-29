@@ -1,27 +1,29 @@
 import style from "./BlockForLogoAndNav.module.css";
 import ComponentForLogoAndTitle from "./ComponentForLogoAndTitle/ComponentForLogoAndTitle";
 import Nav from "./Nav/Nav";
+import {useRef, useState} from "react";
 
 const BlockForLogoAndNav = (props) => {
     const belt = props.belt;
-    /*  const ref = useRef()
-      const [height2, setHeight] = useState()
+    const ref = useRef()
+    const [heightBlock, setHeightBlock] = useState(45)
+    /*
+        useEffect(() => {
+            const interval = setInterval(() => {
 
-
-      useEffect(() => {
-
-          const top = belt ? 35 : 0
-          const height = ref.current.clientHeight
-          console.log(ref.current);
-          const EmptyBlockHeight = Number(top) + Number(height)
-          console.log(top, height, EmptyBlockHeight);
-          setHeight(EmptyBlockHeight)
-      }, [belt]);*/
+                const height = ref.current.clientHeight
+                setHeightBlock(height);
+                console.log(ref.current);
+            }, 1000)
+            return () => {
+                clearInterval(interval)
+            }
+        }, [belt]);*/
     return (
         <div>
             <div className={style.emptyBlock}></div>
             <div className={style.blockForLogoAndNav}
-                 style={{top: belt ? "35px" : " 0px", padding: belt ? "15px 0" : " 5px 0px"}}>
+                 style={{padding: belt ? "15px 0" : " 5px 0px"}}>
                 <ComponentForLogoAndTitle belt={belt}/>
                 <Nav/>
             </div>

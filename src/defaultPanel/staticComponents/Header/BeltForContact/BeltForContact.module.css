@@ -7,6 +7,11 @@
   z-index: 2000;
   top: 0px;
 }
+@media (max-width: 700px) {
+  .container {
+    display: none;
+  }
+}
 .container .blockForContact {
   display: flex;
   column-gap: 10px;

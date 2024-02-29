@@ -2,6 +2,11 @@
   background-color: #FFFFFF;
   padding: 40px var(--leftAndRightPadding);
 }
+@media (max-width: 950px) {
+  .container {
+    padding: 15px var(--leftAndRightPadding);
+  }
+}
 .container h2 {
   width: 100%;
   text-align: start;
@@ -18,6 +23,11 @@
 .container .shortDescriptionUnderHeadline > * {
   text-align: start;
 }
+@media (max-width: 950px) {
+  .container .shortDescriptionUnderHeadline {
+    margin-top: 5px;
+  }
+}
 .container .containerForActivities {
   display: flex;
   flex-wrap: wrap;
@@ -26,6 +36,14 @@
   row-gap: 25px;
   width: 100%;
   padding: 40px 0;
+}
+@media (max-width: 900px) {
+  .container .containerForActivities {
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+    padding: 20px 0;
+  }
 }
 .container .blockForBtn {
   width: 100%;

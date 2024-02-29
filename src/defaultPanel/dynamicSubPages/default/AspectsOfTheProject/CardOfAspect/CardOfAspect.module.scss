@@ -10,6 +10,16 @@
   border-radius: 5px;
   border: 1px solid #003680;
   box-shadow: 0px 0px 1px 2px inset rgba(163, 191, 224, 0.66);
+  transition: 250ms;
+  @media (max-width: 750px) {
+    width: 40%;
+    row-gap: 8px;
+    padding: 10px 10px 15px 10px;
+  }
+  @media (max-width: 450px) {
+    width: 48%;
+    row-gap: 8px;
+  }
 
   h4 {
     color: #003680;
@@ -40,5 +50,6 @@
 
   &:hover {
     cursor: pointer;
+    background-color: rgba(238, 238, 253, 0.57);
   }
 }

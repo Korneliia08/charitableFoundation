@@ -6,21 +6,23 @@ import Advice from "./Advice/Advice";
 import Map from "./Map/Map";
 import Header from "../../staticComponents/Header/Header";
 import {useNavigate} from "react-router-dom";
-import {useRef, useState} from "react";
+import {useRef} from "react";
 import {animateScroll as scroll} from 'react-scroll';
 
 const DefaultPanel = () => {
     const navigate = useNavigate();
     const advice = useRef();
-    const [topOfAdvice, setTopOfAdvice] = useState();
+
+    //  const [topOfAdvice, setTopOfAdvice] = useState();
 
     function desplaySubPageDetails() {
         navigate("details");
     }
 
     function scrollToElement() {
-        setTopOfAdvice(advice.current.offsetTop);
-        scroll.scrollTo(topOfAdvice - 54, {
+        //setTopOfAdvice(advice.current.offsetTop);
+
+        scroll.scrollTo(advice.current.offsetTop - 54, {
             duration: 1000,
             delay: 0,
             smooth: 'easeInOutQuart'

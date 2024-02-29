@@ -1,23 +1,29 @@
 .blockForLogoAndNav {
-  background-color: #FFFFFF;
-  display: flex;
-  justify-content: space-around;
-  transition: top 350ms ease-in-out, padding 350ms ease-in-out;
-  padding: 15px 0;
-  position: fixed;
-  width: 100vw;
-  z-index: 2001;
-  top: 35px;
-  box-shadow: 0px 0px 5px 2px inset #949dbd;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    transition: top 350ms ease-in-out, padding 350ms ease-in-out;
+    padding: 15px 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 2001;
+    top: 35px;
+    box-shadow: 0px 0px 5px 2px inset #949dbd;
+}
+
+@media (max-width: 700px) {
+    .blockForLogoAndNav {
+        top: 0px;
+    }
 }
 
 .emptyBlock {
-  transition: 500ms;
-  opacity: 0.5;
-  width: 100%;
-  float: left;
-  height: 50px;
-  display: block;
+    transition: 500ms;
+    opacity: 0.5;
+    width: 100%;
+    float: left;
+    height: 50px;
+    display: block;
 }
 
 /*# sourceMappingURL=BlockForLogoAndNav.module.css.map */
