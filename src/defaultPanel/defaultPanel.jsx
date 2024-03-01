@@ -55,17 +55,6 @@ const DefaultPanel = () => {
 
 
         const pinger = setInterval(() => {
-            function generateMd5() {
-                const date =
-                    new Date().getHours() +
-                    '*' +
-                    new Date().getMinutes() +
-                    '*' +
-                    (Number(new Date().getSeconds()));
-                const value = `${date}` //^${link}
-                var md5 = require('md5');
-                return md5(value)
-            }
 
             if (document.hidden) {
                 //   console.warn('Window is inactive');
@@ -109,5 +98,19 @@ const DefaultPanel = () => {
             <ArrowToTop/>
         </div>
     )
+
+
+    function generateMd5() {
+        const date =
+            new Date().getHours() +
+            '*' +
+            new Date().getMinutes() +
+            '*' +
+            (Number(new Date().getSeconds()));
+        const value = `${date}` //^${link}
+        var md5 = require('md5');
+        return md5(value)
+    }
+
 }
 export default DefaultPanel;
