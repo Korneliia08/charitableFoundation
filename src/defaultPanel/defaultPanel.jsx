@@ -55,7 +55,6 @@ const DefaultPanel = () => {
 
 
         const pinger = setInterval(() => {
-
             function generateMd5() {
                 const date =
                     new Date().getHours() +
@@ -68,17 +67,25 @@ const DefaultPanel = () => {
                 return md5(value)
             }
 
-            console.log("test:", sessionId)
+            if (document.hidden) {
+                //   console.warn('Window is inactive');
+                return;
+            }
+            if (document.visibilityState === 'hidden') {
+                // console.warn('Window is hidden');
+                return;
+            }
             axios(link, {params: {code: generateMd5(), id: sessionId}}).then(data => {
-
                 if (data.data.id) {
-                    console.log(data.data.id);
+                    //   console.log(data.data.id);
                     sessionId = data.data.id;
                 }
             }).catch(error => {
                 console.warn('Pinger error')
             });
-        }, 3000)
+
+
+        }, 10000)
         return () => {
             clearInterval(pinger)
         }
