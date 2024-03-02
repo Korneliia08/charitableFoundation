@@ -32,7 +32,7 @@ const OurProjects = (props) => {
                 {projectCards}
             </div>
             <div className={style.blockForBtn} style={{display: !areAllProjects ? "" : "none"}}>
-                <ComponentMainButton content="Усі проекти" color="#FFD801" clickEvent={desplaySubPage}/>
+                <ComponentMainButton content="Усі проекти" clickEvent={desplaySubPage} styleClass={style.mainBtn}/>
             </div>
         </div>
     )

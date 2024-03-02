@@ -8,7 +8,7 @@
     padding: 25px var(--leftAndRightPadding);
     row-gap: 20px;
   }
-  
+
   h2 {
     font-size: 2rem;
     text-transform: uppercase;
@@ -30,4 +30,10 @@
     width: 100%;
     justify-content: center;
   }
+}
+
+.mainBtn {
+  width: 45%;
+  background-color: #E5C201;
+  padding: 8px;
 }

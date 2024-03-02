@@ -6,6 +6,7 @@ const CardOfProject = (props) => {
     const navigate = useNavigate();
     const data = props.data;
 
+
     function displaySubPage() {
         navigate('/project/' + data.id);
     }
@@ -13,7 +14,9 @@ const CardOfProject = (props) => {
     return (
         <div className={style.container} onClick={displaySubPage}>
             <h3 dangerouslySetInnerHTML={{__html: data.title}}></h3>
-            <ComponentMainButton content="Пожертвувати" color="#E5C201" clickEvent={displaySubPage}/>
+            <ComponentMainButton content="Пожертвувати"
+                                 styleClass={style.buttonInProjectCard}
+                                 clickEvent={displaySubPage}/>
         </div>
     )
 }

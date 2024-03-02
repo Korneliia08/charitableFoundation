@@ -51,6 +51,10 @@ const DefaultPanel = () => {
             navigate('/error');
         });
         let sessionId = 0;
+
+        if (localStorage.getItem("sessionId")) {
+            sessionId = localStorage.getItem("sessionId")
+        }
         const link = process.env.REACT_APP_LINKTOAPI + 'visits'
 
 
@@ -67,6 +71,7 @@ const DefaultPanel = () => {
             axios(link, {params: {code: generateMd5(), id: sessionId}}).then(data => {
                 if (data.data.id) {
                     //   console.log(data.data.id);
+                    localStorage.setItem("sessionId", data.data.id);
                     sessionId = data.data.id;
                 }
             }).catch(error => {

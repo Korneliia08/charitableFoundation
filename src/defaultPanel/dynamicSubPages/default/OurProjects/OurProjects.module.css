@@ -33,4 +33,10 @@
   justify-content: center;
 }
 
+.mainBtn {
+  width: 45%;
+  background-color: #E5C201;
+  padding: 8px;
+}
+
 /*# sourceMappingURL=OurProjects.module.css.map */

@@ -21,11 +21,12 @@
     padding: 15px 15px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .container {
     flex-direction: column;
     align-items: center;
-    row-gap: 5px;
+    justify-content: center;
+    row-gap: 8px;
   }
 }
 @media (max-width: 450px) {
@@ -39,7 +40,7 @@
 }
 .container h3 {
   text-align: start;
-  width: 70%;
+  width: 90%;
   color: white;
   font-size: 1.5rem;
   margin-right: 10px;
@@ -47,11 +48,16 @@
 @media (max-width: 750px) {
   .container h3 {
     width: 100%;
+    text-align: center;
   }
 }
-@media (max-width: 550px) {
-  .container h3 {
-    text-align: center;
+
+.buttonInProjectCard {
+  background-color: #E5C201;
+}
+@media (max-width: 800px) {
+  .buttonInProjectCard {
+    background-color: rgb(106, 146, 254);
   }
 }
 
