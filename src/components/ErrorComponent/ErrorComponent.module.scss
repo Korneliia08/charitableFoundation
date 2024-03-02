@@ -35,7 +35,23 @@
       color: #9f1717;
       text-shadow: 0px 1px 1px black;
     }
+  }
 
+  button {
+    margin-top: 15px;
+    width: 250px;
+    background-color: #d3d3d3;
+    border: 2px inset #4869d9;
+    color: #3663f6;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: 250ms;
+    text-shadow: 0px 1px 1px #444444;
+
+    &:hover {
+      background-color: #4b73f5;
+      color: white;
+    }
   }
 
   .mainSpan {

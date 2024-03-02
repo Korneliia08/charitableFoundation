@@ -3,6 +3,13 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 900px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+}
 .mainContainer .blockForTitleAndOther {
   width: 40%;
   display: flex;

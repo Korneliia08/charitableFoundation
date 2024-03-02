@@ -12,6 +12,13 @@
   flex-wrap: wrap;
   align-items: flex-start;
 }
+@media (max-width: 700px) {
+  .container .mainContainer {
+    flex-direction: column;
+    row-gap: 29px;
+    justify-content: center;
+  }
+}
 .container .mainContainer .blockForLogoAndContact {
   display: flex;
   flex-direction: column;
@@ -30,6 +37,11 @@
   .container .grayBelt {
     margin-top: 40px;
     padding: 10px var(--leftAndRightPadding);
+  }
+}
+@media (max-width: 700px) {
+  .container .grayBelt {
+    padding-right: 80px;
   }
 }
 .container .grayBelt div {

@@ -2,6 +2,11 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
 
   .blockForTitleAndOther {
     width: 40%;

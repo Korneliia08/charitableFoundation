@@ -43,31 +43,58 @@
 }
 .container form .blockForGroup {
   display: flex;
-  width: 75%;
-  column-gap: 10px;
-}
-@media (max-width: 900px) {
-  .container form .blockForGroup {
-    width: 100%;
-  }
+  width: 100%;
+  column-gap: 5px;
 }
 .container form .blockForGroup select {
-  width: 25%;
+  width: 35%;
   padding: 5px;
 }
+@media (max-width: 900px) {
+  .container form .blockForGroup select {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 700px) {
+  .container form .blockForGroup select {
+    width: 20%;
+  }
+}
+@media (max-width: 560px) {
+  .container form .blockForGroup select {
+    font-size: 1.6rem;
+    width: 22%;
+  }
+}
+@media (max-width: 480px) {
+  .container form .blockForGroup select {
+    font-size: 1.6rem;
+    width: 33%;
+  }
+}
 .container form .blockForGroup input {
-  width: 100%;
+  width: 65%;
+}
+@media (max-width: 700px) {
+  .container form .blockForGroup input {
+    width: 80%;
+  }
+}
+@media (max-width: 560px) {
+  .container form .blockForGroup input {
+    width: 77%;
+  }
+}
+@media (max-width: 480px) {
+  .container form .blockForGroup input {
+    width: 67%;
+  }
 }
 .container form .blockForInput {
   display: flex;
-  width: 75%;
+  width: 100%;
   justify-content: space-between;
   position: relative;
-}
-@media (max-width: 900px) {
-  .container form .blockForInput {
-    width: 100%;
-  }
 }
 .container form .blockForInput:focus-within input {
   outline: 2px solid #efb805;
@@ -82,6 +109,16 @@
   width: 100%;
   height: 120px;
   resize: none;
+}
+@media (max-width: 1000px) {
+  .container form .blockForInput textarea {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 700px) {
+  .container form .blockForInput textarea {
+    font-size: 1.8rem;
+  }
 }
 .container form .blockForInput .icon {
   height: 100%;

@@ -9,6 +9,9 @@
     bottom: 60px;
     right: 50px;
   }
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 
   img {
     width: 50px;

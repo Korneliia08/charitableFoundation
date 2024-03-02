@@ -17,6 +17,19 @@
     left: 50px;
   }
 }
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .container h4 {
+    order: 1;
+  }
+  .container .qrCode {
+    order: 2;
+  }
+}
 @media (max-width: 500px) {
   .container {
     left: 18px;
@@ -25,6 +38,11 @@
 .container h4 {
   color: white;
   font-size: var(--fontSizeInFooterHeadlines);
+}
+@media (max-width: 700px) {
+  .container h4 {
+    font-size: 20px;
+  }
 }
 
 .qrCode {

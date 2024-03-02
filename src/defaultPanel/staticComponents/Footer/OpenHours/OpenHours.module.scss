@@ -6,7 +6,9 @@
   justify-content: center;
   row-gap: 15px;
   width: 25%;
-
+  @media (max-width: 700px) {
+    width: 100%;
+  }
   .blockForTitleAndIcon {
     display: flex;
     justify-content: flex-start;
