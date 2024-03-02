@@ -7,7 +7,7 @@ const ArrowToTop = () => {
     const [arrowToTop, setArrowToTop] = useState(false);
 
     function checkY() {
-        if (window.pageYOffset > 0) {
+        if (window.pageYOffset > 800) {
             setArrowToTop(true);
             return;
         }

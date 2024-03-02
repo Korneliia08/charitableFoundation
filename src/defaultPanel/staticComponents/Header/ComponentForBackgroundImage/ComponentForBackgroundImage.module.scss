@@ -1,15 +1,17 @@
 
 .mainContainer {
   $divWithImageHight: 700px;
-  min-height: $divWithImageHight;
-  height: $divWithImageHight;
-  background-size: 100% auto;
+  // min-height: $divWithImageHight;
+  // height: $divWithImageHight;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   padding: var(--leftAndRightPadding);
   justify-content: flex-start;
-
+  @media (max-width: 700px) {
+    margin-top: 15px
+  }
 
   .container {
     width: 50%;
@@ -18,18 +20,29 @@
     justify-content: center;
     align-items: flex-start;
     row-gap: 40px;
+    @media (max-width: 700px) {
+      padding: 20px;
+      width: 97%;
+      row-gap: 10px;
+    }
 
     h1 {
       color: white;
       font-size: 2rem;
       text-align: left;
       font-family: robotoBold, cursive;
+      @media (max-width: 700px) {
+        font-size: 1.5rem;
+      }
     }
 
     h2 {
       font-size: 1.9rem;
       color: #FED800;
       font-family: robotoBold, cursive;
+      @media (max-width: 700px) {
+        font-size: 1.3rem;
+      }
     }
 
     .blockForBtns {
@@ -56,5 +69,11 @@
         }
       }
     }
+  }
+}
+
+.btn {
+  @media (max-width: 700px) {
+    font-size: 1rem;
   }
 }

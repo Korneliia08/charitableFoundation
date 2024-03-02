@@ -21,7 +21,8 @@ const ComponentForBackgroundImage = (props) => {
                 <h2>{data.titleOfCategoryOfWebsite}</h2>
                 <h1>{data.titleOfWebsite}</h1>
                 <div className={style.blockForBtns}>
-                    <ComponentMainButton content="Дізнатися більше" color="#FAC000" clickEvent={displaySubpageAbout}/>
+                    <ComponentMainButton styleClass={style.btn} content="Дізнатися більше" color="#FAC000"
+                                         clickEvent={displaySubpageAbout}/>
                     <ComponentMainButton content="Зробити пожертву" color="#1265A8" clickEvent={displaySubpageDonat}/>
                 </div>
             </div>

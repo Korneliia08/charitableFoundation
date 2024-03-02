@@ -9,13 +9,18 @@ const VisitCounter = () => {
     const navigate = useNavigate();
     const [dataCounterOfVisits, setDataCounterOfVisits] = useState();
     useEffect(() => {
-        axios(process.env.REACT_APP_LINKTOAPI + '/visits/stats').then(
-            resp => {
-                setDataCounterOfVisits(resp.data);
-            }
-        ).catch(error => {
-            navigate('/error');
-        });
+        const timer = setInterval(() => {
+            axios(process.env.REACT_APP_LINKTOAPI + '/visits/stats').then(
+                resp => {
+                    setDataCounterOfVisits(resp.data);
+                }
+            ).catch(error => {
+                navigate('/error');
+            });
+        }, 25000)
+        return () => {
+            clearInterval(timer);
+        }
     }, []);
     if (!dataCounterOfVisits) {
         return <h4>Loading....</h4>

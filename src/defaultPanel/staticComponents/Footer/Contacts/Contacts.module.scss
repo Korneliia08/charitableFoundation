@@ -6,6 +6,9 @@
   justify-content: center;
   row-gap: 15px;
   width: 25%;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 
   h4 {
     color: white;
