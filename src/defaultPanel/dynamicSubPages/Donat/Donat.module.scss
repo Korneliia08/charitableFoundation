@@ -12,24 +12,48 @@
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    @media (max-width: 900px) {
+      width: 100%;
+    }
 
     .blockForDiamond {
       background-color: #4444ff;
       display: flex;
       justify-content: center;
-      width: 35%;
+      width: 45%;
       border-radius: 40px;
       margin: 20px 0;
       border: 1px inset #002977;
       box-shadow: 0px 0px 10px 4px inset #4d4d4d;
       padding: 10px 0;
+      @media (max-width: 900px) {
+        width: 25%;
+        margin: 10px 0;
+        border-radius: 25px;
+      }
+      @media (max-width: 600px) {
+        width: 30%;
+      }
+      @media (max-width: 450px) {
+        width: 35%;
+      }
+      @media (max-width: 380px) {
+        width: 40%;
+      }
+
 
       .diamondIcon {
         color: #ffffff;
         font-size: 8rem;
         filter: drop-shadow(2px 2px 2px #16161c);
+        @media (max-width: 750px) {
+          font-size: 6rem;
+        }
+        @media (max-width: 450px) {
+          font-size: 5rem;
+        }
       }
     }
 
@@ -61,6 +85,10 @@
     flex-direction: column;
     align-items: center;
     row-gap: 15px;
+    @media (max-width: 900px) {
+      width: 100%;
+      row-gap: 10px;
+    }
 
     h5 {
       text-transform: uppercase;
@@ -79,6 +107,9 @@
       border: 1px inset blue;
       font-size: 0.8rem;
       transition: 250ms;
+      @media (max-width: 700px) {
+        width: 90%;
+      }
 
       &:hover {
         cursor: pointer;

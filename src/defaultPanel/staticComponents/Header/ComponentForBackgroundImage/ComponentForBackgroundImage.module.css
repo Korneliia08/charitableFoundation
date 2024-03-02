@@ -1,12 +1,15 @@
 .mainContainer {
-  min-height: 700px;
-  height: 700px;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   padding: var(--leftAndRightPadding);
   justify-content: flex-start;
+}
+@media (max-width: 700px) {
+  .mainContainer {
+    margin-top: 15px;
+  }
 }
 .mainContainer .container {
   width: 50%;
@@ -16,16 +19,33 @@
   align-items: flex-start;
   row-gap: 40px;
 }
+@media (max-width: 700px) {
+  .mainContainer .container {
+    padding: 20px;
+    width: 97%;
+    row-gap: 10px;
+  }
+}
 .mainContainer .container h1 {
   color: white;
   font-size: 2rem;
   text-align: left;
   font-family: robotoBold, cursive;
 }
+@media (max-width: 700px) {
+  .mainContainer .container h1 {
+    font-size: 1.5rem;
+  }
+}
 .mainContainer .container h2 {
   font-size: 1.9rem;
   color: #FED800;
   font-family: robotoBold, cursive;
+}
+@media (max-width: 700px) {
+  .mainContainer .container h2 {
+    font-size: 1.3rem;
+  }
 }
 .mainContainer .container .blockForBtns {
   padding: 20px 0;
@@ -46,6 +66,12 @@
 .mainContainer .container .blockForBtns .btnMakeADonation:hover {
   background-color: #0a528c;
   cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .btn {
+    font-size: 0.8rem !important;
+  }
 }
 
 /*# sourceMappingURL=ComponentForBackgroundImage.module.css.map */

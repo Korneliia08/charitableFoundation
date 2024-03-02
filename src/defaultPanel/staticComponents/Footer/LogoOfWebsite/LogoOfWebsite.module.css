@@ -25,5 +25,10 @@
   font-size: 1.4rem;
   width: 160px;
 }
+@media (max-width: 600px) {
+  .container h4 {
+    width: 80vw;
+  }
+}
 
 /*# sourceMappingURL=LogoOfWebsite.module.css.map */

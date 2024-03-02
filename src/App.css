@@ -45,7 +45,7 @@ html {
 }
 @media (max-width: 800px) {
   .containerForSubPage {
-    padding: 60px var(--leftAndRightPadding) 40px var(--leftAndRightPadding);
+    padding: 70px var(--leftAndRightPadding) 30px var(--leftAndRightPadding);
   }
 }
 

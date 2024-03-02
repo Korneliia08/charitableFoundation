@@ -14,24 +14,61 @@
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+@media (max-width: 900px) {
+  .mainContainer .blockForTitleAndOther {
+    width: 100%;
+  }
 }
 .mainContainer .blockForTitleAndOther .blockForDiamond {
   background-color: #4444ff;
   display: flex;
   justify-content: center;
-  width: 35%;
+  width: 45%;
   border-radius: 40px;
   margin: 20px 0;
   border: 1px inset #002977;
   box-shadow: 0px 0px 10px 4px inset #4d4d4d;
   padding: 10px 0;
 }
+@media (max-width: 900px) {
+  .mainContainer .blockForTitleAndOther .blockForDiamond {
+    width: 25%;
+    margin: 10px 0;
+    border-radius: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .mainContainer .blockForTitleAndOther .blockForDiamond {
+    width: 30%;
+  }
+}
+@media (max-width: 450px) {
+  .mainContainer .blockForTitleAndOther .blockForDiamond {
+    width: 35%;
+  }
+}
+@media (max-width: 380px) {
+  .mainContainer .blockForTitleAndOther .blockForDiamond {
+    width: 40%;
+  }
+}
 .mainContainer .blockForTitleAndOther .blockForDiamond .diamondIcon {
   color: #ffffff;
   font-size: 8rem;
   filter: drop-shadow(2px 2px 2px #16161c);
+}
+@media (max-width: 750px) {
+  .mainContainer .blockForTitleAndOther .blockForDiamond .diamondIcon {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 450px) {
+  .mainContainer .blockForTitleAndOther .blockForDiamond .diamondIcon {
+    font-size: 5rem;
+  }
 }
 .mainContainer .blockForTitleAndOther h4 {
   font-size: 1.4rem;
@@ -57,6 +94,12 @@
   align-items: center;
   row-gap: 15px;
 }
+@media (max-width: 900px) {
+  .mainContainer .blockForOnlineDonat {
+    width: 100%;
+    row-gap: 10px;
+  }
+}
 .mainContainer .blockForOnlineDonat h5 {
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -73,6 +116,11 @@
   border: 1px inset blue;
   font-size: 0.8rem;
   transition: 250ms;
+}
+@media (max-width: 700px) {
+  .mainContainer .blockForOnlineDonat button {
+    width: 90%;
+  }
 }
 .mainContainer .blockForOnlineDonat button:hover {
   cursor: pointer;
