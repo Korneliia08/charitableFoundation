@@ -9,6 +9,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  @media (max-width: 700px) {
+    margin-bottom: 20px;
+  }
 
   h2 {
     text-align: center;
@@ -24,18 +27,33 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 
   .containerForContentAndBtn {
     width: 65%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     justify-content: space-around;
+    @media (max-width: 700px) {
+      width: 90%;
+
+    }
+
+    p {
+      align-items: start;
+    }
 
     p {
       color: black;
       font-size: 1.2rem;
       line-height: 1.4;
+      @media (max-width: 700px) {
+
+        padding-bottom: 10px;
+      }
     }
 
     .blockForBtn {
@@ -47,5 +65,10 @@
 
   img {
     height: 400px;
+    @media (max-width: 700px) {
+      height: auto;
+      width: 100%;
+      padding-top: 20px;
+    }
   }
 }

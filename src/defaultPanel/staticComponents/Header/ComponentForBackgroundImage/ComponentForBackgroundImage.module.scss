@@ -10,7 +10,7 @@
   padding: var(--leftAndRightPadding);
   justify-content: flex-start;
   @media (max-width: 700px) {
-    margin-top: 15px
+    // margin-top: 15px
   }
 
   .container {
@@ -21,7 +21,7 @@
     align-items: flex-start;
     row-gap: 40px;
     @media (max-width: 700px) {
-      padding: 20px;
+      padding-top: 30px;
       width: 97%;
       row-gap: 10px;
     }
@@ -69,5 +69,11 @@
         }
       }
     }
+  }
+}
+
+.btn {
+  @media (max-width: 700px) {
+    font-size: 0.9rem !important;
   }
 }

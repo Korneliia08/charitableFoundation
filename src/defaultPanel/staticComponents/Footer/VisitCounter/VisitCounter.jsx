@@ -8,15 +8,22 @@ import axios from "axios";
 const VisitCounter = () => {
     const navigate = useNavigate();
     const [dataCounterOfVisits, setDataCounterOfVisits] = useState();
+
+    function fetchData() {
+        axios(process.env.REACT_APP_LINKTOAPI + '/visits/stats').then(
+            resp => {
+                setDataCounterOfVisits(resp.data);
+            }
+        ).catch(error => {
+            navigate('/error');
+        });
+    }
+
     useEffect(() => {
+        fetchData();
         const timer = setInterval(() => {
-            axios(process.env.REACT_APP_LINKTOAPI + '/visits/stats').then(
-                resp => {
-                    setDataCounterOfVisits(resp.data);
-                }
-            ).catch(error => {
-                navigate('/error');
-            });
+            fetchData();
+
         }, 25000)
         return () => {
             clearInterval(timer);

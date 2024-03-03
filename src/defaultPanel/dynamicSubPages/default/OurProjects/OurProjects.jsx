@@ -24,16 +24,17 @@ const OurProjects = (props) => {
     }
 
     return (
-        <div className={style.container} id="ourProjects" style={{paddingTop: areAllProjects ? "100px" : ""}}>
+        <div className={`${style.container}  ${areAllProjects ? style.AllProjects : ''}`} id="ourProjects">
             <ScrollToTop/>
-            {areAllProjects && <ArrowBack onClickEvent={displayOneStepAgo}/>}
+            {areAllProjects && <ArrowBack className={style.arrowBack} onClickEvent={displayOneStepAgo}/>}
             {projectCards.length > 1 ? <h2>Наші проекти</h2> : <h2>Наш проект</h2>}
             <div className={style.containerForCards}>
                 {projectCards}
             </div>
-            <div className={style.blockForBtn} style={{display: !areAllProjects ? "" : "none"}}>
-                <ComponentMainButton content="Усі проекти" clickEvent={desplaySubPage} styleClass={style.mainBtn}/>
-            </div>
+            {projectCards.length >= 3 &&
+                <div className={style.blockForBtn} style={{display: !areAllProjects ? "" : "none"}}>
+                    <ComponentMainButton content="Усі проекти" clickEvent={desplaySubPage} styleClass={style.mainBtn}/>
+                </div>}
         </div>
     )
 }

@@ -43,7 +43,7 @@ const Donat = () => {
                         в серці.</p>
                 </div>
             </div>
-            <ArrowBack onClickEvent={displayOneStepAgo}/>
+            <ArrowBack onClickEvent={displayOneStepAgo} className={style.arrow}/>
         </div>
     )
 }

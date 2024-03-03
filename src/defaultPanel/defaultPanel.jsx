@@ -50,41 +50,40 @@ const DefaultPanel = () => {
         ).catch(error => {
             navigate('/error');
         });
-        let sessionId = 0;
-
-        if (localStorage.getItem("sessionId")) {
-            sessionId = localStorage.getItem("sessionId")
-        }
-        const link = process.env.REACT_APP_LINKTOAPI + 'visits'
 
 
+        pingerFun()
         const pinger = setInterval(() => {
-
-            if (document.hidden) {
-                //   console.warn('Window is inactive');
-                return;
-            }
-            if (document.visibilityState === 'hidden') {
-                // console.warn('Window is hidden');
-                return;
-            }
-            axios(link, {params: {code: generateMd5(), id: sessionId}}).then(data => {
-                if (data.data.id) {
-                    //   console.log(data.data.id);
-                    localStorage.setItem("sessionId", data.data.id);
-                    sessionId = data.data.id;
-                }
-            }).catch(error => {
-                console.warn('Pinger error')
-            });
-
-
+            pingerFun()
         }, 10000)
         return () => {
             clearInterval(pinger)
         }
 
     }, []);
+
+    function pingerFun() {
+
+        if (!localStorage.getItem("sessionId")) {
+            localStorage.setItem("sessionId", 0);
+        }
+        if (document.hidden) {
+            //   console.warn('Window is inactive');
+            return;
+        }
+        if (document.visibilityState === 'hidden') {
+            // console.warn('Window is hidden');
+            return;
+        }
+        const link = process.env.REACT_APP_LINKTOAPI + 'visits'
+        axios(link, {params: {code: generateMd5(), id: localStorage.getItem("sessionId")}}).then(data => {
+            if (data.data.id) {
+                localStorage.setItem("sessionId", data.data.id);
+            }
+        }).catch(error => {
+            console.warn('Pinger error')
+        });
+    }
 
     useEffect(() => {
         document.addEventListener("scroll", checkY);

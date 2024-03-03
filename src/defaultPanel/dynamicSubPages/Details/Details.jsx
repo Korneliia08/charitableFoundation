@@ -29,7 +29,7 @@ const Details = () => {
         <div className="containerForSubPage">
             <ScrollToTop/>
             <div className={style.mainContainer}>
-                <h3>{data.title}</h3>
+                <h3>{data.titleOfHeading}</h3>
                 <div className={style.containerForDetails}>
                     {details}
                 </div>

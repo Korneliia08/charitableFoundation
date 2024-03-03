@@ -125,3 +125,10 @@
     }
   }
 }
+
+.arrow {
+  top: 70px;
+  @media (max-width: 700px) {
+    top: 30px;
+  }
+}

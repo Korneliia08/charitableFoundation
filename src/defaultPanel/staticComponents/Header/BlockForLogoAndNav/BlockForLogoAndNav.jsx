@@ -6,28 +6,25 @@ import NavOptions from "./NavOptions/NavOptions";
 
 const BlockForLogoAndNav = (props) => {
     const belt = props.belt;
-    const ref = useRef()
-    const [heightBlock, setHeightBlock] = useState(45)
-    /*
-        useEffect(() => {
-            const interval = setInterval(() => {
 
-                const height = ref.current.clientHeight
-                setHeightBlock(height);
-                console.log(ref.current);
-            }, 1000)
-            return () => {
-                clearInterval(interval)
-            }
-        }, [belt]);*/
+    const [isOpen, setOpen] = useState(false)
+
     return (
         <div>
             <div className={style.emptyBlock}></div>
-            <div className={style.blockForLogoAndNav}
-                 style={{padding: belt ? "15px 0" : " 5px 0px"}}>
-                <ComponentForLogoAndTitle belt={belt}/>
-                <Nav/>
+            <div className={style.blockForLogoAndNav}>
+                <div className={style.navContainer}
+                     style={{padding: belt ? "15px 10vw 15px 0" : " 5px 0px", height: belt ? '75px' : '60px'}}>
+                    <ComponentForLogoAndTitle belt={belt}/>
+                    <Nav isOpen={isOpen} setOpen={setOpen}/>
+
+                </div>
+                <div className={`${style.hamburger}  ${isOpen ? style.hamburgerOpen : ''}`}>
+                    <NavOptions setOpen={setOpen}/>
+                </div>
             </div>
+
+
         </div>
     )
 }
