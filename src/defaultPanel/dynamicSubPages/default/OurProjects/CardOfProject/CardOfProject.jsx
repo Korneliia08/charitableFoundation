@@ -1,6 +1,7 @@
 import style from "./CardOfProject.module.css";
-import ComponentMainButton from "../../../../../components/ComponentMainButton/ComponentMainButton";
 import {useNavigate} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faEye} from "@fortawesome/free-solid-svg-icons";
 
 const CardOfProject = (props) => {
     const navigate = useNavigate();
@@ -14,9 +15,7 @@ const CardOfProject = (props) => {
     return (
         <div className={style.container} onClick={displaySubPage}>
             <h3 dangerouslySetInnerHTML={{__html: data.title}}></h3>
-            <ComponentMainButton content="Пожертвувати"
-                                 styleClass={style.buttonInProjectCard}
-                                 clickEvent={displaySubPage}/>
+            <FontAwesomeIcon icon={faEye} className={style.iconEyes}/>
         </div>
     )
 }

@@ -4,6 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  box-sizing: border-box;
 }
 @media (max-width: 900px) {
   .container {
@@ -14,7 +15,7 @@
 }
 @media (max-width: 700px) {
   .container {
-    width: 100%;
+    width: 95%;
   }
 }
 .container img {
@@ -27,7 +28,7 @@
 }
 @media (max-width: 600px) {
   .container h4 {
-    width: 80vw;
+    width: 80%;
   }
 }
 

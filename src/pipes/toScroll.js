@@ -13,27 +13,27 @@ export default function toScroll(element) {
     const yOffset = -50;
     let positionScrollY = window.scrollY;
     if (positionScrollY < yCoordinate + yOffset) {
-        intervalFun = setInterval(() => {
-            if (positionScrollY < yCoordinate + yOffset) {
-                positionScrollY += 10;
-                window.scrollTo(0, positionScrollY);
-            } else {
-                clearInterval(intervalFun);
-                clearEvent();
-                window.scrollTo({top: yCoordinate + yOffset, behavior: "smooth"});
-            }
-        }, 1);
+        window.scrollTo({top: yCoordinate + yOffset, behavior: "smooth"});
+        /*  intervalFun = setInterval(() => {
+              if (positionScrollY < yCoordinate + yOffset) {
+                  positionScrollY += 90;
+                  window.scrollTo(0, positionScrollY);
+              } else {
+                  clearInterval(intervalFun);
+                  clearEvent();
+              }
+          }, 1);*/
     } else {
-        intervalFun = setInterval(() => {
-            if (positionScrollY > yCoordinate + yOffset) {
-                positionScrollY -= 10;
-                window.scrollTo(0, positionScrollY);
-            } else {
-                clearInterval(intervalFun);
-                clearEvent();
-                window.scrollTo({top: yCoordinate + yOffset, behavior: "smooth"});
-            }
-        }, 1);
+        window.scrollTo({top: yCoordinate + yOffset, behavior: "smooth"});
+        /*    intervalFun = setInterval(() => {
+                if (positionScrollY > yCoordinate + yOffset) {
+                    positionScrollY -= 90;
+                    window.scrollTo(0, positionScrollY);
+                } else {
+                    clearInterval(intervalFun);
+                    clearEvent();
+                }
+            }, 20);*/
     }
     setTimeout(() => {
         clearEvent();

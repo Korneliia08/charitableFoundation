@@ -14,6 +14,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Donat from "./defaultPanel/dynamicSubPages/Donat/Donat";
 import ErrorComponent from "./components/ErrorComponent/ErrorComponent";
 import ChoosedProject from "./defaultPanel/dynamicSubPages/ChoosedProject/ChoosedProject";
+import "animate.css/animate.min.css";
 
 function App() {
     const router = createBrowserRouter([

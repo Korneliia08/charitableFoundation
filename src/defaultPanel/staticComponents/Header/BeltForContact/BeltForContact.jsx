@@ -9,7 +9,10 @@ const BeltForContact = (props) => {
         <div className={style.container}>
             <div className={style.blockForContact}>
                 <FontAwesomeIcon icon={faPhone} className={style.iconPhone}/>
-                <a href="tel:1234567890" className={style.tegForContact}>{data.contact}</a>
+
+                <a href={"tel:" + data.contact.replace('+', '').replaceAll("  ", '').replaceAll(" ", '')}
+                   className={style.tegForContact}>{data.contact}</a>
+
             </div>
         </div>
     )

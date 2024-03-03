@@ -38,13 +38,25 @@
   width: 65%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+}
+@media (max-width: 700px) {
+  .container .containerForContentAndBtn {
+    width: 90%;
+  }
+}
+.container .containerForContentAndBtn p {
+  align-items: start;
 }
 .container .containerForContentAndBtn p {
   color: black;
   font-size: 1.2rem;
   line-height: 1.4;
+}
+@media (max-width: 700px) {
+  .container .containerForContentAndBtn p {
+    padding-bottom: 10px;
+  }
 }
 .container .containerForContentAndBtn .blockForBtn {
   width: 100%;
