@@ -6,17 +6,27 @@
   column-gap: 5px;
   padding-left: var(--leftAndRightPadding);
 }
+@media (max-width: 700px) {
+  .container {
+    width: 70%;
+  }
+}
 .container img {
-  transition: 350ms ease-in-out;
-  height: 60px;
+  transition: 300ms;
+  height: 50px;
 }
 .container h1 {
-  transition: 350ms ease-in-out;
+  transition: 700ms;
   color: #003680;
   width: 50%;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-family: robotoBold, cursive;
+}
+@media (max-width: 700px) {
+  .container h1 {
+    width: 100%;
+  }
 }
 .container.min img {
   height: 45px;

@@ -6,6 +6,11 @@
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 700px) {
+  .container {
+    display: none;
+  }
+}
 .container a {
   font-size: 1.2rem;
   color: #3a3a3a;
@@ -19,6 +24,15 @@
   cursor: pointer;
   text-decoration: underline;
   text-decoration-color: black;
+}
+
+.hamburger {
+  display: none;
+}
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=Nav.module.css.map */

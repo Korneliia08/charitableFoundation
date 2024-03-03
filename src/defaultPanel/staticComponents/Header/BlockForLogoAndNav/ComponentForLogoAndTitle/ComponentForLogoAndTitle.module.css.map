@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["ComponentForLogoAndTitle.module.scss"],"names":[],"mappings":"AACA;EACE;EACA;EACA;EACA;EACA;EACA;;AAGA;EACE;EAEA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;AAIA;EACE;;AAGF;EACE;EACA","file":"ComponentForLogoAndTitle.module.css"}
+{"version":3,"sourceRoot":"","sources":["ComponentForLogoAndTitle.module.scss"],"names":[],"mappings":"AACA;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EARF;IASI;;;AAGF;EACE;EAEA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EAPF;IAQI;;;AAKF;EACE;;AAGF;EACE;EACA","file":"ComponentForLogoAndTitle.module.css"}

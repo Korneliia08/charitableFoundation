@@ -6,11 +6,6 @@
   padding: var(--leftAndRightPadding);
   justify-content: flex-start;
 }
-@media (max-width: 700px) {
-  .mainContainer {
-    margin-top: 15px;
-  }
-}
 .mainContainer .container {
   width: 50%;
   display: flex;
@@ -21,7 +16,7 @@
 }
 @media (max-width: 700px) {
   .mainContainer .container {
-    padding: 20px;
+    padding-top: 30px;
     width: 97%;
     row-gap: 10px;
   }
@@ -70,7 +65,7 @@
 
 @media (max-width: 700px) {
   .btn {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
   }
 }
 

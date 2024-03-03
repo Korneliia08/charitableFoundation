@@ -1,7 +1,6 @@
 import style from "./Nav.module.css";
-import {HashLink} from "react-router-hash-link";
-import toScroll from "../../../../../pipes/toScroll";
-import {useSelector} from "react-redux";
+import {Turn as Hamburger} from 'hamburger-react'
+import NavOptions from "../NavOptions/NavOptions";
 
 const Nav = () => {
     const allProjects = useSelector(state => state.projects.projects);

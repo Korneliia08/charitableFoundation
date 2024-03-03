@@ -1,7 +1,8 @@
 import style from "./BlockForLogoAndNav.module.css";
 import ComponentForLogoAndTitle from "./ComponentForLogoAndTitle/ComponentForLogoAndTitle";
 import Nav from "./Nav/Nav";
-import {useRef, useState} from "react";
+import {useState} from "react";
+import NavOptions from "./NavOptions/NavOptions";
 
 const BlockForLogoAndNav = (props) => {
     const belt = props.belt;
