@@ -1,0 +1,31 @@
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  row-gap: 15px;
+
+  img {
+    height: 350px;
+    @media (max-width: 750px) {
+      height: 250px;
+    }
+  }
+
+  span {
+    color: #0b43c5;
+    font-size: 2rem;
+  }
+
+  button {
+    background-color: #003680;
+    font-size: 0.8rem;
+    transition: 250ms;
+
+    &:hover {
+      background-color: #022c65;
+    }
+  }
+}

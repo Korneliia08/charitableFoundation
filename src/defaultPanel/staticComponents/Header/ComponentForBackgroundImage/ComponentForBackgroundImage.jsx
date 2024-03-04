@@ -2,7 +2,6 @@ import style from "./ComponentForBackgroundImage.module.css";
 import backGroundImage from "../../../../assets/images/header.png";
 import ComponentMainButton from "../../../../components/ComponentMainButton/ComponentMainButton";
 import {useNavigate} from "react-router-dom";
-import {AnimationOnScroll} from "react-animation-on-scroll";
 
 const ComponentForBackgroundImage = (props) => {
     const navigate = useNavigate();
@@ -19,10 +18,8 @@ const ComponentForBackgroundImage = (props) => {
     return (
         <div className={style.mainContainer} style={{backgroundImage: `url(${backGroundImage})`}}>
             <div className={style.container}>
-                <AnimationOnScroll animateIn="animate__bounceIn" animateOnce={true}>
-                    <h2>{data.titleOfCategoryOfWebsite}</h2>
-                    <h1>{data.titleOfWebsite}</h1>
-                </AnimationOnScroll>
+                <h2>{data.titleOfCategoryOfWebsite}</h2>
+                <h1>{data.titleOfWebsite}</h1>
                 <div className={style.blockForBtns}>
                     <ComponentMainButton styleClass={style.btn} content="Дізнатися більше" color="#FAC000"
                                          clickEvent={displaySubpageAbout}/>
