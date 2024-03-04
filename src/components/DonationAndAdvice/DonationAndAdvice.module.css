@@ -33,10 +33,6 @@
 @media (max-width: 550px) {
   .container {
     padding: 10px 40px 10px var(--leftAndRightPadding);
-  }
-}
-@media (max-width: 450px) {
-  .container {
     justify-content: center;
   }
 }
@@ -45,6 +41,15 @@
   font-size: 2rem;
   text-transform: uppercase;
   margin-right: 10px;
+}
+
+.mainBtn {
+  display: block;
+}
+@media (max-width: 500px) {
+  .mainBtn {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=DonationAndAdvice.module.css.map */

@@ -23,6 +23,21 @@
   opacity: 1;
   background-position: center;
 }
+@media (max-width: 800px) {
+  .container .containerForBackGroundAndNumber .containerForBackGround {
+    background-size: 200px;
+  }
+}
+@media (max-width: 550px) {
+  .container .containerForBackGroundAndNumber .containerForBackGround {
+    background-size: 100px;
+  }
+}
+@media (max-width: 370px) {
+  .container .containerForBackGroundAndNumber .containerForBackGround {
+    background-size: 65px;
+  }
+}
 .container .containerForBackGroundAndNumber .spanErrorNumber {
   font-size: 27rem;
   letter-spacing: 40px;
@@ -34,16 +49,36 @@
   color: #9f1717;
   text-shadow: 0px 1px 1px black;
 }
+@media (max-width: 800px) {
+  .container .containerForBackGroundAndNumber .spanErrorNumber {
+    font-size: 20rem;
+  }
+}
+@media (max-width: 550px) {
+  .container .containerForBackGroundAndNumber .spanErrorNumber {
+    font-size: 11rem;
+  }
+}
+@media (max-width: 370px) {
+  .container .containerForBackGroundAndNumber .spanErrorNumber {
+    font-size: 7rem;
+  }
+}
 .container button {
   margin-top: 15px;
   width: 250px;
-  background-color: #d3d3d3;
+  background-color: #f0eeee;
   border: 2px inset #4869d9;
-  color: #3663f6;
+  color: #0030ce;
   font-size: 0.8rem;
   letter-spacing: 2px;
   transition: 250ms;
   text-shadow: 0px 1px 1px #444444;
+}
+@media (max-width: 370px) {
+  .container button {
+    width: 200px;
+  }
 }
 .container button:hover {
   background-color: #4b73f5;

@@ -24,15 +24,21 @@
   }
   @media(max-width: 550px) {
     padding: 10px 40px 10px var(--leftAndRightPadding);
-  }
-  @media(max-width: 450px) {
     justify-content: center;
   }
+
 
   h3 {
     color: white;
     font-size: 2rem;
     text-transform: uppercase;
     margin-right: 10px;
+  }
+}
+
+.mainBtn {
+  display: block;
+  @media(max-width: 500px) {
+    display: none;
   }
 }

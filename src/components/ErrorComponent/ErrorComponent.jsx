@@ -15,7 +15,7 @@ const ErrorComponent = () => {
                 <div className={style.containerForBackGround}></div>
             </div>
             <span className={style.mainSpan}>Вибачте за тимчасові незручності. Сталася внутрішня помилка сервера. Наша команда вже працює над вирішенням цього питання. Дякуємо за ваше розуміння та терпіння.</span>
-            <button onClick={displayHome}>Спробуйте ще раз</button>
+            <button onClick={displayHome}>головна сторінка</button>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 import style from "./DonationAndAdvice.module.css";
 import ComponentMainButton from "../ComponentMainButton/ComponentMainButton";
-import {AnimationOnScroll} from "react-animation-on-scroll";
 
 const DonationAndAdvice = (props) => {
     const title = props.title;

@@ -25,9 +25,7 @@ const FormAdvice = () => {
         axios.post('http://10.68.6.106:3000/website-data/contactForm', data).then(resp => {
             toast.success("Повідомлення вислане! Очікуйте відповіді");
         }).catch(error => {
-
             toast.error("Повідомлення не було відправлене");
-            console.log(error);
         }).finally(() => {
             setBlockButton(false)
         });

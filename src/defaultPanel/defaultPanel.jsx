@@ -81,7 +81,6 @@ const DefaultPanel = () => {
                 localStorage.setItem("sessionId", data.data.id);
             }
         }).catch(error => {
-            console.warn('Pinger error')
         });
     }
 

@@ -15,6 +15,7 @@ import Donat from "./defaultPanel/dynamicSubPages/Donat/Donat";
 import ErrorComponent from "./components/ErrorComponent/ErrorComponent";
 import ChoosedProject from "./defaultPanel/dynamicSubPages/ChoosedProject/ChoosedProject";
 import "animate.css/animate.min.css";
+import Error404Component from "./components/Error404Component/Error404Component";
 
 function App() {
     const router = createBrowserRouter([
@@ -55,6 +56,10 @@ function App() {
                     element: <Donat/>
                 }
             ],
+        },
+        {
+            path: "*",
+            element: <Error404Component/>
         },
         {
             path: "/error",
