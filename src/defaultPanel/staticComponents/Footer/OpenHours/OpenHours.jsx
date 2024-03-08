@@ -20,8 +20,8 @@ const OpenHours = () => {
                 <span>Середа: {data.wednesday.isOpen ? `${data.wednesday.open}-${data.wednesday.close}` : 'зачинено'}</span>
                 <span>Четвер: {data.thursday.isOpen ? `${data.thursday.open}-${data.thursday.close}` : 'зачинено'}</span>
                 <span>П’ятниця: {data.friday.isOpen ? `${data.friday.open}-${data.friday.close}` : 'зачинено'}</span>
-                <span>Субота - {data.saturday.isOpen ? `${data.saturday.open}-${data.saturday.close}` : 'зачинено'}</span>
-                <span>Неділя - {data.sunday.isOpen ? `${data.sunday.open}-${data.sunday.close}` : 'зачинено'}</span>
+                <span>Субота: {data.saturday.isOpen ? `${data.saturday.open}-${data.saturday.close}` : 'зачинено'}</span>
+                <span>Неділя: {data.sunday.isOpen ? `${data.sunday.open}-${data.sunday.close}` : 'зачинено'}</span>
             </div>
         </div>
     )
