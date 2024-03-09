@@ -67,6 +67,7 @@ const FormAdvice = () => {
                 <div className={style.blockForGroup}>
                     <select ref={optionPrefixOfPhone}>
                         <option value="">+380</option>
+                        <option value="">+48</option>
                     </select>
                     <div className={style.blockForInput}>
                         <div className={style.icon}>

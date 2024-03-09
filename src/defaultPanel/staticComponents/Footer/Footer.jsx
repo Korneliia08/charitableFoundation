@@ -5,6 +5,8 @@ import VisitCounter from "./VisitCounter/VisitCounter";
 import QrCode from "./QrCode/QrCode";
 import {useEffect, useState} from "react";
 import LogoOfWebsite from "./LogoOfWebsite/LogoOfWebsite";
+import {faUserTie} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
     const [year, setYear] = useState();
@@ -14,6 +16,11 @@ const Footer = () => {
         const year = data.getFullYear();
         setYear(year);
     }, []);
+
+    function desplayAdminPanel() {
+        window.location.href = "https://admin.powepeople.com";
+    }
+
     return (
         <div className={style.container} id="footer">
             <div className={style.mainContainer}>
@@ -29,6 +36,7 @@ const Footer = () => {
                 <div>
                     <span> &copy; Всі права захищені {year} <a
                         href="https://t.me/korneliia0808">Веб-розробник:Корнелія Мушак</a></span>
+                    <FontAwesomeIcon icon={faUserTie} className={style.adminIcon} onClick={desplayAdminPanel}/>
                 </div>
             </div>
         </div>

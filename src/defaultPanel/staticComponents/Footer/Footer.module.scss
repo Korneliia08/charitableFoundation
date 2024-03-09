@@ -53,6 +53,20 @@
         text-shadow: 0px 1px 1px black;
       }
     }
+
+    .adminIcon {
+      color: #d0d0d0;
+      position: absolute;
+      right: 120px;
+      font-size: 25px;
+      text-shadow: 1px 1px 1px black;
+      transition: 250ms;
+
+      &:hover {
+        cursor: pointer;
+        color: #aba7a7;
+      }
+    }
   }
 }
 

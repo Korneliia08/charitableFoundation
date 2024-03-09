@@ -65,7 +65,7 @@ function App() {
             path: "/error",
             element: <ErrorComponent/>
         },
-    ], {basename: ""});
+    ], {basename: "/charitableFoundation"});
     return (
         <div className="App">
             <Provider store={store}>
