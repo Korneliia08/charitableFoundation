@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.574f90d6.css",
-    "main.js": "/static/js/main.b8260334.js",
-    "static/media/header.png": "/static/media/header.af5f32fe9b8f88cb9c12.png",
-    "static/media/makeAdonat.png": "/static/media/makeAdonat.712df73bf4bdb1ef4a19.png",
-    "static/media/sad500Cat.png": "/static/media/sad500Cat.fe2b717bb9507cbe11e6.png",
-    "static/media/aboutUs.png": "/static/media/aboutUs.0f4d0c535d0ad7965000.png",
-    "static/media/herb.png": "/static/media/herb.fa0d0720c01dfe99b49a.png",
-    "static/media/RobotoCondensed-ExtraBold.ttf": "/static/media/RobotoCondensed-ExtraBold.d53d0c919b0bfa8eef6d.ttf",
-    "static/media/RobotoCondensed-Light.ttf": "/static/media/RobotoCondensed-Light.43aa3135f2d0207e6473.ttf",
-    "static/media/errorUA.jpg": "/static/media/errorUA.51bf6c24c0fe27326325.jpg",
-    "index.html": "/index.html",
-    "main.574f90d6.css.map": "/static/css/main.574f90d6.css.map",
-    "main.b8260334.js.map": "/static/js/main.b8260334.js.map"
+    "main.css": "/charitableFoundation/static/css/main.3ff1779e.css",
+    "main.js": "/charitableFoundation/static/js/main.1ca20557.js",
+    "static/media/header.png": "/charitableFoundation/static/media/header.af5f32fe9b8f88cb9c12.png",
+    "static/media/makeAdonat.png": "/charitableFoundation/static/media/makeAdonat.712df73bf4bdb1ef4a19.png",
+    "static/media/sad500Cat.png": "/charitableFoundation/static/media/sad500Cat.fe2b717bb9507cbe11e6.png",
+    "static/media/aboutUs.png": "/charitableFoundation/static/media/aboutUs.0f4d0c535d0ad7965000.png",
+    "static/media/herb.png": "/charitableFoundation/static/media/herb.fa0d0720c01dfe99b49a.png",
+    "static/media/RobotoCondensed-ExtraBold.ttf": "/charitableFoundation/static/media/RobotoCondensed-ExtraBold.d53d0c919b0bfa8eef6d.ttf",
+    "static/media/RobotoCondensed-Light.ttf": "/charitableFoundation/static/media/RobotoCondensed-Light.43aa3135f2d0207e6473.ttf",
+    "static/media/errorUA.jpg": "/charitableFoundation/static/media/errorUA.51bf6c24c0fe27326325.jpg",
+    "index.html": "/charitableFoundation/index.html",
+    "main.3ff1779e.css.map": "/charitableFoundation/static/css/main.3ff1779e.css.map",
+    "main.1ca20557.js.map": "/charitableFoundation/static/js/main.1ca20557.js.map"
   },
   "entrypoints": [
-    "static/css/main.574f90d6.css",
-    "static/js/main.b8260334.js"
+    "static/css/main.3ff1779e.css",
+    "static/js/main.1ca20557.js"
   ]
 }
