@@ -11,6 +11,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
+  position: relative;
 }
 @media (max-width: 700px) {
   .container .mainContainer {
@@ -41,7 +42,7 @@
 }
 @media (max-width: 700px) {
   .container .grayBelt {
-    padding-right: 80px;
+    padding-right: 150px;
   }
 }
 .container .grayBelt div {
@@ -61,6 +62,12 @@
   font-size: 25px;
   text-shadow: 1px 1px 1px black;
   transition: 250ms;
+}
+@media (max-width: 700px) {
+  .container .grayBelt .adminIcon {
+    bottom: 4px;
+    right: 100px;
+  }
 }
 .container .grayBelt .adminIcon:hover {
   cursor: pointer;
