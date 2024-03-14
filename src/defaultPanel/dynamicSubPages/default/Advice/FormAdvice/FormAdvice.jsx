@@ -5,6 +5,7 @@ import ComponentMainButton from "../../../../../components/ComponentMainButton/C
 import {useRef, useState} from "react";
 import axios from "axios";
 import {toast} from "react-toastify";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const FormAdvice = () => {
     let data = {};
@@ -22,7 +23,7 @@ const FormAdvice = () => {
         inputNumberPhone.current.reportValidity();
         data = CreateAObj();
         setBlockButton(true)
-        axios.post('http://10.68.6.106:3000/website-data/contactForm', data).then(resp => {
+        axios.post(process.env.REACT_APP_LINKTOAPI+'website-data/contactForm', data).then(resp => {
             toast.success("Повідомлення вислане! Очікуйте відповіді");
         }).catch(error => {
             toast.error("Повідомлення не було відправлене");
@@ -46,7 +47,10 @@ const FormAdvice = () => {
             inputNumberPhone.current.setCustomValidity("Номер телефону складається із цифр");
         }
     }
+    const recaptchaRef = useRef();
+    function solve(){
 
+    }
     return (
         <div className={style.container}>
             <form onSubmit={sendData}>
@@ -86,6 +90,14 @@ const FormAdvice = () => {
                     <textarea placeholder="Текст повідомлення" required={true} ref={inputContent}></textarea>
                 </div>
                 <ComponentMainButton disabled={blockButton} content="Надіслати" color="#E5C201" clickEvent={validate}/>
+                <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey="6Le7CJQpAAAAAGf58WqRrQndYfQib7NTS8GlDoO4"
+                    onChange={solve}
+                    size='invisible'
+                    badge='inline'
+                />
+
             </form>
         </div>
     )

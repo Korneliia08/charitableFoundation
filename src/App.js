@@ -1,5 +1,5 @@
 import './App.css';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, createHashRouter, RouterProvider} from "react-router-dom";
 import DefaultPanel from "./defaultPanel/defaultPanel";
 import {Provider} from "react-redux";
 import store from "./data/store";
@@ -65,7 +65,7 @@ function App() {
             path: "/error",
             element: <ErrorComponent/>
         },
-    ], {basename: "/charitableFoundation"});
+    ], {basename: "/"});
     return (
         <div className="App">
             <Provider store={store}>

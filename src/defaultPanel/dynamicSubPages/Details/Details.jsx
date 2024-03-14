@@ -37,7 +37,7 @@ const Details = () => {
                     <ComponentMainButton content="Долучитися до збору" color="#FAC000" clickEvent={displaySubPage}/>
                 </div>
             </div>
-            <ArrowBack onClickEvent={displayOneStepAgo}/>
+            <ArrowBack className={style.arrow} onClickEvent={displayOneStepAgo}/>
         </div>
     )
 }

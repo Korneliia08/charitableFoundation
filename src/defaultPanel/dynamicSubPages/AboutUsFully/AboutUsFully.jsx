@@ -19,7 +19,7 @@ const AboutUsFully = () => {
                 <ContentAboutUsFully/>
                 <img src={aboutImage} alt="aboutUs"/>
             </div>
-            <ArrowBack onClickEvent={displayOneStepAgo}/>
+            <ArrowBack className={style.arrow}  onClickEvent={displayOneStepAgo}/>
         </div>
     )
 }
