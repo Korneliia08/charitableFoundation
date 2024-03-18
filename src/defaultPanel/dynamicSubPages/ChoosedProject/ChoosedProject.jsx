@@ -19,7 +19,7 @@ const ChoosedProject = () => {
         })
     }, []);
     if (!data) {
-        return <h4>Loading....</h4>
+        return "";
     }
 
     function displaySubPage() {

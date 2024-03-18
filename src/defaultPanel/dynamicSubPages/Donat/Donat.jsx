@@ -21,10 +21,8 @@ const Donat = () => {
             <div className={style.mainContainer}>
                 <div className={style.blockForTitleAndOther}>
                     <h4>БЛАГОДІЙНИЙ ФОНД - МОГУТНІСТЬ НАРОДУ</h4>
-                    <div className={style.blockForImage}>
-                        <img src={process.env.REACT_APP_LINKTOAPI + "files/" + data.imageId} role="presentation"
-                             alt=""/>
-                    </div>
+                    <img src={process.env.REACT_APP_LINKTOAPI + "files/" + data.imageId} role="presentation"
+                         alt=""/>
                 </div>
                 <div className={style.blockForOnlineDonat}>
                     <h5>пожертвувати онлайн</h5>

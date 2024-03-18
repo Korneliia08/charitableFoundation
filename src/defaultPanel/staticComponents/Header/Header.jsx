@@ -6,7 +6,7 @@ const Header = () => {
     const dataOfHeader = useSelector(state => state.websiteDates.websiteDates.header);
 
     if (!dataOfHeader) {
-        return <h2>Loading....</h2>
+        return "";
     }
 
     return (

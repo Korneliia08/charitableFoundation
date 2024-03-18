@@ -18,93 +18,76 @@
       width: 100%;
     }
 
-    .blockForImage {
-      background-color: #eaeaea;
-      display: flex;
-      justify-content: center;
-      width: 60%;
-      height: 195px;
-      border-radius: 40px;
-      margin: 20px 0;
-      box-shadow: 1px 1px 8px 4px rgba(129, 129, 129, 0.75);
-      padding: 10px 0;
-      position: relative;
-
-      img {
-        bottom: 5px;
-        left: 5px;
-        width: 100%;
-        border-radius: 40px;
-        position: absolute;
-      }
-
-      @media (max-width: 900px) {
-        width: 25%;
-        margin: 10px 0;
-        border-radius: 25px;
-      }
-      @media (max-width: 600px) {
-        width: 30%;
-      }
-      @media (max-width: 450px) {
-        width: 35%;
-      }
-      @media (max-width: 380px) {
-        width: 40%;
-      }
+    img {
+      width: 250px;
     }
 
-    h4 {
-      font-size: 1.4rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 15px;
+    @media (max-width: 900px) {
+      width: 25%;
+      margin: 10px 0;
+      border-radius: 25px;
+    }
+    @media (max-width: 600px) {
+      width: 30%;
+    }
+    @media (max-width: 450px) {
+      width: 35%;
+    }
+    @media (max-width: 380px) {
+      width: 40%;
     }
   }
 
-  .blockForOnlineDonat {
-    width: 50%;
+  h4 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+}
+
+.blockForOnlineDonat {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  @media (max-width: 900px) {
+    width: 100%;
+    row-gap: 10px;
+  }
+
+  h5 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  button {
+    width: 40%;
+    color: white;
+    text-shadow: 1px 0px 1px #2c2c2c;
+    background-color: #4444FF;
+    padding: 10px 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    row-gap: 15px;
-    @media (max-width: 900px) {
-      width: 100%;
-      row-gap: 10px;
+    justify-content: center;
+    border: 1px inset blue;
+    font-size: 0.8rem;
+    transition: 250ms;
+    @media (max-width: 700px) {
+      width: 90%;
     }
 
-    h5 {
-      text-transform: uppercase;
-      font-size: 1.2rem;
+    &:hover {
+      cursor: pointer;
+      background-color: #2828ea;
     }
+  }
 
-    button {
-      width: 40%;
-      color: white;
-      text-shadow: 1px 0px 1px #2c2c2c;
-      background-color: #4444FF;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px inset blue;
-      font-size: 0.8rem;
-      transition: 250ms;
-      @media (max-width: 700px) {
-        width: 90%;
-      }
-
-      &:hover {
-        cursor: pointer;
-        background-color: #2828ea;
-      }
-    }
-
-    p {
-      padding: 10px 5px;
-      font-size: 1.1rem;
-      color: black;
-    }
+  p {
+    padding: 10px 5px;
+    font-size: 1.1rem;
+    color: black;
   }
 }
 

@@ -30,7 +30,7 @@ const VisitCounter = () => {
         }
     }, []);
     if (!dataCounterOfVisits) {
-        return <h4>Loading....</h4>
+        return "";
     }
     return (
         <div className={style.container}>

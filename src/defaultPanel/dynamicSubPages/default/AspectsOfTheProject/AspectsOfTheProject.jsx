@@ -27,7 +27,7 @@ const AspectsOfTheProject = (props) => {
     }
 
     if (!data) {
-        return <h4>Loading....</h4>
+        return "";
     }
     return (
         <div className={style.container} style={{paddingTop: areAllAspects ? "100px" : ""}}>

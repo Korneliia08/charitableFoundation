@@ -33,7 +33,7 @@ const Details = () => {
     }
 
     if (!allDetails) {
-        return <h2>Loading....</h2>
+        return "";
     }
     const details = allDetails.map((detail, index) => <Detail data={detail} key={index}/>);
     return (

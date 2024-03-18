@@ -6,7 +6,7 @@ import {useSelector} from "react-redux";
 const OpenHours = () => {
     const data = useSelector(state => state.websiteDates.websiteDates?.footer?.workShedule);
     if (!data) {
-        return <h4>Loading....</h4>
+        return "";
     }
     return (
         <div className={style.container}>

@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 const ComponentForLogoAndTitle = (props) => {
     const title = useSelector(state => state.websiteDates.websiteDates?.header?.titleOfWebsite);
     if (!title) {
-        return <h2>Loading....</h2>;
+        return "";
     }
     return (
         <div className={`${style.container} ${props.belt ? '' : style.min}`}>

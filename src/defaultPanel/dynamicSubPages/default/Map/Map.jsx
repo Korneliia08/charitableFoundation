@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 const Map = () => {
     const data = useSelector(state => state.websiteDates.websiteDates.footer?.map);
     if (!data) {
-        return <h4>Loading....</h4>;
+        return "";
     }
     return (
         <div className={style.container}>
