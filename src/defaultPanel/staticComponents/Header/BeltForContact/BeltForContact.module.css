@@ -27,5 +27,21 @@
   text-decoration: none;
   font-family: robotoBold, cursive;
 }
+.container .blockForHeart {
+  position: absolute;
+  right: 50px;
+  top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 5px;
+}
+.container .blockForHeart .ukrainianHeartImage {
+  width: 25px;
+}
+.container .blockForHeart span {
+  color: white;
+  font-size: 0.9rem;
+}
 
 /*# sourceMappingURL=BeltForContact.module.css.map */

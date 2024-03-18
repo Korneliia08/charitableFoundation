@@ -1,5 +1,4 @@
 .container {
-  background-image: url("../../assets/images/makeAdonat.png");
   background-repeat: no-repeat;
   padding: 40px 280px 40px var(--leftAndRightPadding);
   background-size: cover;

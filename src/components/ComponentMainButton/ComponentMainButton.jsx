@@ -6,7 +6,10 @@ const ComponentMainButton = (props) => {
     const styleClass = props.styleClass;
     const disabled = props.disabled
     return (
-        <button disabled={disabled} className={`${style.btnKnowMore} ${styleClass}`} style={{backgroundColor: color}}
+        <button disabled={disabled}
+                onMouseLeave={props.onMouseLeave}
+                onMouseEnter={props.onMouseEnter}
+                className={`${style.btnKnowMore} ${styleClass}`} style={{backgroundColor: color}}
                 onClick={props.clickEvent}>
             {content}
             <div className={style.emptyBlock}></div>

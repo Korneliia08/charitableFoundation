@@ -1,16 +1,17 @@
 import {useNavigate, useParams} from "react-router-dom";
 import style from "./ChoosedAspect.module.css";
-import imageTeg from "../../../assets/images/aboutUs.png";
 import ArrowBack from "../../../components/ArrowBack/ArrowBack";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import ComponentMainButton from "../../../components/ComponentMainButton/ComponentMainButton";
 import ScrollToTop from "../../../components/scrollToTop";
+import {useSelector} from "react-redux";
 
 const ChoosedAspect = (props) => {
     const navigate = useNavigate();
     const [data, setData] = useState();
     const {id} = useParams();
+    const imageId = useSelector(state => state.websiteDates.websiteDates?.aboutUs?.imgId);
 
     function displayOneStepAgo() {
         navigate(-1);
@@ -31,9 +32,11 @@ const ChoosedAspect = (props) => {
     }, [id]);
 
     if (!data) {
-        return <h2>Loading....</h2>
+        return "";
     }
-
+    if (!imageId) {
+        return "";
+    }
 
     return (
         <>
@@ -51,7 +54,7 @@ const ChoosedAspect = (props) => {
                                                  clickEvent={displaySubPage}/>
                         </div>
                     </div>
-                    <img src={imageTeg} alt="imageTeg"/>
+                    <img src={process.env.REACT_APP_LINKTOAPI + "files/" + imageId} role="presentation" alt=""/>
                 </div>
             </div>
         </>

@@ -1,12 +1,16 @@
 import ArrowBack from "../../../components/ArrowBack/ArrowBack";
-import aboutImage from "../../../assets/images/aboutUs.png";
 import ContentAboutUsFully from "./ContentAboutUsFully/ContentAboutUsFully";
 import style from "./AboutUsFully.module.css";
 import {useNavigate} from "react-router-dom";
 import ScrollToTop from "../../../components/scrollToTop";
+import {useSelector} from "react-redux";
 
 const AboutUsFully = () => {
     const navigate = useNavigate();
+    const data = useSelector(state => state.websiteDates.websiteDates?.aboutUs);
+    if (!data) {
+        return "";
+    }
 
     function displayOneStepAgo() {
         navigate(-1);
@@ -17,9 +21,9 @@ const AboutUsFully = () => {
             <ScrollToTop/>
             <div className={style.container}>
                 <ContentAboutUsFully/>
-                <img src={aboutImage} alt="aboutUs"/>
+                <img src={process.env.REACT_APP_LINKTOAPI + "files/" + data.imgId} role="presentation" alt=""/>
             </div>
-            <ArrowBack className={style.arrow}  onClickEvent={displayOneStepAgo}/>
+            <ArrowBack className={style.arrow} onClickEvent={displayOneStepAgo}/>
         </div>
     )
 }

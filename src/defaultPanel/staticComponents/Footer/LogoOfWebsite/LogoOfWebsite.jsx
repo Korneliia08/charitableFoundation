@@ -9,7 +9,7 @@ const LogoOfWebsite = () => {
     }
     return (
         <div className={style.container}>
-            <img src={imgLogo} alt="logo"/>
+            <img src={imgLogo} role="presentation" alt=""/>
             <h4>{data.titleOfFoundation}</h4>
         </div>
     )

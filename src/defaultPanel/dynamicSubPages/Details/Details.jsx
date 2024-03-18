@@ -5,6 +5,9 @@ import ComponentMainButton from "../../../components/ComponentMainButton/Compone
 import ScrollToTop from "../../../components/scrollToTop";
 import {useSelector} from "react-redux";
 import Detail from "./Detail/Detail";
+import flyDove from "../../../assets/images/flyDove.png";
+import {useState} from "react";
+
 
 const Details = () => {
     const navigate = useNavigate();
@@ -19,12 +22,20 @@ const Details = () => {
         navigate("/donat");
     }
 
+    const [styleFlyDove, setStyleFlyDove] = useState(false);
+
+    function setStyleToFlyDove() {
+        setStyleFlyDove(true);
+    }
+
+    function setStyleToNoFlyDove() {
+        setStyleFlyDove(false);
+    }
 
     if (!allDetails) {
         return <h2>Loading....</h2>
     }
     const details = allDetails.map((detail, index) => <Detail data={detail} key={index}/>);
-
     return (
         <div className="containerForSubPage">
             <ScrollToTop/>
@@ -33,8 +44,17 @@ const Details = () => {
                 <div className={style.containerForDetails}>
                     {details}
                 </div>
+                <div className={style.blockForImage}>
+                    <img src={process.env.REACT_APP_LINKTOAPI + "files/" + data.imageId} role="presentation" alt=""/>
+                    <span dangerouslySetInnerHTML={{__html: data.descriptionToImage}}></span>
+                </div>
                 <div className={style.blockForButton}>
-                    <ComponentMainButton content="Долучитися до збору" color="#FAC000" clickEvent={displaySubPage}/>
+                    <img src={flyDove} alt="" role="presentation"
+                         className={`${style.imgNoFlyDove} ${styleFlyDove ? style.imgFlyDove : ""}`}/>
+                    <ComponentMainButton content="Долучитися до збору" color="#FAC000"
+                                         onMouseEnter={setStyleToFlyDove} onMouseLeave={setStyleToNoFlyDove}
+                                         clickEvent={displaySubPage}/>
+
                 </div>
             </div>
             <ArrowBack className={style.arrow} onClickEvent={displayOneStepAgo}/>

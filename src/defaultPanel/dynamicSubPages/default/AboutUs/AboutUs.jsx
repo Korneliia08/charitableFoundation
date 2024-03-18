@@ -1,20 +1,19 @@
 import style from "./AboutUs.module.css";
 import Content from "./Content/Content";
-import aboutImage from "../../../../assets/images/aboutUs.png";
 import {useSelector} from "react-redux";
 
 
 const AboutUs = () => {
-    const data = useSelector(state => state.websiteDates.websiteDates.aboutUs);
+    const data = useSelector(state => state.websiteDates.websiteDates?.aboutUs);
 
 
     if (!data) {
-        return <h2>Loading....</h2>
+        return "";
     }
     return (
         <div className={style.container} id="aboutUs">
             <Content data={data}/>
-            <img src={aboutImage} alt="aboutUs"/>
+            <img src={process.env.REACT_APP_LINKTOAPI + "files/" + data.imgId} role="presentation" alt=""/>
         </div>
     )
 }

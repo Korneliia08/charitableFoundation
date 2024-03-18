@@ -1,11 +1,13 @@
 import style from "./ComponentForBackgroundImage.module.css";
-import backGroundImage from "../../../../assets/images/header.png";
 import ComponentMainButton from "../../../../components/ComponentMainButton/ComponentMainButton";
 import {useNavigate} from "react-router-dom";
+import {useSelector} from "react-redux";
 
 const ComponentForBackgroundImage = (props) => {
     const navigate = useNavigate();
     const data = props.data;
+    const imageSrc = useSelector(state => state.websiteDates.websiteDates.header.bannerId);
+
 
     function displaySubpageAbout() {
         navigate('/aboutUs');
@@ -16,7 +18,8 @@ const ComponentForBackgroundImage = (props) => {
     }
 
     return (
-        <div className={style.mainContainer} style={{backgroundImage: `url(${backGroundImage})`}}>
+        <div className={style.mainContainer}
+             style={{backgroundImage: `url(${process.env.REACT_APP_LINKTOAPI + "files/" + imageSrc})`}}>
             <div className={style.container}>
                 <h2>{data.titleOfCategoryOfWebsite}</h2>
                 <h1>{data.titleOfWebsite}</h1>

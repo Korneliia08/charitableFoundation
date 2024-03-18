@@ -22,70 +22,52 @@
     width: 100%;
   }
 }
-.mainContainer .blockForTitleAndOther .blockForDiamond {
-  background-color: #4444ff;
+.mainContainer .blockForTitleAndOther .blockForImage {
+  background-color: #eaeaea;
   display: flex;
   justify-content: center;
-  width: 45%;
+  width: 60%;
+  height: 195px;
   border-radius: 40px;
   margin: 20px 0;
-  border: 1px inset #002977;
-  box-shadow: 0px 0px 10px 4px inset #4d4d4d;
+  box-shadow: 1px 1px 8px 4px rgba(129, 129, 129, 0.75);
   padding: 10px 0;
+  position: relative;
+}
+.mainContainer .blockForTitleAndOther .blockForImage img {
+  bottom: 5px;
+  left: 5px;
+  width: 100%;
+  border-radius: 40px;
+  position: absolute;
 }
 @media (max-width: 900px) {
-  .mainContainer .blockForTitleAndOther .blockForDiamond {
+  .mainContainer .blockForTitleAndOther .blockForImage {
     width: 25%;
     margin: 10px 0;
     border-radius: 25px;
   }
 }
 @media (max-width: 600px) {
-  .mainContainer .blockForTitleAndOther .blockForDiamond {
+  .mainContainer .blockForTitleAndOther .blockForImage {
     width: 30%;
   }
 }
 @media (max-width: 450px) {
-  .mainContainer .blockForTitleAndOther .blockForDiamond {
+  .mainContainer .blockForTitleAndOther .blockForImage {
     width: 35%;
   }
 }
 @media (max-width: 380px) {
-  .mainContainer .blockForTitleAndOther .blockForDiamond {
+  .mainContainer .blockForTitleAndOther .blockForImage {
     width: 40%;
-  }
-}
-.mainContainer .blockForTitleAndOther .blockForDiamond .diamondIcon {
-  color: #ffffff;
-  font-size: 8rem;
-  filter: drop-shadow(2px 2px 2px #16161c);
-}
-@media (max-width: 750px) {
-  .mainContainer .blockForTitleAndOther .blockForDiamond .diamondIcon {
-    font-size: 6rem;
-  }
-}
-@media (max-width: 450px) {
-  .mainContainer .blockForTitleAndOther .blockForDiamond .diamondIcon {
-    font-size: 5rem;
   }
 }
 .mainContainer .blockForTitleAndOther h4 {
   font-size: 1.4rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-.mainContainer .blockForTitleAndOther .blockForHowMoney {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.mainContainer .blockForTitleAndOther .blockForHowMoney .mainSpan {
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-.mainContainer .blockForTitleAndOther .blockForHowMoney span {
-  font-size: 1.2rem;
+  margin-bottom: 15px;
 }
 .mainContainer .blockForOnlineDonat {
   width: 50%;
@@ -127,7 +109,6 @@
   background-color: #2828ea;
 }
 .mainContainer .blockForOnlineDonat p {
-  border-top: 1px solid rgba(84, 84, 84, 0.75);
   padding: 10px 5px;
   font-size: 1.1rem;
   color: black;

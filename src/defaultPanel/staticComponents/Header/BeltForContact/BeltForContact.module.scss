@@ -8,6 +8,7 @@
   z-index: 2000;
   top: 0px;
 
+
   @media (max-width: 700px) {
     display: none;
   }
@@ -27,6 +28,25 @@
       font-size: 1rem;
       text-decoration: none;
       font-family: robotoBold, cursive;
+    }
+  }
+
+  .blockForHeart {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 5px;
+
+    .ukrainianHeartImage {
+      width: 25px;
+    }
+
+    span {
+      color: white;
+      font-size: 0.9rem;
     }
   }
 }

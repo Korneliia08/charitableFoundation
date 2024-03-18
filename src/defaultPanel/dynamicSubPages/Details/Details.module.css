@@ -16,11 +16,43 @@ h3 {
   flex-wrap: wrap;
   row-gap: 25px;
 }
+.mainContainer .blockForImage {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  column-gap: 15px;
+}
+.mainContainer .blockForImage img {
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px #9b9b9b;
+}
+.mainContainer .blockForImage span {
+  width: 400px;
+  font-size: 1.4rem;
+  color: #073a7e;
+  text-shadow: 0px 0px 1px #676767;
+}
 .mainContainer .blockForButton {
-  margin-top: 40px;
+  margin-top: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+.mainContainer .blockForButton .imgNoFlyDove {
+  visibility: hidden;
+  top: -65px;
+  width: 80px;
+  position: absolute;
+  transition: 800ms linear;
+  transform: rotate(8deg);
+}
+.mainContainer .blockForButton .imgFlyDove {
+  visibility: visible;
+  top: -50px;
+  transform: rotate(0deg);
 }
 
 .arrow {
