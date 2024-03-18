@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   padding: var(--leftAndRightPadding);
-  justify-content: flex-end;
+  justify-content: flex-start;
   @media (max-width: 700px) {
     // margin-top: 15px
   }
