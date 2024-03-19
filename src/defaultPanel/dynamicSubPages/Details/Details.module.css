@@ -73,8 +73,9 @@ h3 {
   .mainContainer .blockForButton .imgNoFlyDove {
     transition: 500ms linear;
     width: 60px;
+    animation-iteration-count: infinite;
     animation-name: flyMove;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-delay: 2s;
   }
 }
@@ -94,10 +95,15 @@ h3 {
 }
 
 @keyframes flyMove {
-  50% {
+  20% {
     visibility: visible;
     top: -38px;
     transform: rotate(0deg);
+  }
+  40% {
+    visibility: hidden;
+    top: -65px;
+    transform: rotate(8deg);
   }
 }
 
