@@ -26,12 +26,22 @@ const FormAdvice = () => {
         setBlockButton(true)
         axios.post(process.env.REACT_APP_LINKTOAPI+'website-data/contactForm', data).then(resp => {
             toast.success("Повідомлення вислане! Очікуйте відповіді");
+
+             inputName.current.value='';
+             inputEmail.current.value='';
+             inputContent.current.value='';
+             optionPrefixOfPhone.current.value='';
+             inputNumberPhone.current.value='';
+
         }).catch(error => {
             toast.error("Повідомлення не було відправлене");
         }).finally(() => {
             setBlockButton(false)
             setCaptcha('')
             recaptchaRef.current.reset()
+
+
+
         });
     }
 
