@@ -41,6 +41,6 @@ button {
 
   &:disabled {
     filter: grayscale(0.8);
-    cursor: wait;
+    cursor: default;
   }
 }
