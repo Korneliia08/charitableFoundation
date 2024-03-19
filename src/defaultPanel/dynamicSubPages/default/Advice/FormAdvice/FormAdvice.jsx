@@ -16,7 +16,8 @@ const FormAdvice = () => {
     const inputNumberPhone = useRef();
     let numberOfPhone = "";
     const [blockButton, setBlockButton] = useState(false)
-
+    const [captcha,setCaptcha] = useState('');
+    const [displayReCaptcha,setDisplayReCaptcha] = useState(false);
     function sendData(event) {
         event.preventDefault();
         numberOfPhone = optionPrefixOfPhone.current.textContent + inputNumberPhone.current.value;
@@ -25,10 +26,22 @@ const FormAdvice = () => {
         setBlockButton(true)
         axios.post(process.env.REACT_APP_LINKTOAPI+'website-data/contactForm', data).then(resp => {
             toast.success("Повідомлення вислане! Очікуйте відповіді");
+
+             inputName.current.value='';
+             inputEmail.current.value='';
+             inputContent.current.value='';
+             optionPrefixOfPhone.current.value='';
+             inputNumberPhone.current.value='';
+
         }).catch(error => {
             toast.error("Повідомлення не було відправлене");
         }).finally(() => {
             setBlockButton(false)
+            setCaptcha('')
+            recaptchaRef.current.reset()
+
+
+
         });
     }
 
@@ -38,6 +51,7 @@ const FormAdvice = () => {
             email: inputEmail.current.value,
             numberOfPhone,
             content: inputContent.current.value,
+            reCaptcha:captcha
         }
     }
 
@@ -48,12 +62,12 @@ const FormAdvice = () => {
         }
     }
     const recaptchaRef = useRef();
-    function solve(){
-
+    function solve(event){
+        setCaptcha(event);
     }
     return (
         <div className={style.container}>
-            <form onSubmit={sendData}>
+            <form onSubmit={sendData} onKeyPress={()=>setDisplayReCaptcha(true)}>
                 <div className={style.blockForInput}>
                     <div className={style.icon}>
                         <FontAwesomeIcon icon={faUser}
@@ -89,14 +103,15 @@ const FormAdvice = () => {
                     </div>
                     <textarea placeholder="Текст повідомлення" required={true} ref={inputContent}></textarea>
                 </div>
-                <ComponentMainButton disabled={blockButton} content="Надіслати" color="#E5C201" clickEvent={validate}/>
-                <ReCAPTCHA
+                <ComponentMainButton disabled={blockButton || (captcha.length < 10 && displayReCaptcha)} content="Надіслати" color="#E5C201" clickEvent={validate}/>
+                {displayReCaptcha && <ReCAPTCHA
                     ref={recaptchaRef}
                     sitekey="6Le7CJQpAAAAAGf58WqRrQndYfQib7NTS8GlDoO4"
-                    onChange={solve}
-                    size='invisible'
+                    onChange={(event)=>solve(event)}
+                    onExpired={()=>setCaptcha('')}
                     badge='inline'
-                />
+                    required={true}
+                />}
 
             </form>
         </div>

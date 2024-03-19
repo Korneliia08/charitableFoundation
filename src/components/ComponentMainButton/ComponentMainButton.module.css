@@ -41,7 +41,7 @@ button:hover:not(:disabled) .emptyBlock {
 }
 button:disabled {
   filter: grayscale(0.8);
-  cursor: wait;
+  cursor: default;
 }
 
 /*# sourceMappingURL=ComponentMainButton.module.css.map */
