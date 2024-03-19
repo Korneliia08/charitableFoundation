@@ -28,6 +28,15 @@ h3 {
       width: 280px;
       border-radius: 10px;
       box-shadow: 0px 0px 2px 2px #9b9b9b;
+      @media (max-width: 900px) {
+        width: 220px;
+      }
+      @media (max-width: 600px) {
+        width: 150px;
+      }
+      @media (max-width: 400px) {
+        width: 120px;
+      }
     }
 
     span {
@@ -35,6 +44,9 @@ h3 {
       font-size: 1.4rem;
       color: #073a7e;
       text-shadow: 0px 0px 1px #676767;
+      @media (max-width: 400px) {
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -52,7 +64,13 @@ h3 {
       position: absolute;
       transition: 800ms linear;
       transform: rotate(8deg);
-
+      @media (max-width: 1300px) {
+        transition: 500ms linear;
+        width: 60px;
+        animation-name: flyMove;
+        animation-duration: 5s;
+        animation-delay: 2s;
+      }
     }
 
     .imgFlyDove {
@@ -67,5 +85,14 @@ h3 {
   top: 70px;
   @media (max-width: 700px) {
     top: 30px;
+  }
+}
+
+
+@keyframes flyMove {
+  50% {
+    visibility: visible;
+    top: -38px;
+    transform: rotate(0deg);
   }
 }

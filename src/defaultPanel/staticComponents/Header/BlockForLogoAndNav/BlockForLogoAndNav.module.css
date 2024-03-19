@@ -1,83 +1,91 @@
 .blockForLogoAndNav {
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  transition: top 350ms, padding 350ms, height 300ms;
-  position: fixed;
-  width: 100vw;
-  z-index: 2001;
-  top: 35px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    transition: top 350ms, padding 350ms, height 300ms;
+    position: fixed;
+    width: 100vw;
+    z-index: 2001;
+    top: 34px;
 }
+
 .blockForLogoAndNav .navContainer {
-  transition: 300ms;
-  box-shadow: 0px 0px 5px 2px inset #949dbd;
-  padding: 15px 0;
-  display: flex;
-  justify-content: space-around;
+    transition: 300ms;
+    box-shadow: 0px 0px 5px 2px inset #949dbd;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
 }
+
 @media (max-width: 700px) {
-  .blockForLogoAndNav {
-    top: 0px;
-  }
+    .blockForLogoAndNav {
+        top: 0px;
+    }
 }
 
 .emptyBlock {
-  transition: 500ms;
-  opacity: 0.5;
-  width: 100%;
-  float: left;
-  height: 50px;
-  display: block;
+    transition: 500ms;
+    opacity: 0.5;
+    width: 100%;
+    float: left;
+    height: 50px;
+    display: block;
 }
 
 .hamburger {
-  height: 0;
-  transition: height 400ms ease-in-out;
-  overflow-y: hidden;
-  width: 100vw;
-  z-index: 10;
-  background-color: #eaeaea;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 4px;
-  box-shadow: 0px 0px 5px 2px inset #949dbd;
+    height: 0;
+    transition: height 400ms ease-in-out;
+    overflow-y: hidden;
+    width: 100vw;
+    z-index: 10;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+    box-shadow: 0px 0px 5px 2px inset #949dbd;
 }
+
 .hamburger > div {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
 }
+
 .hamburger a {
-  box-sizing: border-box;
-  padding: 3px;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  color: #3a3a3a;
-  display: block;
-  width: 100%;
-  text-align: center;
-  transition: all 200ms ease-in-out;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  font-weight: normal;
-  font-family: robotoBold, cursive;
+    box-sizing: border-box;
+    padding: 3px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #3a3a3a;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: all 200ms ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    font-weight: normal;
+    font-family: robotoBold, cursive;
 }
+
 .hamburger a:first-of-type {
-  padding-top: 10px;
+    padding-top: 10px;
 }
+
 .hamburger a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  text-decoration-color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: black;
 }
+
 .hamburger.hamburgerOpen {
-  height: 190px;
+    height: 190px;
 }
+
 @media (min-width: 700px) {
-  .hamburger.hamburgerOpen {
-    height: 0px;
-  }
+    .hamburger.hamburgerOpen {
+        height: 0px;
+    }
 }
 
 /*# sourceMappingURL=BlockForLogoAndNav.module.css.map */

@@ -8,6 +8,12 @@
   box-shadow: 0px 0px 0px 1px inset #707070;
   z-index: 2000;
 }
+@media (max-width: 900px) {
+  .container {
+    padding: 4px 20px;
+    right: 20px;
+  }
+}
 .container .arrowToTopIcon {
   font-size: 1.4rem;
   color: white;

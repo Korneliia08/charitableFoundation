@@ -6,6 +6,11 @@
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 900px) {
+  .container {
+    padding-right: 35px;
+  }
+}
 @media (max-width: 700px) {
   .container {
     display: none;

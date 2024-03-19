@@ -14,6 +14,11 @@
   align-items: flex-start;
   row-gap: 40px;
 }
+@media (max-width: 1000px) {
+  .mainContainer .container {
+    padding-top: 20px;
+  }
+}
 @media (max-width: 700px) {
   .mainContainer .container {
     padding-top: 30px;

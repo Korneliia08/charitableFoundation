@@ -56,6 +56,10 @@
     width: 100%;
     row-gap: 10px;
   }
+  @media (max-width: 700px) {
+    width: 100%;
+    row-gap: 5px;
+  }
 
   h5 {
     text-transform: uppercase;
@@ -88,6 +92,9 @@
     padding: 10px 5px;
     font-size: 1.1rem;
     color: black;
+    @media (max-width: 700px) {
+      padding: 5px;
+    }
   }
 }
 
