@@ -16,7 +16,7 @@ const DefaultPanel = () => {
     //  const [topOfAdvice, setTopOfAdvice] = useState();
 
     function desplaySubPageDetails() {
-        navigate("details");
+        navigate("/details");
     }
 
     function scrollToElement() {
