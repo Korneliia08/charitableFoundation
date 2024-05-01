@@ -6,7 +6,7 @@ import {useTranslation} from 'react-i18next';
 
 const BeltForContact = (props) => {
     const data = props.data;
-    const {t} = useTranslation('translation', {lng: 'ua'});
+    const {t} = useTranslation();
     return (
         <div className={style.container}>
             <div className={style.blockForContact}>
