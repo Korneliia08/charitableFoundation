@@ -10,7 +10,7 @@ const Advice = (props) => {
     }
     return (
         <div className={style.container} id="advice" ref={props.advice}
-             style={{backgroundImage: `url(${process.env.REACT_APP_LINKTOAPI + "files/" + imageId})`}}>
+             style={{backgroundImage: `url(${import.meta.env.VITE_APP_LINKTOAPI + "files/" + imageId})`}}>
             <Content/>
             <FormAdvice/>
             <div className={style.blueBackground}></div>

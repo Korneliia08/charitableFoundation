@@ -2,14 +2,15 @@ import Footer from "./staticComponents/Footer/Footer";
 import ArrowToTop from "../components/ArrowToTop/ArrowToTop";
 import {Outlet, useNavigate} from "react-router-dom";
 import BlockForLogoAndNav from "./staticComponents/Header/BlockForLogoAndNav/BlockForLogoAndNav";
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import axios from "axios";
 import {setAspects} from "../data/reducers/aspectReducer";
 import BeltForContact from "./staticComponents/Header/BeltForContact/BeltForContact";
 import {setWebsiteData} from "../data/reducers/websiteDataReducer";
 import {setProjects} from "../data/reducers/projectReducer";
-
+import UserContext from "../serverContext.js";
+import md5 from "md5";
 const DefaultPanel = () => {
     const navigate = useNavigate();
     const dataOfHeader = useSelector(state => state.websiteDates.websiteDates.header);
@@ -28,14 +29,14 @@ const DefaultPanel = () => {
 
     const dispatch = useDispatch();
     useEffect(() => {
-        axios(process.env.REACT_APP_LINKTOAPI + 'aspects').then(
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'aspects').then(
             resp => {
                 dispatch(setAspects(resp.data));
             }
         ).catch(error => {
             navigate('/error');
         })
-        axios(process.env.REACT_APP_LINKTOAPI + 'website-data').then(
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'website-data').then(
             resp => {
                 dispatch(setWebsiteData(resp.data));
             }
@@ -43,7 +44,7 @@ const DefaultPanel = () => {
             navigate('/error');
         })
 
-        axios(process.env.REACT_APP_LINKTOAPI + 'projects').then(
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'projects').then(
             resp => {
                 dispatch(setProjects(resp.data));
             }
@@ -63,7 +64,9 @@ const DefaultPanel = () => {
     }, []);
 
     function pingerFun() {
-
+   /* if(!import.meta.env.SSR){
+        return
+    }*/
         if (!localStorage.getItem("sessionId")) {
             localStorage.setItem("sessionId", 0);
         }
@@ -75,7 +78,7 @@ const DefaultPanel = () => {
             // console.warn('Window is hidden');
             return;
         }
-        const link = process.env.REACT_APP_LINKTOAPI + 'visits'
+        const link = import.meta.env.VITE_APP_LINKTOAPI + 'visits'
         axios(link, {params: {code: generateMd5(), id: localStorage.getItem("sessionId")}}).then(data => {
             if (data.data.id) {
                 localStorage.setItem("sessionId", data.data.id);
@@ -97,7 +100,7 @@ const DefaultPanel = () => {
             {dataOfHeader && <BeltForContact data={dataOfHeader.blockOfBelt}/>}
             <BlockForLogoAndNav belt={belt}/>
             <Outlet/>
-            <Footer/>
+             <Footer/>
             <ArrowToTop/>
         </div>
     )
@@ -111,7 +114,7 @@ const DefaultPanel = () => {
             '*' +
             (Number(new Date().getSeconds()));
         const value = `${date}` //^${link}
-        var md5 = require('md5');
+      //  var md5 = require('md5');
         return md5(value)
     }
 

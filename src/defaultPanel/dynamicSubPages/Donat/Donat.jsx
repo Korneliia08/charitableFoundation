@@ -21,12 +21,12 @@ const Donat = () => {
             <div className={style.mainContainer}>
                 <div className={style.blockForTitleAndOther}>
                     <h4>БЛАГОДІЙНИЙ ФОНД - МОГУТНІСТЬ НАРОДУ</h4>
-                    <img src={process.env.REACT_APP_LINKTOAPI + "files/" + data.imageId} role="presentation"
+                    <img src={import.meta.env.VITE_APP_LINKTOAPI + "files/" + data.imageId} role="presentation"
                          alt=""/>
                 </div>
                 <div className={style.blockForOnlineDonat}>
                     <h5>пожертвувати онлайн</h5>
-                    <button>Долучитися до пожертвування</button>
+                    <a style={{textDecoration:'none'}} target={"_blank"} href={import.meta.env.VITE_APP_LINKTODONAT}><button style={{width:'100%'}}>Долучитися до пожертвування</button></a>
                     <p dangerouslySetInnerHTML={{__html: data.description}}></p>
                 </div>
             </div>

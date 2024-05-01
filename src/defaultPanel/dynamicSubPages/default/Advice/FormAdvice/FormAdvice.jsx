@@ -24,7 +24,7 @@ const FormAdvice = () => {
         inputNumberPhone.current.reportValidity();
         data = CreateAObj();
         setBlockButton(true)
-        axios.post(process.env.REACT_APP_LINKTOAPI+'website-data/contactForm', data).then(resp => {
+        axios.post(import.meta.env.VITE_APP_LINKTOAPI+'website-data/contactForm', data).then(resp => {
             toast.success("Повідомлення вислане! Очікуйте відповіді");
 
              inputName.current.value='';

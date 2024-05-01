@@ -18,7 +18,8 @@ const Footer = () => {
     }, []);
 
     function desplayAdminPanel() {
-        window.location.href = "https://admin.powepeople.com";
+           window.location.href = "https://admin.powepeople.com";
+
     }
 
     return (

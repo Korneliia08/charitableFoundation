@@ -21,7 +21,7 @@ const AboutUsFully = () => {
             <ScrollToTop/>
             <div className={style.container}>
                 <ContentAboutUsFully/>
-                <img src={process.env.REACT_APP_LINKTOAPI + "files/" + data.imgId} role="presentation" alt=""/>
+                <img src={import.meta.env.VITE_APP_LINKTOAPI + "files/" + data.imgId} role="presentation" alt=""/>
             </div>
             <ArrowBack className={style.arrow} onClickEvent={displayOneStepAgo}/>
         </div>

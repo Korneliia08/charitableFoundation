@@ -3,18 +3,21 @@ import DonationAndAdvice from "../../../components/DonationAndAdvice/DonationAnd
 import AspectsOfTheProject from "./AspectsOfTheProject/AspectsOfTheProject";
 import OurProjects from "./OurProjects/OurProjects";
 import Advice from "./Advice/Advice";
-import Map from "./Map/Map";
+
 import Header from "../../staticComponents/Header/Header";
 import {useNavigate} from "react-router-dom";
-import {useRef} from "react";
+import {lazy, useEffect, useRef, useState} from "react";
 import {animateScroll as scroll} from 'react-scroll';
 
-const DefaultPanel = () => {
+
+const DefaultPanel = (props) => {
     const navigate = useNavigate();
     const advice = useRef();
+    const [isClient, setIsClient] = useState(false);
 
-    //  const [topOfAdvice, setTopOfAdvice] = useState();
-
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
     function desplaySubPageDetails() {
         navigate("/details");
     }
@@ -28,9 +31,13 @@ const DefaultPanel = () => {
             smooth: 'easeInOutQuart'
         });
     }
-
+    let map = ''
+    if(isClient){
+     map = lazy(() => import('./Map/Map.jsx'));
+    }
     return (
         <>
+
             <Header/>
             <AboutUs/>
             <DonationAndAdvice title="Консультація онлайн" onClickEvent={scrollToElement}/>
@@ -38,7 +45,7 @@ const DefaultPanel = () => {
             <DonationAndAdvice title="Зробити пожертвування" onClickEvent={desplaySubPageDetails}/>
             <OurProjects/>
             <Advice advice={advice}/>
-            <Map/>
+            {  isClient ?<map/>:''}
         </>
     )
 }

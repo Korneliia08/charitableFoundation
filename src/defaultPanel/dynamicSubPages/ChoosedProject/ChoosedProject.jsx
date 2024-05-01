@@ -12,7 +12,7 @@ const ChoosedProject = () => {
     const [data, setData] = useState();
 
     useEffect(() => {
-        axios(process.env.REACT_APP_LINKTOAPI + "projects/" + id).then(resp => {
+        axios(import.meta.env.VITE_APP_LINKTOAPI + "projects/" + id).then(resp => {
             setData(resp.data);
         }).catch(error => {
             navigate("/error");

@@ -22,7 +22,7 @@ const ChoosedAspect = (props) => {
     }
 
     useEffect(() => {
-        axios(process.env.REACT_APP_LINKTOAPI + 'aspects/' + id).then(
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'aspects/' + id).then(
             resp => {
                 setData(resp.data);
             }
@@ -54,7 +54,7 @@ const ChoosedAspect = (props) => {
                                                  clickEvent={displaySubPage}/>
                         </div>
                     </div>
-                    <img src={process.env.REACT_APP_LINKTOAPI + "files/" + imageId} role="presentation" alt=""/>
+                    <img src={import.meta.env.VITE_APP_LINKTOAPI + "files/" + imageId} role="presentation" alt=""/>
                 </div>
             </div>
         </>

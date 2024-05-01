@@ -10,6 +10,9 @@
     font-size: 2rem;
     color: #003680;
     text-transform: uppercase;
+    @media (max-width: 650px) {
+      width: 78%;
+    }
   }
 
   p {

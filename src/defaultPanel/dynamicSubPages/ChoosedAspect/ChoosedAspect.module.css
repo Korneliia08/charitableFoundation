@@ -1,7 +1,7 @@
 .backgroundWithTitle {
   padding: 45px 0;
   width: 100%;
-  background-image: url("../../../assets/images/makeAdonat.png");
+  background-image: url("../../../assets/images/makeAdonat.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -43,7 +43,7 @@
 }
 @media (max-width: 700px) {
   .container .containerForContentAndBtn {
-    width: 90%;
+    width: 75%;
   }
 }
 .container .containerForContentAndBtn p {

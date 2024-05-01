@@ -45,7 +45,7 @@ const Details = () => {
                     {details}
                 </div>
                 <div className={style.blockForImage}>
-                    <img src={process.env.REACT_APP_LINKTOAPI + "files/" + data.imageId} role="presentation" alt=""/>
+                    <img src={import.meta.env.VITE_APP_LINKTOAPI + "files/" + data.imageId} role="presentation" alt=""/>
                     <span dangerouslySetInnerHTML={{__html: data.descriptionToImage}}></span>
                 </div>
                 <div className={style.blockForButton}>

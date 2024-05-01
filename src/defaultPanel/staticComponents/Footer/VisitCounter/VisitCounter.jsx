@@ -10,7 +10,7 @@ const VisitCounter = () => {
     const [dataCounterOfVisits, setDataCounterOfVisits] = useState();
 
     function fetchData() {
-        axios(process.env.REACT_APP_LINKTOAPI + '/visits/stats').then(
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'visits/stats').then(
             resp => {
                 setDataCounterOfVisits(resp.data);
             }

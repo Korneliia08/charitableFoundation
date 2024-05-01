@@ -19,7 +19,7 @@ const ComponentForBackgroundImage = (props) => {
 
     return (
         <div className={style.mainContainer}
-             style={{backgroundImage: `url(${process.env.REACT_APP_LINKTOAPI + "files/" + imageSrc})`}}>
+             style={{backgroundImage: `url(${import.meta.env.VITE_APP_LINKTOAPI + "files/" + imageSrc})`}}>
             <div className={style.container}>
                 <h2>{data.titleOfCategoryOfWebsite}</h2>
                 <h1>{data.titleOfWebsite}</h1>

@@ -11,7 +11,7 @@ const DonationAndAdvice = (props) => {
     const whichFunction = props.onClickEvent;
     return (
         <div className={style.container} onClick={whichFunction}
-             style={{backgroundImage: `url(${process.env.REACT_APP_LINKTOAPI + "files/" + imageId})`}}>
+             style={{backgroundImage: `url(${import.meta.env.VITE_APP_LINKTOAPI + "files/" + imageId})`}}>
             <h3>{title}</h3>
             <ComponentMainButton content="Детальніше" color="#FFD801" clickEvent={whichFunction}
                                  styleClass={style.mainBtn}/>

@@ -11,6 +11,11 @@
   color: #003680;
   text-transform: uppercase;
 }
+@media (max-width: 650px) {
+  .mainContainer h4 {
+    width: 78%;
+  }
+}
 .mainContainer p {
   width: 100%;
   color: black;
