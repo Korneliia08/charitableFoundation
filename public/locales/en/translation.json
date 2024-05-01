@@ -1,7 +1,21 @@
 {
-  "nav" : {
+  "allBtns": {
+    "learnMore": "Learn more",
+    "makeDonat": "To donate",
+    "moreDetails": "More details"
+  },
+  "header": {
     "belt": {
-      "rightTitle": "ddddddd"
+      "rightTitle": "Everything will be Ukraine!"
+    },
+    "nav": {
+      "about": "About us",
+      "consultation": "Consultation",
+      "contact": "Сontacts",
+      "main": "Home",
+      "ourProject": "Our project",
+      "ourProjects": "Our projects",
+      "requisites": "Requisites"
     }
   }
 }

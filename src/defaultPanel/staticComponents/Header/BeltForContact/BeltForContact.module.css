@@ -1,10 +1,11 @@
 .container {
   background-color: #003680;
-  padding: 10px var(--leftAndRightPadding);
+  padding: 7px var(--leftAndRightPadding);
   display: flex;
   width: 100%;
   position: fixed;
   z-index: 2000;
+  align-items: center;
   top: 0px;
 }
 @media (max-width: 700px) {
@@ -14,6 +15,8 @@
 }
 .container .blockForContact {
   display: flex;
+  height: 100%;
+  align-items: center;
   column-gap: 10px;
 }
 .container .blockForContact .iconPhone {
@@ -26,6 +29,22 @@
   font-size: 1rem;
   text-decoration: none;
   font-family: robotoBold, cursive;
+}
+.container .blockForIconLanguage {
+  margin-left: 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .blockForIconLanguage .icon {
+  color: white;
+  filter: drop-shadow(1px 1px 1px #464646);
+  font-size: 20px;
+  transition: 450ms ease;
+}
+.container .blockForIconLanguage .icon:hover {
+  cursor: pointer;
+  color: #c9cfff;
 }
 .container .blockForHeart {
   position: absolute;

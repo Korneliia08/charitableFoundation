@@ -1,1 +1,0 @@
-import{u as r,r as e}from"./index-CqWK5b6m.js";const i=()=>{if(!r(a=>{var t;return(t=a.websiteDates.websiteDates.footer)==null?void 0:t.map}))return"";const[u,s]=e.useState(!1);return e.useEffect(()=>{s(!0)},[]),""};export{i as default};

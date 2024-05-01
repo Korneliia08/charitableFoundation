@@ -1,7 +1,21 @@
 {
-  "nav": {
+  "allBtns": {
+    "learnMore": "Дізнатися більше",
+    "makeDonat": "Зробити пожертву",
+    "moreDetails": "Детальніше"
+  },
+  "header": {
     "belt": {
       "rightTitle": "Все Буде Україна!"
+    },
+    "nav": {
+      "about": "Про нас",
+      "consultation": "Консультація",
+      "contact": "Контакти",
+      "main": "Головна",
+      "ourProject": "Наш проект",
+      "ourProjects": "Наші проекти",
+      "requisites": "Реквізити"
     }
   }
 }

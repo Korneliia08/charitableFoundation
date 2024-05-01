@@ -23,6 +23,7 @@
     "compression": "^1.7.4",
     "cross-env": "^7.0.3",
     "express": "^4.18.3",
+    "flag-icons": "^7.2.1",
     "generate-cli-react": "^1.1.0",
     "gh-pages": "^6.1.1",
     "hamburger-react": "^2.5.0",
@@ -33,6 +34,7 @@
     "md5": "^2.3.0",
     "react": "^18.2.0",
     "react-animation-on-scroll": "^5.1.0",
+    "react-country-flag": "^3.1.0",
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
     "react-i18next": "^14.1.1",
@@ -71,9 +73,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-
-  },
+  "eslintConfig": {},
   "browserslist": {
     "production": [
       ">0.2%",
