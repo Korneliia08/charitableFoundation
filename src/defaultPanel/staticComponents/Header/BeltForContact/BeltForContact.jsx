@@ -6,6 +6,8 @@ import {useTranslation} from 'react-i18next';
 import ContainerForLanguages from "./containerForLanguages/ContainerForLanguages.jsx";
 import {useState} from "react";
 
+import { Modal } from 'react-responsive-modal';
+
 const BeltForContact = (props) => {
     const data = props.data;
     const {t} = useTranslation();
@@ -14,6 +16,7 @@ const BeltForContact = (props) => {
     function displayLanguages() {
         setOpenAllLanguages(!openAllLanguages);
     }
+
 
     return (
         <div className={style.container}>
@@ -24,13 +27,26 @@ const BeltForContact = (props) => {
             </div>
             <div className={style.blockForIconLanguage}><FontAwesomeIcon icon={faLanguage} className={style.icon}
                                                                          onClick={displayLanguages}/>
-                <ContainerForLanguages isVisibly={openAllLanguages}/>
+
             </div>
             <div className={style.blockForHeart}>
                 <img src={ukrainianHeart} role="presentation" alt="" className={style.ukrainianHeartImage}/>
                 <span>{t('translation:header.belt.rightTitle')}</span>
             </div>
+
+            <Modal
+                closeOnEsc={()=>setOpenAllLanguages(false)}
+                open={openAllLanguages}
+                onClose={()=>setOpenAllLanguages(false)}
+                onOverlayClick={()=>setOpenAllLanguages(false)}
+                blockScroll={true}
+                closeIcon={false}
+                center={true}
+            >
+                <ContainerForLanguages setOpenAllLanguages={setOpenAllLanguages}/>
+            </Modal>
         </div>
+
     )
 }
 export default BeltForContact;

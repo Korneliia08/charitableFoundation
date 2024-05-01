@@ -6,9 +6,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import "animate.css/animate.min.css";
 import {Router} from "./router.jsx";
 import './assets/globalVariables.css';
-
+import {useEffect} from "react";
+import {useTranslation} from "react-i18next";
 function App(props) {
+    const [t, i18n] = useTranslation()
+    useEffect(() => {
 
+    }, []);
     return (
 
         <div className="App">

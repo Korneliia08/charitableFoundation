@@ -4,10 +4,14 @@ const websiteDataReducer = createSlice({
     name: "websiteDates",
     initialState: {
         websiteDates: [],
+        language:''
     },
     reducers: {
         setWebsiteData(state, action) {
             return {...state, websiteDates: action.payload};
+        },
+        setLanguage(state, action) {
+            return {...state, language: action.payload};
         },
     },
 });

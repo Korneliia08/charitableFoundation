@@ -3,11 +3,11 @@ import {useTranslation} from "react-i18next";
 
 const ContainerForLanguages = (props) => {
     const {t, i18n} = useTranslation();
-    const isVisibly = props.isVisibly;
+    const setOpenAllLanguages = props.setOpenAllLanguages;
 
     return (
-        <div className={style.container} style={{display: isVisibly ? "flex" : "none"}}>
-            <span className={style.closeSpan}>X</span>
+        <div className={style.container} ariaHideApp={false} >
+            {/*<span className={style.closeSpan} onClick={()=>setOpenAllLanguages(false)}>X</span>*/}
             <span className={style.chooseLanguage}>Оберіть мову</span>
             <div className={style.containerForLanguages}>
                 <div className={style.blockForLanguage} onClick={() => {
