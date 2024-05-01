@@ -8,6 +8,10 @@
     "belt": {
       "rightTitle": "Все Буде Україна!"
     },
+    "donationAndAdviceComponent": {
+      "titleToDonat": "Зробити пожертвування",
+      "titleToConsultation": "Консультація онлайн"
+    },
     "nav": {
       "about": "Про нас",
       "consultation": "Консультація",

@@ -1,12 +1,16 @@
 {
   "allBtns": {
     "learnMore": "Learn more",
-    "makeDonat": "To donate",
+    "makeDonat": "Make a donation",
     "moreDetails": "More details"
   },
   "header": {
     "belt": {
       "rightTitle": "Everything will be Ukraine!"
+    },
+    "donationAndAdviceComponent": {
+      "titleToDonat": "Make a donation",
+      "titleToConsultation": "Online consultation"
     },
     "nav": {
       "about": "About us",
