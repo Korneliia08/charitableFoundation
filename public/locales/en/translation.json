@@ -4,6 +4,7 @@
   },
   "adviceComponent.content": "We will advise you on all matters of interest and help you understand your case.",
   "allBtns": {
+    "joinToCollection": "Join the collection",
     "learnMore": "Learn more",
     "makeDonat": "Make a donation",
     "moreDetails": "More details",
@@ -65,6 +66,7 @@
     },
     "nav": {
       "about": "About us",
+      "chooseLanguage": "Select a language",
       "consultation": "Consultation",
       "contact": "Сontacts",
       "main": "Home",

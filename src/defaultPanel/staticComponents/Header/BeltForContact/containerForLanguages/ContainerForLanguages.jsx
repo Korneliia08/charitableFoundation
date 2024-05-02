@@ -8,7 +8,7 @@ const ContainerForLanguages = (props) => {
     return (
         <div className={style.container} ariaHideApp={false} >
             {/*<span className={style.closeSpan} onClick={()=>setOpenAllLanguages(false)}>X</span>*/}
-            <span className={style.chooseLanguage}>Оберіть мову</span>
+            <span className={style.chooseLanguage}>{t('translation:header.nav.chooseLanguage')}</span>
             <div className={style.containerForLanguages}>
                 <div className={style.blockForLanguage} onClick={() => {
                     i18n.changeLanguage('ua')
