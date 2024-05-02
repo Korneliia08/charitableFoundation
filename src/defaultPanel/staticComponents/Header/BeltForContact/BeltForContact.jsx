@@ -39,7 +39,7 @@ const BeltForContact = (props) => {
                 open={openAllLanguages}
                 onClose={()=>setOpenAllLanguages(false)}
                 onOverlayClick={()=>setOpenAllLanguages(false)}
-                blockScroll={true}
+                // blockScroll={true}
                 closeIcon={false}
                 center={true}
             >
