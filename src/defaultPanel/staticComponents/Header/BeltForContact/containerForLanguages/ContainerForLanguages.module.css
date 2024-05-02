@@ -69,8 +69,8 @@
 }
 @media (max-width: 800px) {
   .container .containerForLanguages .blockForLanguage {
-    width: 50%;
-    align-items: center;
+    width: 47%;
+    text-align: center;
   }
 }
 .container .containerForLanguages .blockForLanguage .spanLanguage {
