@@ -7,9 +7,11 @@ import {useEffect, useState} from "react";
 import LogoOfWebsite from "./LogoOfWebsite/LogoOfWebsite";
 import {faUserTie} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {useTranslation} from "react-i18next";
 
 const Footer = () => {
     const [year, setYear] = useState();
+    const [t] = useTranslation();
 
     useEffect(() => {
         const data = new Date();
@@ -18,7 +20,7 @@ const Footer = () => {
     }, []);
 
     function desplayAdminPanel() {
-           window.location.href = "https://admin.powepeople.com";
+        window.location.href = "https://admin.powepeople.com";
 
     }
 
@@ -35,8 +37,8 @@ const Footer = () => {
             </div>
             <div className={style.grayBelt}>
                 <div>
-                    <span> &copy; Всі права захищені {year} <a
-                        href="https://t.me/korneliia0808">Веб-розробник:Корнелія Мушак</a></span>
+                    <span> &copy; {t('translation:header.footer.bottomBelt.allRightsTitle')} {year} <a
+                        href="https://t.me/korneliia0808">{t('translation:header.footer.bottomBelt.nameAndSurname')}</a></span>
                     <FontAwesomeIcon icon={faUserTie} className={style.adminIcon} onClick={desplayAdminPanel}/>
                 </div>
             </div>

@@ -1,4 +1,8 @@
 {
+  "adviceComponent": {
+    "title": "Please fill out this form to request a consultation:"
+  },
+  "adviceComponent.content": "We will advise you on all matters of interest and help you understand your case.",
   "allBtns": {
     "learnMore": "Learn more",
     "makeDonat": "Make a donation",
@@ -9,8 +13,8 @@
       "rightTitle": "Everything will be Ukraine!"
     },
     "donationAndAdviceComponent": {
-      "titleToDonat": "Make a donation",
-      "titleToConsultation": "Online consultation"
+      "titleToConsultation": "Online consultation",
+      "titleToDonat": "Make a donation"
     },
     "nav": {
       "about": "About us",
@@ -20,6 +24,36 @@
       "ourProject": "Our project",
       "ourProjects": "Our projects",
       "requisites": "Requisites"
+    },
+    "footer": {
+      "contacts": {
+        "title": "Contacts"
+      },
+      "WorkingHoursSchedule": {
+        "title": "Working hours schedule",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "Saturday": "Saturday",
+        "Sunday": "Sunday",
+        "closed": "Closed"
+      },
+      "NumberOfVisits": {
+        "title": "Number of visits",
+        "online": "Online",
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "thisWeek": "This week",
+        "thisMonth": "This month",
+        "thisYear": "This year",
+        "all": "All"
+      },
+      "bottomBelt": {
+        "allRightsTitle": "All rights reserved",
+        "nameAndSurname": "Web Developer: Cornelia Mushak"
+      }
     }
   }
 }

@@ -1,4 +1,8 @@
 {
+  "adviceComponent": {
+    "title": "Для отримання консультації заповніть цю форму:"
+  },
+  "adviceComponent.content": "Ми проконсультуємо Вас з усіх питань, що                 Вас цікавлять та допоможемо розібратись                 у Вашій справі",
   "allBtns": {
     "learnMore": "Дізнатися більше",
     "makeDonat": "Зробити пожертву",
@@ -9,8 +13,8 @@
       "rightTitle": "Все Буде Україна!"
     },
     "donationAndAdviceComponent": {
-      "titleToDonat": "Зробити пожертвування",
-      "titleToConsultation": "Консультація онлайн"
+      "titleToConsultation": "Консультація онлайн",
+      "titleToDonat": "Зробити пожертвування"
     },
     "nav": {
       "about": "Про нас",
@@ -20,6 +24,36 @@
       "ourProject": "Наш проект",
       "ourProjects": "Наші проекти",
       "requisites": "Реквізити"
+    },
+    "footer": {
+      "contacts": {
+        "title": "Контакти"
+      },
+      "WorkingHoursSchedule": {
+        "title": "Графік роботи",
+        "monday": "Понеділок",
+        "tuesday": "Вівторок",
+        "wednesday": "Середа",
+        "thursday": "Четвер",
+        "friday": "П’ятниця",
+        "Saturday": "Субота",
+        "Sunday": "Неділя",
+        "closed": "Зачинено"
+      },
+      "NumberOfVisits": {
+        "title": "Кількість відвідувань",
+        "online": "Онлайн",
+        "today": "Сьогодні",
+        "yesterday": "Учорай",
+        "thisWeek": "Цього тижня",
+        "thisMonth": "Цього місяця",
+        "thisYear": "Цього року",
+        "all": "Усього"
+      },
+      "bottomBelt": {
+        "allRightsTitle": "Усі права захищені",
+        "nameAndSurname": "Веб-розробник: Корнелія Мушак"
+      }
     }
   }
 }
