@@ -10,7 +10,7 @@ export default function toScroll(element) {
     };
 
     const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -50;
+    const yOffset = -90;
     let positionScrollY = window.scrollY;
     if (positionScrollY < yCoordinate + yOffset) {
         window.scrollTo({top: yCoordinate + yOffset, behavior: "smooth"});
