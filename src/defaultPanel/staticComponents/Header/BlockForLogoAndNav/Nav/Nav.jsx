@@ -11,7 +11,6 @@ const Nav = (props) => {
                 <NavOptions/>
             </div>
             <div className={style.translation}>
-
                 <LanguageButton/>
             </div>
             <div className={style.hamburger}>

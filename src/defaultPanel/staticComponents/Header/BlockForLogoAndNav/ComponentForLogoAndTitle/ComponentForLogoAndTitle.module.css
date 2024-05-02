@@ -15,6 +15,11 @@
   transition: 300ms;
   height: 50px;
 }
+@media (max-width: 750px) {
+  .container img {
+    height: 35px;
+  }
+}
 .container h1 {
   transition: 700ms;
   color: #003680;
@@ -30,7 +35,6 @@
 }
 @media (max-width: 700px) {
   .container h1 {
-    width: 100%;
     font-size: 0.9rem;
   }
 }

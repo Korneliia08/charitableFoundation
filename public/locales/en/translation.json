@@ -4,7 +4,7 @@
   },
   "adviceComponent.content": "We will advise you on all matters of interest and help you understand your case.",
   "allBtns": {
-    "joinToCollection": "Join the collection",
+    "joinToDonation": "JOIN THE DONATION",
     "learnMore": "Learn more",
     "makeDonat": "Make a donation",
     "moreDetails": "More details",
@@ -78,5 +78,9 @@
   "projects": {
     "title1": "Our projects",
     "title2": "Our project"
+  },
+  "donat": {
+    "title": "CHARITABLE FOUNDATION - POWER PEOPLE",
+    "titleDonateOnline": "DONATE ONLINE"
   }
 }

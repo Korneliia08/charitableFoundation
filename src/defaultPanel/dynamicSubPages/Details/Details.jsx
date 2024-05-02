@@ -14,7 +14,8 @@ const Details = () => {
     const navigate = useNavigate();
     const data = useSelector(state => state.websiteDates.websiteDates?.detailSubPage);
     const allDetails = data?.details;
-const [t] = useTranslation()
+    const [t] = useTranslation()
+
     function displayOneStepAgo() {
         navigate(-1);
     }
@@ -52,7 +53,7 @@ const [t] = useTranslation()
                 <div className={style.blockForButton}>
                     <img src={flyDove} alt="" role="presentation"
                          className={`${style.imgNoFlyDove} ${styleFlyDove ? style.imgFlyDove : ""}`}/>
-                    <ComponentMainButton content={t('translation:allBtns.joinToCollection')} color="#FAC000"
+                    <ComponentMainButton content={t('translation:allBtns.joinToDonation')} color="#FAC000"
                                          onMouseEnter={setStyleToFlyDove} onMouseLeave={setStyleToNoFlyDove}
                                          clickEvent={displaySubPage}/>
 
