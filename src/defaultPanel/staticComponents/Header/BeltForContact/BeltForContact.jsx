@@ -7,15 +7,12 @@ import ContainerForLanguages from "./containerForLanguages/ContainerForLanguages
 import {useState} from "react";
 
 import { Modal } from 'react-responsive-modal';
+import LanguageButton from "./LanguageButton.jsx";
 
 const BeltForContact = (props) => {
     const data = props.data;
     const {t} = useTranslation();
-    const [openAllLanguages, setOpenAllLanguages] = useState(false);
 
-    function displayLanguages() {
-        setOpenAllLanguages(!openAllLanguages);
-    }
 
 
     return (
@@ -25,8 +22,10 @@ const BeltForContact = (props) => {
                 <a href={"tel:" + data.contact.replace('+', '').replaceAll("  ", '').replaceAll(" ", '')}
                    className={style.tegForContact}>{data.contact}</a>
             </div>
-            <div className={style.blockForIconLanguage}><FontAwesomeIcon icon={faLanguage} className={style.icon}
-                                                                         onClick={displayLanguages}/>
+            <div className={style.blockForIconLanguage}>
+                <LanguageButton/>
+
+
 
             </div>
             <div className={style.blockForHeart}>
@@ -34,17 +33,6 @@ const BeltForContact = (props) => {
                 <span>{t('translation:header.belt.rightTitle')}</span>
             </div>
 
-            <Modal
-                closeOnEsc={()=>setOpenAllLanguages(false)}
-                open={openAllLanguages}
-                onClose={()=>setOpenAllLanguages(false)}
-                onOverlayClick={()=>setOpenAllLanguages(false)}
-                // blockScroll={true}
-                closeIcon={false}
-                center={true}
-            >
-                <ContainerForLanguages setOpenAllLanguages={setOpenAllLanguages}/>
-            </Modal>
         </div>
 
     )
