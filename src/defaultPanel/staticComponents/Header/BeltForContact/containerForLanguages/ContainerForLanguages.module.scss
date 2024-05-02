@@ -13,7 +13,10 @@
   flex-direction: column;
   align-items: center;
   row-gap: 15px;
-
+  @media (max-width: 800px) {
+    width: 90vw;
+    padding: 15px 0px;
+  }
   .closeSpan {
     position: absolute;
     top: 13px;
@@ -55,6 +58,9 @@
     align-items: center;
     justify-content: space-around;
     row-gap: 15px;
+    @media (max-width: 800px) {
+justify-content: center;
+    }
     padding: 25px 0;
 
     .blockForLanguage {

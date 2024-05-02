@@ -51,7 +51,7 @@ const Details = () => {
                 <div className={style.blockForButton}>
                     <img src={flyDove} alt="" role="presentation"
                          className={`${style.imgNoFlyDove} ${styleFlyDove ? style.imgFlyDove : ""}`}/>
-                    <ComponentMainButton content="Долучитися до збору" color="#FAC000"
+                    <ComponentMainButton content={t('translation:allBtns.joinToCollection')} color="#FAC000"
                                          onMouseEnter={setStyleToFlyDove} onMouseLeave={setStyleToNoFlyDove}
                                          clickEvent={displaySubPage}/>
 

@@ -4,9 +4,24 @@
   },
   "adviceComponent.content": "Ми проконсультуємо Вас з усіх питань, що                 Вас цікавлять та допоможемо розібратись                 у Вашій справі",
   "allBtns": {
+    "joinToCollection": "Долучитися до збору",
     "learnMore": "Дізнатися більше",
     "makeDonat": "Зробити пожертву",
-    "moreDetails": "Детальніше"
+    "moreDetails": "Детальніше",
+    "send": "Надіслати"
+  },
+  "forms": {
+    "labels": {
+      "content": "Текст повідомлення",
+      "email": "Email",
+      "name": "Name",
+      "phone": "Phone number"
+    },
+    "messages": {
+      "phoneCustomValidyty": "Номер телефону складається із цифр",
+      "sendError": "Повідомлення не було відправлене",
+      "sendSuccess": "Повідомлення вислане! Очікуйте відповіді"
+    }
   },
   "header": {
     "belt": {
@@ -16,44 +31,52 @@
       "titleToConsultation": "Консультація онлайн",
       "titleToDonat": "Зробити пожертвування"
     },
+    "footer": {
+      "NumberOfVisits": {
+        "all": "Усього",
+        "online": "Онлайн",
+        "thisMonth": "Цього місяця",
+        "thisWeek": "Цього тижня",
+        "thisYear": "Цього року",
+        "title": "Кількість відвідувань",
+        "today": "Сьогодні",
+        "yesterday": "Учорай"
+      },
+      "WorkingHoursSchedule": {
+        "Saturday": "Субота",
+        "Sunday": "Неділя",
+        "closed": "Зачинено",
+        "friday": "П’ятниця",
+        "monday": "Понеділок",
+        "thursday": "Четвер",
+        "title": "Графік роботи",
+        "tuesday": "Вівторок",
+        "wednesday": "Середа"
+      },
+      "bottomBelt": {
+        "allRightsTitle": "Усі права захищені",
+        "nameAndSurname": "Веб-розробник: Корнелія Мушак"
+      },
+      "contacts": {
+        "title": "Контакти"
+      },
+      "qrCode": {
+        "title": "Мобільна версія:"
+      }
+    },
     "nav": {
       "about": "Про нас",
+      "chooseLanguage": "Оберіть мову",
       "consultation": "Консультація",
       "contact": "Контакти",
       "main": "Головна",
       "ourProject": "Наш проект",
       "ourProjects": "Наші проекти",
       "requisites": "Реквізити"
-    },
-    "footer": {
-      "contacts": {
-        "title": "Контакти"
-      },
-      "WorkingHoursSchedule": {
-        "title": "Графік роботи",
-        "monday": "Понеділок",
-        "tuesday": "Вівторок",
-        "wednesday": "Середа",
-        "thursday": "Четвер",
-        "friday": "П’ятниця",
-        "Saturday": "Субота",
-        "Sunday": "Неділя",
-        "closed": "Зачинено"
-      },
-      "NumberOfVisits": {
-        "title": "Кількість відвідувань",
-        "online": "Онлайн",
-        "today": "Сьогодні",
-        "yesterday": "Учорай",
-        "thisWeek": "Цього тижня",
-        "thisMonth": "Цього місяця",
-        "thisYear": "Цього року",
-        "all": "Усього"
-      },
-      "bottomBelt": {
-        "allRightsTitle": "Усі права захищені",
-        "nameAndSurname": "Веб-розробник: Корнелія Мушак"
-      }
     }
+  },
+  "projects": {
+    "title1": "Наші проекти",
+    "title2": "Наш проект"
   }
 }

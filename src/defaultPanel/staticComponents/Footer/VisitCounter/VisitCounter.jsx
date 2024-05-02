@@ -17,7 +17,7 @@ const VisitCounter = () => {
                 setDataCounterOfVisits(resp.data);
             }
         ).catch(error => {
-            navigate('/error');
+
         });
     }
 

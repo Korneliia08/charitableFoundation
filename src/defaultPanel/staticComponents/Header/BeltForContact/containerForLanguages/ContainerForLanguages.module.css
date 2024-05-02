@@ -13,6 +13,12 @@
   align-items: center;
   row-gap: 15px;
 }
+@media (max-width: 800px) {
+  .container {
+    width: 90vw;
+    padding: 15px 0px;
+  }
+}
 .container .closeSpan {
   position: absolute;
   top: 13px;
@@ -52,9 +58,20 @@
   row-gap: 15px;
   padding: 25px 0;
 }
+@media (max-width: 800px) {
+  .container .containerForLanguages {
+    justify-content: center;
+  }
+}
 .container .containerForLanguages .blockForLanguage {
   width: 25%;
   transition: 250ms ease;
+}
+@media (max-width: 800px) {
+  .container .containerForLanguages .blockForLanguage {
+    width: 50%;
+    align-items: center;
+  }
 }
 .container .containerForLanguages .blockForLanguage .spanLanguage {
   margin-left: 5px;
