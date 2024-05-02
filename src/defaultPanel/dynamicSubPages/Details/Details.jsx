@@ -7,13 +7,14 @@ import {useSelector} from "react-redux";
 import Detail from "./Detail/Detail";
 import flyDove from "../../../assets/images/flyDove.png";
 import {useState} from "react";
+import {useTranslation} from "react-i18next";
 
 
 const Details = () => {
     const navigate = useNavigate();
     const data = useSelector(state => state.websiteDates.websiteDates?.detailSubPage);
     const allDetails = data?.details;
-
+const [t] = useTranslation()
     function displayOneStepAgo() {
         navigate(-1);
     }
