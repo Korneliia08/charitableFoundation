@@ -12,12 +12,14 @@ const ContainerForLanguages = (props) => {
             <div className={style.containerForLanguages}>
                 <div className={style.blockForLanguage} onClick={() => {
                     i18n.changeLanguage('ua')
+                    setOpenAllLanguages(false)
                 }}>
                     <span className={"fi fi-ua"}></span>
                     <span className={style.spanLanguage}>Українська</span>
                 </div>
                 <div className={style.blockForLanguage} onClick={() => {
                     i18n.changeLanguage('en')
+                    setOpenAllLanguages(false)
                 }}>
                     <span className={"fi fi-us"}></span>
                     <span className={style.spanLanguage}>English</span>

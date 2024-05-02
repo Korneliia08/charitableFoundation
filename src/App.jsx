@@ -1,5 +1,5 @@
 import './App.css';
-import {Provider} from "react-redux";
+import {Provider, useDispatch} from "react-redux";
 import store from "./data/store";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,11 +8,9 @@ import {Router} from "./router.jsx";
 import './assets/globalVariables.css';
 import {useEffect} from "react";
 import {useTranslation} from "react-i18next";
+import {setLanguage} from "./data/reducers/websiteDataReducer.jsx";
 function App(props) {
-    const [t, i18n] = useTranslation()
-    useEffect(() => {
 
-    }, []);
     return (
 
         <div className="App">
