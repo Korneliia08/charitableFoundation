@@ -3,6 +3,7 @@ import ComponentForLogoAndTitle from "./ComponentForLogoAndTitle/ComponentForLog
 import Nav from "./Nav/Nav";
 import {useState} from "react";
 import NavOptions from "./NavOptions/NavOptions";
+import LanguageButton from "../BeltForContact/LanguageButton.jsx";
 
 const BlockForLogoAndNav = (props) => {
     const belt = props.belt;
@@ -20,6 +21,7 @@ const BlockForLogoAndNav = (props) => {
 
                 </div>
                 <div className={`${style.hamburger}  ${isOpen ? style.hamburgerOpen : ''}`}>
+
                     <NavOptions setOpen={setOpen}/>
                 </div>
             </div>

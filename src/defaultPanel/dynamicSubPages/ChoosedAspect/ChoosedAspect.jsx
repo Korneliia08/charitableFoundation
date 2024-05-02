@@ -6,6 +6,7 @@ import axios from "axios";
 import ComponentMainButton from "../../../components/ComponentMainButton/ComponentMainButton";
 import ScrollToTop from "../../../components/scrollToTop";
 import {useSelector} from "react-redux";
+import {useTranslation} from "react-i18next";
 
 const ChoosedAspect = (props) => {
     const navigate = useNavigate();
@@ -20,16 +21,16 @@ const ChoosedAspect = (props) => {
     function displaySubPage() {
         navigate("/donat");
     }
-
+    const [t, i18n ] = useTranslation()
     useEffect(() => {
-        axios(import.meta.env.VITE_APP_LINKTOAPI + 'aspects/' + id).then(
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'aspects/' + id+'/'+i18n.language).then(
             resp => {
                 setData(resp.data);
             }
         ).catch(err => {
             navigate('/error');
         });
-    }, [id]);
+    }, [id,i18n.language]);
 
     if (!data) {
         return "";
@@ -50,7 +51,7 @@ const ChoosedAspect = (props) => {
                     <div className={style.containerForContentAndBtn}>
                         <p dangerouslySetInnerHTML={{__html: data.content}}></p>
                         <div className={style.blockForBtn}>
-                            <ComponentMainButton content="Долучитися до пожертви" color="#F3CE03"
+                            <ComponentMainButton content={t('translation:allBtns.makeDonat')} color="#F3CE03"
                                                  clickEvent={displaySubPage}/>
                         </div>
                     </div>
@@ -58,6 +59,6 @@ const ChoosedAspect = (props) => {
                 </div>
             </div>
         </>
-    )
+    );
 }
 export default ChoosedAspect;
