@@ -40,7 +40,7 @@ if (!isProduction) {
         }),
     );
 }
-
+const api = 'https://fun.fenek.tech';
 app.use("*", async (req, res, next) => {
     // ! Favicon Fix
     if (req.originalUrl === "/favicon.ico") {
@@ -62,11 +62,15 @@ app.use("*", async (req, res, next) => {
         }
         let context = {}
         try {
-            const resp = await axios('https://api.powepeople.com/' + 'website-data')
+
+            const resp = await axios( api + '/website-data/translation/ua')
+
             context.defaultData = resp.data
+
         } catch (error) {
+            console.log(error);
             context.error = error
-            context.errorUrl = 'https://api.powepeople.com/' + 'website-data'
+            context.errorUrl = api+'/website-data/translation/ua'
         }
 
         const rendered = await render({path: req.originalUrl, context: context}, ssrManifest);

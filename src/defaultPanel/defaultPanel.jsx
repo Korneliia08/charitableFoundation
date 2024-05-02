@@ -7,14 +7,19 @@ import {useDispatch, useSelector} from "react-redux";
 import axios from "axios";
 import {setAspects} from "../data/reducers/aspectReducer";
 import BeltForContact from "./staticComponents/Header/BeltForContact/BeltForContact";
-import {setWebsiteData} from "../data/reducers/websiteDataReducer";
+import {setLanguage, setWebsiteData} from "../data/reducers/websiteDataReducer";
 import {setProjects} from "../data/reducers/projectReducer";
 import UserContext from "../serverContext.js";
 import md5 from "md5";
+import {useTranslation} from "react-i18next";
 const DefaultPanel = () => {
     const navigate = useNavigate();
     const dataOfHeader = useSelector(state => state.websiteDates.websiteDates.header);
-
+    const [t, i18n] = useTranslation()
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(setLanguage(i18n.language));
+    }, [i18n.language]);
     const [belt, setBelt] = useState(true);
 
     function checkY() {
@@ -26,17 +31,15 @@ const DefaultPanel = () => {
         setBelt(true);
 
     }
-
-    const dispatch = useDispatch();
     useEffect(() => {
-        axios(import.meta.env.VITE_APP_LINKTOAPI + 'aspects').then(
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'aspects/translation/'+i18n.language).then(
             resp => {
                 dispatch(setAspects(resp.data));
             }
         ).catch(error => {
             navigate('/error');
         })
-        axios(import.meta.env.VITE_APP_LINKTOAPI + 'website-data').then(
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'website-data/translation/'+i18n.language).then(
             resp => {
                 dispatch(setWebsiteData(resp.data));
             }
@@ -44,13 +47,17 @@ const DefaultPanel = () => {
             navigate('/error');
         })
 
-        axios(import.meta.env.VITE_APP_LINKTOAPI + 'projects').then(
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'projects/translation/'+i18n.language).then(
             resp => {
                 dispatch(setProjects(resp.data));
             }
         ).catch(error => {
             navigate('/error');
         });
+    },[i18n.language])
+
+    useEffect(() => {
+
 
 
         pingerFun()
@@ -99,7 +106,7 @@ const DefaultPanel = () => {
 
             {dataOfHeader && <BeltForContact data={dataOfHeader.blockOfBelt}/>}
             <BlockForLogoAndNav belt={belt}/>
-            <Outlet/>
+           <Outlet/>
              <Footer/>
             <ArrowToTop/>
         </div>

@@ -15,7 +15,7 @@ const websiteDataReducer = createSlice({
         },
     },
 });
-export const {setWebsiteData} = websiteDataReducer.actions;
+export const {setWebsiteData,setLanguage} = websiteDataReducer.actions;
 export default websiteDataReducer.reducer;
 
 
