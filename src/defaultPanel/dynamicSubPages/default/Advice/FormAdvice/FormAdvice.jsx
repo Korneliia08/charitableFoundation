@@ -6,9 +6,11 @@ import {useRef, useState} from "react";
 import axios from "axios";
 import {toast} from "react-toastify";
 import ReCAPTCHA from 'react-google-recaptcha';
+import {useTranslation} from "react-i18next";
 
 const FormAdvice = () => {
     let data = {};
+    const [t] = useTranslation()
     const inputName = useRef();
     const inputEmail = useRef();
     const inputContent = useRef();
@@ -25,7 +27,7 @@ const FormAdvice = () => {
         data = CreateAObj();
         setBlockButton(true)
         axios.post(import.meta.env.VITE_APP_LINKTOAPI+'website-data/contactForm', data).then(resp => {
-            toast.success("Повідомлення вислане! Очікуйте відповіді");
+            toast.success(t('translation:forms.messages.sendSuccess'));
 
              inputName.current.value='';
              inputEmail.current.value='';
@@ -34,7 +36,7 @@ const FormAdvice = () => {
              inputNumberPhone.current.value='';
 
         }).catch(error => {
-            toast.error("Повідомлення не було відправлене");
+            toast.error(t('translation:forms.messages.sendError'));
         }).finally(() => {
             setBlockButton(false)
             setCaptcha('')
@@ -58,13 +60,14 @@ const FormAdvice = () => {
     function validate() {
         inputNumberPhone.current.setCustomValidity("");
         if (isNaN(inputNumberPhone.current.value)) {
-            inputNumberPhone.current.setCustomValidity("Номер телефону складається із цифр");
+            inputNumberPhone.current.setCustomValidity(t('translation:forms.messages.phoneCustomValidyty'));
         }
     }
     const recaptchaRef = useRef();
     function solve(event){
         setCaptcha(event);
     }
+
     return (
         <div className={style.container}>
             <form onSubmit={sendData} onKeyPress={()=>setDisplayReCaptcha(true)}>
@@ -73,14 +76,14 @@ const FormAdvice = () => {
                         <FontAwesomeIcon icon={faUser}
                                          className={style.iconStyle}/>
                     </div>
-                    <input type="text" placeholder="Ім’я" required={true} ref={inputName}/>
+                    <input type="text" placeholder={t('translation:forms.labels.name')} required={true} ref={inputName}/>
                 </div>
                 <div className={style.blockForInput}>
                     <div className={style.icon}>
                         <FontAwesomeIcon icon={faEnvelope}
                                          className={style.iconStyle}/>
                     </div>
-                    <input type="email" placeholder="E-mail" required={true} ref={inputEmail}/>
+                    <input type="email" placeholder={t('translation:forms.labels.email')} required={true} ref={inputEmail}/>
                 </div>
                 <div className={style.blockForGroup}>
                     <select ref={optionPrefixOfPhone}>
@@ -92,7 +95,7 @@ const FormAdvice = () => {
                             <FontAwesomeIcon icon={faPhone}
                                              className={style.iconStyle}/>
                         </div>
-                        <input type="text" placeholder="Номер телефону" required={true} minLength={9} maxLength={9}
+                        <input type="text" placeholder={t('translation:forms.labels.phone')} required={true} minLength={9} maxLength={9}
                                ref={inputNumberPhone}/>
                     </div>
                 </div>
@@ -101,9 +104,9 @@ const FormAdvice = () => {
                         <FontAwesomeIcon icon={faPen}
                                          className={style.iconStyle}/>
                     </div>
-                    <textarea placeholder="Текст повідомлення" required={true} ref={inputContent}></textarea>
+                    <textarea placeholder={t('translation:forms.labels.content')} required={true} ref={inputContent}></textarea>
                 </div>
-                <ComponentMainButton disabled={blockButton || (captcha.length < 10 && displayReCaptcha)} content="Надіслати" color="#E5C201" clickEvent={validate}/>
+                <ComponentMainButton disabled={blockButton || (captcha.length < 10 && displayReCaptcha)} content={t('translation:allBtns.send')} color="#E5C201" clickEvent={validate}/>
                 {displayReCaptcha && <ReCAPTCHA
                     ref={recaptchaRef}
                     sitekey="6Le7CJQpAAAAAGf58WqRrQndYfQib7NTS8GlDoO4"

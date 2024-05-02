@@ -6,7 +6,21 @@
   "allBtns": {
     "learnMore": "Learn more",
     "makeDonat": "Make a donation",
-    "moreDetails": "More details"
+    "moreDetails": "More details",
+    "send": "Send"
+  },
+  "forms": {
+    "labels": {
+      "content": "Message",
+      "email": "Email",
+      "name": "Name",
+      "phone": "Phone number"
+    },
+    "messages": {
+      "phoneCustomValidyty": "The phone number consists of digits",
+      "sendError": "The message was not sent",
+      "sendSuccess": "The message has been sent! Wait for a reply"
+    }
   },
   "header": {
     "belt": {
@@ -16,6 +30,39 @@
       "titleToConsultation": "Online consultation",
       "titleToDonat": "Make a donation"
     },
+    "footer": {
+      "NumberOfVisits": {
+        "all": "All",
+        "online": "Online",
+        "thisMonth": "This month",
+        "thisWeek": "This week",
+        "thisYear": "This year",
+        "title": "Number of visits",
+        "today": "Today",
+        "yesterday": "Yesterday"
+      },
+      "WorkingHoursSchedule": {
+        "Saturday": "Saturday",
+        "Sunday": "Sunday",
+        "closed": "Closed",
+        "friday": "Friday",
+        "monday": "Monday",
+        "thursday": "Thursday",
+        "title": "Working hours schedule",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday"
+      },
+      "bottomBelt": {
+        "allRightsTitle": "All rights reserved",
+        "nameAndSurname": "Web Developer: Cornelia Mushak"
+      },
+      "contacts": {
+        "title": "Contacts"
+      },
+      "qrCode": {
+        "title": "Mobile version:"
+      }
+    },
     "nav": {
       "about": "About us",
       "consultation": "Consultation",
@@ -24,36 +71,10 @@
       "ourProject": "Our project",
       "ourProjects": "Our projects",
       "requisites": "Requisites"
-    },
-    "footer": {
-      "contacts": {
-        "title": "Contacts"
-      },
-      "WorkingHoursSchedule": {
-        "title": "Working hours schedule",
-        "monday": "Monday",
-        "tuesday": "Tuesday",
-        "wednesday": "Wednesday",
-        "thursday": "Thursday",
-        "friday": "Friday",
-        "Saturday": "Saturday",
-        "Sunday": "Sunday",
-        "closed": "Closed"
-      },
-      "NumberOfVisits": {
-        "title": "Number of visits",
-        "online": "Online",
-        "today": "Today",
-        "yesterday": "Yesterday",
-        "thisWeek": "This week",
-        "thisMonth": "This month",
-        "thisYear": "This year",
-        "all": "All"
-      },
-      "bottomBelt": {
-        "allRightsTitle": "All rights reserved",
-        "nameAndSurname": "Web Developer: Cornelia Mushak"
-      }
     }
+  },
+  "projects": {
+    "title1": "Our projects",
+    "title2": "Our project"
   }
 }

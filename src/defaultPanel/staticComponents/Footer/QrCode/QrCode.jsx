@@ -1,15 +1,17 @@
 import style from "./QrCode.module.css";
 import QRCode from "react-qr-code";
 import {useEffect, useState} from "react";
+import {useTranslation} from "react-i18next";
 
 const QrCode = () => {
+    const [t] = useTranslation()
     const [isClient, setIsClient] = useState(false);
     useEffect(() => {
         setIsClient(true);
     }, []);
     return (
         <div className={style.container}>
-            <h4>Мобільна версія:</h4>
+            <h4>{t('translation:header.footer.qrCode.title')}</h4>
             {isClient ?    <QRCode
                 size={256}
                 className={style.qrCode}
