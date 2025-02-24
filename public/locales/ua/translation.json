@@ -13,9 +13,9 @@
   "forms": {
     "labels": {
       "content": "Текст повідомлення",
-      "email": "Email",
-      "name": "Name",
-      "phone": "Phone number"
+      "email": "Електронна пошта",
+      "name": "Ім'я",
+      "phone": "Номер телефону"
     },
     "messages": {
       "phoneCustomValidyty": "Номер телефону складається із цифр",

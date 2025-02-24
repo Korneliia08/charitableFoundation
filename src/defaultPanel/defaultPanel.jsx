@@ -32,28 +32,32 @@ const DefaultPanel = () => {
 
     }
     useEffect(() => {
-        axios(import.meta.env.VITE_APP_LINKTOAPI + 'aspects/translation/'+i18n.language).then(
-            resp => {
-                dispatch(setAspects(resp.data));
-            }
-        ).catch(error => {
-            navigate('/error');
-        })
-        axios(import.meta.env.VITE_APP_LINKTOAPI + 'website-data/translation/'+i18n.language).then(
-            resp => {
-                dispatch(setWebsiteData(resp.data));
-            }
-        ).catch(error => {
-            navigate('/error');
-        })
+        const language = ['ua', 'en'].includes(i18n.language) ? i18n.language : 'ua';
 
-        axios(import.meta.env.VITE_APP_LINKTOAPI + 'projects/translation/'+i18n.language).then(
-            resp => {
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'aspects/translation/' + language)
+            .then(resp => {
+                dispatch(setAspects(resp.data));
+            })
+            .catch(error => {
+                navigate('/error');
+            });
+
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'website-data/translation/' + language)
+            .then(resp => {
+                dispatch(setWebsiteData(resp.data));
+            })
+            .catch(error => {
+                navigate('/error');
+            });
+
+        axios(import.meta.env.VITE_APP_LINKTOAPI + 'projects/translation/' + language)
+            .then(resp => {
                 dispatch(setProjects(resp.data));
-            }
-        ).catch(error => {
-            navigate('/error');
-        });
+            })
+            .catch(error => {
+                navigate('/error');
+            });
+
     },[i18n.language])
 
     useEffect(() => {
@@ -71,9 +75,7 @@ const DefaultPanel = () => {
     }, []);
 
     function pingerFun() {
-   /* if(!import.meta.env.SSR){
-        return
-    }*/
+
         if (!localStorage.getItem("sessionId")) {
             localStorage.setItem("sessionId", 0);
         }

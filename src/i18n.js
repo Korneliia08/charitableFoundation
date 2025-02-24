@@ -6,6 +6,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // don't want to use this?
 // have a look at the Quick start guide
 // for passing in lng and translations on init
+const randomNum = Math.floor(Math.random() * 1000);
 
 i18n
     // load translation using http -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)
@@ -22,7 +23,11 @@ i18n
     // for all options read: https://www.i18next.com/overview/configuration-options
     .init({
         fallbackLng: 'ua',
-        debug: true,
+        debug: false,
+        supportedLngs: ['en', 'ua'],
+        backend: {
+            loadPath: '/locales/{{lng}}/{{ns}}.json?random=' + randomNum, // Dodanie losowego numeru do URL
+        },
         react: {
             useSuspense: false,
         },
