@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  padding: 20px 15px;
+  border-radius: 8px;
+  border: 4px double rgba(0, 16, 79, 0.68);
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  transition: 125ms ease;
+}
+@media (max-width: 850px) {
+  .container {
+    padding: 10px 7px;
+  }
+}
+.container .blockUnderImage {
+  width: 130px;
+  height: 130px;
+  background-color: rgba(150, 150, 150, 0.18);
+  position: relative;
+  border-radius: 100px;
+  border: 1px solid #dedede;
+}
+@media (max-width: 850px) {
+  .container .blockUnderImage {
+    width: 90px;
+    height: 90px;
+  }
+}
+.container .blockUnderImage .imgStyle {
+  position: absolute;
+  width: 110px;
+  border-radius: 0 0 100px 100px;
+  bottom: 4px;
+  left: 7px;
+  filter: drop-shadow(1px 1px 1px #181818);
+}
+@media (max-width: 850px) {
+  .container .blockUnderImage .imgStyle {
+    width: 80px;
+  }
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+}
+.container .content .name {
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: #002075;
+  font-weight: bold;
+}
+@media (max-width: 850px) {
+  .container .content .name {
+    font-size: 21px;
+  }
+}
+@media (max-width: 550px) {
+  .container .content .name {
+    font-size: 19px;
+  }
+}
+.container .content .whichPartner {
+  font-size: 18px;
+  color: #002075;
+}
+@media (max-width: 850px) {
+  .container .content .whichPartner {
+    font-size: 16px;
+  }
+}
+.container .iconHand {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 19px;
+  color: #002075;
+}
+@media (max-width: 850px) {
+  .container .iconHand {
+    font-size: 16px;
+    bottom: 5px;
+  }
+}
+.container:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=PartnerCard.module.css.map */

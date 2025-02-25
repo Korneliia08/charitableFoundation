@@ -14,18 +14,20 @@ import Error404Component from "./components/Error404Component/Error404Component.
 export const Router = () => {
     return (
         <Routes basepatch={'/'}>
-            <Route path="/" element={<DefaultPanel/>} >
-                <Route path="/" element={<Default />} />
-                <Route path="/aboutUs" element={<AboutUsFully />} />
-                <Route path="/aspects" element={<AspectsOfTheProject allAspects={true} />} />
-                <Route path="/projects" element={<OurProjects allProjects={true} />} />
-                <Route path="/aspect/:id" element={<ChoosedAspect />} />
-                <Route path="/project/:id" element={<ChoosedProject />} />
-                <Route path="/details" element={<Details />} />
-                <Route path="/donat" element={<Donat />} />
+            <Route path="/" element={<DefaultPanel/>}>
+                <Route path="/" element={<Default/>}/>
+                <Route path="/aboutUs" element={<AboutUsFully/>}/>
+                <Route path="/aspects" element={<AspectsOfTheProject allAspects={true}/>}/>
+                <Route path="/projects" element={<OurProjects allProjects={true}/>}/>
+                <Route path="/aspect/:id" element={<ChoosedAspect/>}/>
+                <Route path="/project/:id" element={<ChoosedProject/>}/>
+                <Route path="/partner" element={<ChoosedProject/>}/>
+                <Route path="/details" element={<Details/>}/>
+                <Route path="/donat" element={<Donat/>}/>
             </Route>
 
-        <Route path="/error" element={<ErrorComponent />} />
-        <Route path="*" element={<Error404Component />} />
-</Routes>
-    )}
+            <Route path="/error" element={<ErrorComponent/>}/>
+            <Route path="*" element={<Error404Component/>}/>
+        </Routes>
+    )
+}

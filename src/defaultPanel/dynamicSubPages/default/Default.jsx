@@ -1,4 +1,5 @@
 import AboutUs from "./AboutUs/AboutUs";
+import OurPartners from "./OurPartners/OurPartners.jsx"
 import DonationAndAdvice from "../../../components/DonationAndAdvice/DonationAndAdvice";
 import AspectsOfTheProject from "./AspectsOfTheProject/AspectsOfTheProject";
 import OurProjects from "./OurProjects/OurProjects";
@@ -44,6 +45,7 @@ const DefaultPanel = (props) => {
 
             <Header/>
             <AboutUs/>
+            <OurPartners/>
             <DonationAndAdvice title={t('translation:header.donationAndAdviceComponent.titleToConsultation')}
                                onClickEvent={scrollToElement}/>
             <AspectsOfTheProject/>
