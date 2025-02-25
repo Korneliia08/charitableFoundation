@@ -57,6 +57,11 @@ html {
     padding: 45px var(--leftAndRightPadding) 30px var(--leftAndRightPadding);
   }
 }
+@media (max-width: 600px) {
+  .containerForSubPage {
+    padding: 48px var(--leftAndRightPadding) 30px var(--leftAndRightPadding);
+  }
+}
 
 @media (max-width: 800px) {
   input {

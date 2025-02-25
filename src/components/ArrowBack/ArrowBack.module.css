@@ -16,5 +16,10 @@
     top: 50px;
   }
 }
+@media (max-width: 600px) {
+  .container {
+    top: 500px;
+  }
+}
 
 /*# sourceMappingURL=ArrowBack.module.css.map */

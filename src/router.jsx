@@ -10,6 +10,7 @@ import ChoosedAspect from "./defaultPanel/dynamicSubPages/ChoosedAspect/ChoosedA
 import Donat from "./defaultPanel/dynamicSubPages/Donat/Donat.jsx";
 import ErrorComponent from "./components/ErrorComponent/ErrorComponent.jsx";
 import Error404Component from "./components/Error404Component/Error404Component.jsx";
+import ChoosedPartner from "./defaultPanel/dynamicSubPages/ChoosedPartner/ChoosedPartner.jsx";
 
 export const Router = () => {
     return (
@@ -21,7 +22,7 @@ export const Router = () => {
                 <Route path="/projects" element={<OurProjects allProjects={true}/>}/>
                 <Route path="/aspect/:id" element={<ChoosedAspect/>}/>
                 <Route path="/project/:id" element={<ChoosedProject/>}/>
-                <Route path="/partner" element={<ChoosedProject/>}/>
+                <Route path="/partner" element={<ChoosedPartner/>}/>
                 <Route path="/details" element={<Details/>}/>
                 <Route path="/donat" element={<Donat/>}/>
             </Route>
