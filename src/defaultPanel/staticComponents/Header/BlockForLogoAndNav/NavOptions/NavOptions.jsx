@@ -16,16 +16,9 @@ const NavOptions = (props) => {
     return (
         <>
             <HashLink scroll={(element) => toScroll(element)} onClick={close}
-                      to={"./#body"}>{t('translation:header.nav.main')}</HashLink>
-            <HashLink scroll={(element) => toScroll(element)} onClick={close}
-                      to={"./#aboutUs"}>{t('translation:header.nav.about')}</HashLink>
-            <HashLink scroll={(element) => toScroll(element)} onClick={close} to={"./#ourProjects"}>
-                {allProjects.length > 1 ? <>{t('translation:header.nav.ourProjects')}</> : <>{t('translation:header.nav.ourProject')}</>}
-            </HashLink>
-            <HashLink scroll={(element) => toScroll(element)} onClick={close}
                       to={"/details"}>{t('translation:header.nav.requisites')}</HashLink>
-            <HashLink scroll={(element) => toScroll(element)} onClick={close}
-                      to={"./#advice"}>{t('translation:header.nav.contact')}</HashLink>
+            {/*<HashLink scroll={(element) => toScroll(element)} onClick={close}*/}
+            {/*          to={"/details"}>{t('translation:header.nav.requisites')}</HashLink> Відділ комунікацій*/}
         </>
     )
 }
