@@ -1,0 +1,122 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+}
+.mainContainer .blockForTitleAndOther {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .mainContainer .blockForTitleAndOther {
+    width: 100%;
+  }
+}
+.mainContainer .blockForTitleAndOther img {
+  width: 250px;
+}
+@media (max-width: 900px) {
+  .mainContainer .blockForTitleAndOther {
+    width: 25%;
+    margin: 10px 0;
+    border-radius: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .mainContainer .blockForTitleAndOther {
+    width: 30%;
+  }
+}
+@media (max-width: 450px) {
+  .mainContainer .blockForTitleAndOther {
+    width: 35%;
+  }
+}
+@media (max-width: 380px) {
+  .mainContainer .blockForTitleAndOther {
+    width: 40%;
+  }
+}
+.mainContainer h4 {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.blockForOnlineDonat {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+@media (max-width: 900px) {
+  .blockForOnlineDonat {
+    width: 100%;
+    row-gap: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .blockForOnlineDonat {
+    width: 100%;
+    row-gap: 5px;
+  }
+}
+.blockForOnlineDonat h5 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.blockForOnlineDonat button {
+  width: 40%;
+  color: white;
+  text-shadow: 1px 0px 1px #2c2c2c;
+  background-color: #4444FF;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px inset blue;
+  font-size: 0.8rem;
+  transition: 250ms;
+}
+@media (max-width: 700px) {
+  .blockForOnlineDonat button {
+    width: 90%;
+  }
+}
+.blockForOnlineDonat button:hover {
+  cursor: pointer;
+  background-color: #2828ea;
+}
+.blockForOnlineDonat p {
+  padding: 10px 5px;
+  font-size: 1.1rem;
+  color: black;
+}
+@media (max-width: 700px) {
+  .blockForOnlineDonat p {
+    padding: 5px;
+  }
+}
+
+.arrow {
+  top: 70px;
+}
+@media (max-width: 700px) {
+  .arrow {
+    top: 30px;
+  }
+}
+
+/*# sourceMappingURL=DepartmentCommunications.module.css.map */

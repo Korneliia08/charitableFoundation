@@ -11,6 +11,8 @@ import Donat from "./defaultPanel/dynamicSubPages/Donat/Donat.jsx";
 import ErrorComponent from "./components/ErrorComponent/ErrorComponent.jsx";
 import Error404Component from "./components/Error404Component/Error404Component.jsx";
 import ChoosedPartner from "./defaultPanel/dynamicSubPages/ChoosedPartner/ChoosedPartner.jsx";
+import DepartmentCommunications
+    from "./defaultPanel/dynamicSubPages/DepartmentCommunications/DepartmentCommunications.jsx";
 
 export const Router = () => {
     return (
@@ -25,6 +27,9 @@ export const Router = () => {
                 <Route path="/partner" element={<ChoosedPartner/>}/>
                 <Route path="/details" element={<Details/>}/>
                 <Route path="/donat" element={<Donat/>}/>
+                <Route path="/departmentCommunications" element={<DepartmentCommunications/>}/>
+
+
             </Route>
 
             <Route path="/error" element={<ErrorComponent/>}/>
