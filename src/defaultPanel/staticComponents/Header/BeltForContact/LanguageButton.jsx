@@ -8,16 +8,23 @@ import {faLanguage} from "@fortawesome/free-solid-svg-icons";
 import style from "./BeltForContact.module.css";
 
 const LanguageButton = (props) => {
-    const {t} = useTranslation();
+    const {t,i18n} = useTranslation();
     const [openAllLanguages, setOpenAllLanguages] = useState(false);
     function displayLanguages() {
         setOpenAllLanguages(!openAllLanguages);
     }
+let icon =    <FontAwesomeIcon icon={faLanguage} className={style.icon}  onClick={displayLanguages}/>
+    if(i18n.language =='ua'){
 
+        icon =  <span className={`fi fi-ua ${style.icon}`}  onClick={displayLanguages}></span>
+    }else if (i18n.language =='en'){
+        icon =  <span className={`fi fi-us ${style.icon}`}  onClick={displayLanguages}></span>
+
+    }
     return (
         <>
+            {icon}
 
-    <FontAwesomeIcon icon={faLanguage} className={style.icon}             onClick={displayLanguages}/>
         <Modal
             closeOnEsc={()=>setOpenAllLanguages(false)}
             open={openAllLanguages}
