@@ -1,77 +1,88 @@
 .container {
-  background-color: #00295F;
-  font-family: robotoBold, cursive;
-  letter-spacing: 1px;
-  position: relative;
+    background-color: #00295F;
+    font-family: robotoBold, cursive;
+    letter-spacing: 1px;
+    position: relative;
 }
+
 .container .mainContainer {
-  padding: 50px var(--leftAndRightPadding);
-  background-color: #00295F;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  position: relative;
+    padding: 50px var(--leftAndRightPadding);
+    background-color: #00295F;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
 }
+
 @media (max-width: 700px) {
-  .container .mainContainer {
-    flex-direction: column;
-    row-gap: 29px;
-    justify-content: center;
-  }
+    .container .mainContainer {
+        flex-direction: column;
+        row-gap: 29px;
+        justify-content: center;
+    }
 }
+
 .container .mainContainer .blockForLogoAndContact {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  row-gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 50px;
 }
+
 .container .grayBelt {
-  padding: 20px var(--leftAndRightPadding);
-  background-color: #20222E;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+    padding: 20px var(--leftAndRightPadding);
+    background-color: #20222E;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+
 @media (max-width: 900px) {
-  .container .grayBelt {
-    margin-top: 40px;
-    padding: 10px var(--leftAndRightPadding);
-  }
+    .container .grayBelt {
+        margin-top: 40px;
+        padding: 10px var(--leftAndRightPadding);
+    }
 }
+
 @media (max-width: 700px) {
-  .container .grayBelt {
-    padding-right: 150px;
-  }
+    .container .grayBelt {
+        padding-right: 150px;
+    }
 }
+
 .container .grayBelt div {
-  display: flex;
-  column-gap: 10px;
+    display: flex;
+    column-gap: 10px;
 }
+
 .container .grayBelt div span, .container .grayBelt div a {
-  letter-spacing: 1px;
-  font-size: 1rem;
-  color: white;
-  text-shadow: 0px 1px 1px black;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 0px 1px 1px black;
 }
+
 .container .grayBelt .adminIcon {
-  color: #d0d0d0;
-  position: absolute;
-  right: 120px;
-  font-size: 25px;
-  text-shadow: 1px 1px 1px black;
-  transition: 250ms;
+    color: #d0d0d0;
+    position: absolute;
+    right: 120px;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px black;
+    transition: 250ms;
 }
+
 @media (max-width: 700px) {
-  .container .grayBelt .adminIcon {
-    bottom: 4px;
-    right: 100px;
-  }
+    .container .grayBelt .adminIcon {
+        bottom: 4px;
+        right: 100px;
+    }
 }
+
 .container .grayBelt .adminIcon:hover {
-  cursor: pointer;
-  color: #aba7a7;
+    cursor: pointer;
+    color: #aba7a7;
 }
 
 /*# sourceMappingURL=Footer.module.css.map */
