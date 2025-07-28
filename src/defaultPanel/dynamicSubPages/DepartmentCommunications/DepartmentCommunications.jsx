@@ -5,6 +5,7 @@ import ScrollToTop from "../../../components/scrollToTop";
 import {useSelector} from "react-redux";
 import {useTranslation} from "react-i18next";
 import imageRight from "./../../../assets/images/department.jpg";
+import {Swiper, SwiperSlide} from "swiper/react";
 
 const DepartmentCommunications = () => {
     const navigate = useNavigate();
@@ -17,6 +18,15 @@ const DepartmentCommunications = () => {
     function displayOneStepAgo() {
         navigate(-1);
     }
+
+    const employees = [
+        // {
+        //     image: imageRight,
+        //     name: "Артем",
+        //     description: "Франція",
+        // },
+
+    ];
 
     return (
         <div className="containerForSubPage">
@@ -37,35 +47,47 @@ const DepartmentCommunications = () => {
                         <img src={imageRight} alt="imageRight" className={style.imageStyle}/>
                     </div>
                 </div>
-                {/*<div className={style.blockForPersons}>*/}
-                {/*    <h4 className={style.title}>Наші співробітники</h4>*/}
-                {/*    <div className={style.persons}>*/}
-                {/*        <div className={style.personBlock}>*/}
-                {/*            <img src={imageRight} alt="person" className={style.imgPerson}/>*/}
-                {/*            <div className={style.blockLinia}>*/}
-                {/*                <div className={style.circle}></div>*/}
-                {/*            </div>*/}
-                {/*            <h5 className={style.name}>Ігор Іванович</h5>*/}
-                {/*            <p className={style.description}>Співзасновник благодійного фонду ітд ітп</p>*/}
-                {/*        </div>*/}
-                {/*        <div className={style.personBlock}>*/}
-                {/*            <img src={imageRight} alt="person" className={style.imgPerson}/>*/}
-                {/*            <div className={style.blockLinia}>*/}
-                {/*                <div className={style.circle}></div>*/}
-                {/*            </div>*/}
-                {/*            <h5 className={style.name}>Ігор Іванович</h5>*/}
-                {/*            <p className={style.description}>Співзасновник благодійного фонду ітд ітп</p>*/}
-                {/*        </div>*/}
-                {/*        <div className={style.personBlock}>*/}
-                {/*            <img src={imageRight} alt="person" className={style.imgPerson}/>*/}
-                {/*            <div className={style.blockLinia}>*/}
-                {/*                <div className={style.circle}></div>*/}
-                {/*            </div>*/}
-                {/*            <h5 className={style.name}>Ігор Іванович</h5>*/}
-                {/*            <p className={style.description}>Співзасновник благодійного фонду ітд ітп</p>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                {employees?.length > 0 && (
+                    <div className={style.blockForPersons}>
+                        <h4 className={style.title}>Наші співробітники</h4>
+                        <Swiper
+                            // modules={[Pagination]}
+                            spaceBetween={0}
+
+                            breakpoints={{
+                                0: {
+                                    slidesPerView: 1,
+                                },
+                                640: {
+                                    slidesPerView: 2,
+                                },
+                                1050: {
+                                    slidesPerView: 3,
+                                },
+                            }}
+                            pagination={{clickable: true}}
+                            className={style.persons}
+
+                        >
+                            {employees.map((employee, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className={style.personBlock}>
+                                        <img
+                                            src={employee.image || imageRight}
+                                            alt={employee.name}
+                                            className={style.imgPerson}
+                                        />
+                                        <div className={style.blockLinia}>
+                                            <div className={style.circle}></div>
+                                        </div>
+                                        <h5 className={style.name}>{employee.name}</h5>
+                                        <p className={style.description}>{employee.description}</p>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                )}
             </div>
             <ArrowBack onClickEvent={displayOneStepAgo} className={style.arrow}/>
         </div>
