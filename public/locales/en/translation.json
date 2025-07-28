@@ -8,7 +8,8 @@
     "learnMore": "Learn more",
     "makeDonat": "Make a donation",
     "moreDetails": "More details",
-    "send": "Send"
+    "send": "Send",
+    "joinToCollection": "Join to collection"
   },
   "forms": {
     "labels": {
@@ -73,7 +74,8 @@
       "ourProject": "Our project",
       "ourProjects": "Our projects",
       "requisites": "Requisites",
-      "departmentCommunications": "Communications Department"
+      "departmentCommunications": "Communications Department",
+      "donat": "Donate"
     }
   },
   "projects": {

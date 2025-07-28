@@ -8,7 +8,8 @@
     "learnMore": "Дізнатися більше",
     "makeDonat": "Зробити пожертву",
     "moreDetails": "Детальніше",
-    "send": "Надіслати"
+    "send": "Надіслати",
+    "joinToCollection": "Долучитися до збору"
   },
   "forms": {
     "labels": {
@@ -73,7 +74,8 @@
       "ourProject": "Наш проект",
       "ourProjects": "Наші проекти",
       "requisites": "Реквізити",
-      "departmentCommunications": "Відділ комунікацій"
+      "departmentCommunications": "Відділ комунікацій",
+      "donat": "Пожертвувати"
     }
   },
   "projects": {
