@@ -34,13 +34,9 @@ const DepartmentCommunications = () => {
             <div className={style.mainContainer}>
                 <div className={style.top}>
                     <div className={style.left}>
-                        <h5 className={style.title}>Відділ комунікацій та медіа Фонду</h5>
+                        <h5 className={style.title}>{t('departmentCommunications.title')}</h5>
                         <p className={style.description}>
-                            Розповсюдження інформації в Україні і в світі про діяльність Фонду, потреби українських
-                            ветеранів та постраждалих від російської агресії в Україні. Залучення журналістів, блогерів,
-                            волонтерів до поширення правдивої інформації про російсько-українську війну, її причини, хід
-                            та
-                            наслідки.
+                            {t('departmentCommunications.description')}
                         </p>
                     </div>
                     <div className={style.right}>

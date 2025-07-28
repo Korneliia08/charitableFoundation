@@ -85,5 +85,9 @@
   "donat": {
     "title": "CHARITABLE FOUNDATION - POWER PEOPLE",
     "titleDonateOnline": "DONATE ONLINE"
+  },
+  "departmentCommunications": {
+    "title": "Communications and Media Department of the Foundation",
+    "description": "Dissemination of information in Ukraine and around the world about the Foundation's activities, the needs of Ukrainian veterans, and those affected by Russian aggression in Ukraine. Engaging journalists, bloggers, and volunteers in spreading truthful information about the Russo-Ukrainian war—its causes, course, and consequences."
   }
 }
