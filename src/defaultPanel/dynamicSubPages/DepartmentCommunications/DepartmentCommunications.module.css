@@ -1,113 +1,94 @@
 .mainContainer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 900px) {
-  .mainContainer {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 15px;
-  }
-}
-.mainContainer .blockForTitleAndOther {
-  width: 40%;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-@media (max-width: 900px) {
-  .mainContainer .blockForTitleAndOther {
-    width: 100%;
-  }
+.mainContainer .top {
+  display: flex;
 }
-.mainContainer .blockForTitleAndOther img {
-  width: 250px;
-}
-@media (max-width: 900px) {
-  .mainContainer .blockForTitleAndOther {
-    width: 25%;
-    margin: 10px 0;
-    border-radius: 25px;
-  }
-}
-@media (max-width: 600px) {
-  .mainContainer .blockForTitleAndOther {
-    width: 30%;
-  }
-}
-@media (max-width: 450px) {
-  .mainContainer .blockForTitleAndOther {
-    width: 35%;
-  }
-}
-@media (max-width: 380px) {
-  .mainContainer .blockForTitleAndOther {
-    width: 40%;
-  }
-}
-.mainContainer h4 {
-  font-size: 1.4rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-.blockForOnlineDonat {
+.mainContainer .top .left {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  row-gap: 15px;
+  row-gap: 20px;
 }
-@media (max-width: 900px) {
-  .blockForOnlineDonat {
-    width: 100%;
-    row-gap: 10px;
-  }
+.mainContainer .top .left .title {
+  color: #073a7e;
+  font-size: 27px;
+  text-shadow: 0px 0px 1px #676767;
 }
-@media (max-width: 700px) {
-  .blockForOnlineDonat {
-    width: 100%;
-    row-gap: 5px;
-  }
+.mainContainer .top .left .description {
+  font-size: 21px;
+  line-height: 1.3;
+  color: #414141;
 }
-.blockForOnlineDonat h5 {
-  text-transform: uppercase;
-  font-size: 1.2rem;
+.mainContainer .top .right {
+  width: 50%;
+  padding-left: 150px;
 }
-.blockForOnlineDonat button {
-  width: 40%;
+.mainContainer .top .right .imageStyle {
+  width: 400px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px 1px rgba(176, 176, 176, 0.69);
+}
+.mainContainer .blockForPersons {
+  margin: 40px 0;
+  width: 100%;
+  background-color: #1B1D3C;
+  padding: 15px 20px 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 1px rgba(231, 231, 231, 0.24);
+}
+.mainContainer .blockForPersons .title {
+  font-size: 28px;
   color: white;
-  text-shadow: 1px 0px 1px #2c2c2c;
-  background-color: #4444FF;
-  padding: 10px 20px;
+}
+.mainContainer .blockForPersons .persons {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 28px;
+}
+.mainContainer .blockForPersons .persons .personBlock {
+  width: 33.5%;
+  display: flex;
   justify-content: center;
-  border: 1px inset blue;
-  font-size: 0.8rem;
-  transition: 250ms;
+  align-items: center;
+  flex-direction: column;
 }
-@media (max-width: 700px) {
-  .blockForOnlineDonat button {
-    width: 90%;
-  }
+.mainContainer .blockForPersons .persons .personBlock .imgPerson {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 1px rgba(204, 204, 204, 0.19);
 }
-.blockForOnlineDonat button:hover {
-  cursor: pointer;
-  background-color: #2828ea;
+.mainContainer .blockForPersons .persons .personBlock .blockLinia {
+  margin: 28px 0 10px 0;
+  height: 4px;
+  width: 100%;
+  background-color: #d3d11b;
+  position: relative;
 }
-.blockForOnlineDonat p {
-  padding: 10px 5px;
-  font-size: 1.1rem;
-  color: black;
+.mainContainer .blockForPersons .persons .personBlock .blockLinia .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  content: "";
+  display: block;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  background-color: #d3d11b;
 }
-@media (max-width: 700px) {
-  .blockForOnlineDonat p {
-    padding: 5px;
-  }
+.mainContainer .blockForPersons .persons .personBlock .name {
+  font-size: 19px;
+  color: white;
+  margin: 10px 0 10px 0;
+}
+.mainContainer .blockForPersons .persons .personBlock .description {
+  font-size: 17px;
+  color: white;
 }
 
 .arrow {
