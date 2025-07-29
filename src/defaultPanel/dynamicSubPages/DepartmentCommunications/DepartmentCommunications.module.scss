@@ -2,9 +2,14 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px 80px 20px 0px;
+  padding: 20px 0px 20px 0px;
+  @media (max-width: 1000px) {
+    padding-right: 0;
+    padding-top: 0px;
+  }
 
   .top {
+
     display: flex;
     gap: 150px;
     justify-content: space-between;
@@ -13,22 +18,27 @@
     }
     @media (max-width: 1000px) {
       gap: 60px;
+      max-width: 100%;;
     }
     @media (max-width: 700px) {
       gap: 10px;
     }
     @media (max-width: 600px) {
       flex-direction: column;
+      gap: 40px;
     }
 
     .left {
       flex-grow: 1;
-      max-width: 50%;
+      max-width: 70%;
       display: flex;
       flex-direction: column;
       row-gap: 20px;
       align-content: start;
       align-items: start;
+      @media (max-width: 600px) {
+        max-width: 100%;
+      }
 
       .title {
         text-align: start;
@@ -64,8 +74,8 @@
 
     .right {
       display: flex;
-      width: 50%;
-      justify-content: start;
+      //width: 50%;
+      justify-content: flex-end;
 
       .imageStyle {
         width: 280px;

@@ -28,7 +28,9 @@ const DepartmentCommunications = () => {
     ];
 
     return (
-        <div className="containerForSubPage">
+        <div className="containerForSubPage" style={{
+            paddingTop: "10px",
+        }}>
             <ScrollToTop/>
             <div className={style.mainContainer}>
                 <div className={style.top}>
