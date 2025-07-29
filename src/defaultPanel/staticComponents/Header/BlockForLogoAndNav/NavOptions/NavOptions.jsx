@@ -24,6 +24,12 @@ const NavOptions = (props) => {
                       to={"/details"}>{t('translation:header.nav.requisites')}</HashLink>
             <HashLink scroll={(element) => toScroll(element)} onClick={close}
                       to={"/departmentCommunications"}>{t('translation:header.nav.departmentCommunications')}</HashLink>
+            <HashLink scroll={(element) => toScroll(element)} onClick={close}
+                      to={"./#/project/3"}>{t('translation:header.nav.ourProject')}</HashLink>
+            <HashLink scroll={(element) => toScroll(element)} onClick={close}
+                      to={"./#footer"}>{t('translation:header.nav.contact')}</HashLink>
+
+
         </>
     )
 }
