@@ -89,5 +89,16 @@
   "departmentCommunications": {
     "title": "Communications and Media Department of the Foundation",
     "description": "Dissemination of information in Ukraine and around the world about the Foundation's activities, the needs of Ukrainian veterans, and those affected by Russian aggression in Ukraine. Engaging journalists, bloggers, and volunteers in spreading truthful information about the Russo-Ukrainian war—its causes, course, and consequences."
+  },
+  "ourPartners": {
+    "title": "Partners of <span>“Power of the People”</span> – together for change!",
+    "description": "Your support is our strength. We are deeply grateful to all the partners of the 'Power of the People' charity foundation who stand with us and help create change even in the most challenging times.",
+    "partners": [
+      {
+        "name": "Mikailov Nizami Veli oglu",
+        "description": "representative of the foundation in Southwest Asia",
+        "longDescription": "Mikailov Nizami Veli oglu is our foundation's representative in Southwest Asia. During our joint work on the 'Power of the People' project, Mikailov Nizami Veli oglu demonstrated exceptional effectiveness in attracting sponsors and organizing events to support the project's development.\nMikailov Nizami Veli oglu has a deep understanding of the region's needs, excellent organizational skills, strong communication abilities, experience working with local communities, knowledge of the specifics of charitable organizations, and the ability to work both in a team and independently.\nHe has shown high productivity and persistence in achieving goals."
+      }
+    ]
   }
 }
