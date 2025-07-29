@@ -1,5 +1,4 @@
 import style from "./DepartmentCommunications.module.scss";
-import ArrowBack from "../../../components/ArrowBack/ArrowBack";
 import {useNavigate} from "react-router-dom";
 import ScrollToTop from "../../../components/scrollToTop";
 import {useSelector} from "react-redux";
@@ -85,7 +84,6 @@ const DepartmentCommunications = () => {
                     </div>
                 )}
             </div>
-            <ArrowBack onClickEvent={displayOneStepAgo} className={style.arrow}/>
         </div>
     )
 }

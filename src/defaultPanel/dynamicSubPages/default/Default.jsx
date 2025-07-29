@@ -10,6 +10,7 @@ import {useNavigate} from "react-router-dom";
 import {lazy, useEffect, useRef, useState} from "react";
 import {animateScroll as scroll} from 'react-scroll';
 import {useTranslation} from "react-i18next";
+import DepartmentCommunications from "../DepartmentCommunications/DepartmentCommunications.jsx";
 
 
 const DefaultPanel = (props) => {
@@ -52,6 +53,7 @@ const DefaultPanel = (props) => {
             <DonationAndAdvice title={t('translation:header.donationAndAdviceComponent.titleToDonat')}
                                onClickEvent={desplaySubPageDetails}/>
             <OurProjects/>
+            <DepartmentCommunications/>
             <Advice advice={advice}/>
             {isClient ? <map/> : ''}
         </>
