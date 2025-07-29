@@ -3,6 +3,7 @@ import partner from "../../../../../../assets/images/partners/Mikajlov.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHandshake} from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const PartnerCard = () => {
     const navigate = useNavigate();
@@ -11,8 +12,9 @@ const PartnerCard = () => {
         navigate('/partner/');
     }
 
-    const name = "Мікайлов Нізамі Вели огли";
-    const describe = "представник фонду по Південно-Західній Азії";
+    const [t] = useTranslation()
+    const name = t('ourPartners.partners.0.name');
+    const describe = t('ourPartners.partners.0.description');
     return (
         <div className={style.container} onClick={displayPartner}>
             <div className={style.blockUnderImage}>
