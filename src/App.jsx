@@ -8,6 +8,7 @@ import {Router} from "./router.jsx";
 import './assets/globalVariables.css';
 import "swiper/css";
 import "swiper/css/pagination";
+import PopUp from "./defaultPanel/staticComponents/popup/popup.jsx";
 
 function App(props) {
 
@@ -17,6 +18,7 @@ function App(props) {
 
             <Provider store={store}>
                 <Router/>
+                <PopUp isOpen={true}/>
                 <ToastContainer/>
             </Provider>
         </div>
