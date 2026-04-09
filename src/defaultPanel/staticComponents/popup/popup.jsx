@@ -11,7 +11,7 @@ export default function PopUp({isOpen, onClose, title, children}) {
             <div className={styles.container} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.header}>
                     <h2>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                        Терміновий збір для 21-ї бригади!
                     </h2>
                     <button className={styles.closeBtn} onClick={onClose}>
                         ×
@@ -34,14 +34,14 @@ export default function PopUp({isOpen, onClose, title, children}) {
                                     <li>Комплектуючі для ударних моделей — мотори, рами, електроніка</li>
                                 </ul>
                                 <p>
-                                    Усе йде напряму хлопцям. Переказуйте сюди: [вставте реквізити].
+                                    Усе йде напряму хлопцям. Переказуйте сюди: <span className={styles.requisites}>[1111111]</span>.
                                 </p>
                                 <p>Звіти — кожні два тижні, все відкрито.</p>
                                 <p>
                                     Якщо можете допомогти — дякуємо від душі. Якщо ні — просто поділіться, хай побачать
                                     більше людей.
                                 </p>
-                                <p>Разом тримаємо. Слава Україні!</p>
+                                <p className="glory">Слава Україні!</p>
                             </>
                         )}
                     </div>
