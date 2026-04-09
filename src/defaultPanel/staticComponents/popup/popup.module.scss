@@ -9,16 +9,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 11000;
   backdrop-filter: blur(4px); // легке розмиття фону
 }
 
 .container {
   background: #f0f8ff; // світлий голубий
-  border-radius: 16px;
+  border-radius: 13px;
   width: 90%;
   max-width: 800px;
-  padding: 24px;
+  padding: 14px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
   display: flex;
   flex-direction: column;
@@ -27,12 +27,20 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .header {
-
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
 }
 
 
@@ -42,6 +50,9 @@
   border: none;
   cursor: pointer;
   color: #007bff;
+  padding: 0;
+  position: relative;
+  top: -9px;
   transition: transform 0.2s;
 }
 

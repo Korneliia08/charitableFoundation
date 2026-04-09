@@ -1,26 +1,31 @@
 import React from "react";
 import styles from "./PopUp.module.scss";
 import soldiers from "./../../../assets/imagesOfProject/soldiers.jpg";
+import {NavLink} from "react-router-dom";
 
-export default function PopUp({ isOpen, onClose, title, children }) {
+export default function PopUp({isOpen, onClose, title, children}) {
     if (!isOpen) return null;
 
     return (
         <div className={styles.overlay} onClick={onClose}>
             <div className={styles.container} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.header}>
+                    <h2>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                    </h2>
                     <button className={styles.closeBtn} onClick={onClose}>
                         ×
                     </button>
                 </div>
 
                 <div className={styles.body}>
-                    <img src={soldiers} alt="soldiers" className={styles.image} />
+                    <img src={soldiers} alt="soldiers" className={styles.image}/>
                     <div className={styles.text}>
                         {children || (
                             <>
                                 <p>
-                                    Друзі, для 21-ї бригади на передовій збираємо кошти на технічне забезпечення FPV-дронів:
+                                    Друзі, для 21-ї бригади на передовій збираємо кошти на технічне забезпечення
+                                    FPV-дронів:
                                 </p>
                                 <ul>
                                     <li>Акумулятори та зарядні станції — щоб дрони літали довше</li>
@@ -33,7 +38,8 @@ export default function PopUp({ isOpen, onClose, title, children }) {
                                 </p>
                                 <p>Звіти — кожні два тижні, все відкрито.</p>
                                 <p>
-                                    Якщо можете допомогти — дякуємо від душі. Якщо ні — просто поділіться, хай побачать більше людей.
+                                    Якщо можете допомогти — дякуємо від душі. Якщо ні — просто поділіться, хай побачать
+                                    більше людей.
                                 </p>
                                 <p>Разом тримаємо. Слава Україні!</p>
                             </>
@@ -42,9 +48,9 @@ export default function PopUp({ isOpen, onClose, title, children }) {
                 </div>
 
                 <div className={styles.footer}>
-                    <a href="[посилання на оплату]" className={styles.donateBtn}>
+                    <NavLink onClick={() => onClose()} to={'/project/4'} className={styles.donateBtn}>
                         Перейти
-                    </a>
+                    </NavLink>
                 </div>
             </div>
         </div>
