@@ -4,54 +4,101 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 123, 255, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 11000;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
 }
 
 .container {
-  background-color: #fff;
-  border-radius: 8px;
-  max-width: 400px;
+  background: #f0f8ff;
+  border-radius: 16px;
   width: 90%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  animation: popup-slide 0.3s ease-out;
+  max-width: 800px;
+  padding: 24px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: fadeIn 0.3s ease-out;
 }
 
-@keyframes popup-slide {
+@keyframes fadeIn {
   from {
-    transform: translateY(-30px);
     opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0);
   }
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-  border-bottom: 1px solid #eee;
+.closeBtn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  transition: transform 0.2s;
+}
+
+.closeBtn:hover {
+  transform: scale(1.2);
 }
 
 .body {
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
 }
 
-.closeBtn {
-  background: none;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-  line-height: 1;
-  color: #333;
+.image {
+  border-radius: 12px;
+  width: 400px;
 }
-.closeBtn:hover {
-  color: #000;
+
+.text {
+  font-size: 18px;
+  color: #0a3d62;
+  line-height: 1.5;
+}
+
+.text ul {
+  padding-left: 20px;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text li {
+  margin-bottom: 6px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.donateBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 80px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.donateBtn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
 /*# sourceMappingURL=popup.module.css.map */
