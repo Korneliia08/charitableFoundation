@@ -9,7 +9,10 @@ const AboutUs = () => {
     let data = useSelector(state => state.websiteDates.websiteDates?.aboutUs);
     if (typeof document == 'undefined') {
         const user = useContext(UserContext);
-        data =user.defaultData.aboutUs;
+        if (user && user?.defaultData?.aboutUs) {
+
+            data = user?.defaultData?.aboutUs;
+        }
     }
 
 

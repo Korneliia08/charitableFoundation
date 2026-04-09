@@ -12,7 +12,7 @@ const Content = (props) => {
 
     if (typeof document == 'undefined') {
         const user = useContext(UserContext);
-        data = user.defaultData.aboutUs;
+        data = user?.defaultData?.aboutUs;
     }
 
     function displaySubPage() {
