@@ -12,7 +12,7 @@ export default function PopUp({isOpen, onClose, title, children}) {
             <div className={styles.container} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.header}>
                     <h2>
-                        Терміновий збір для 21-ї бригади!
+                        {t('translation:popTitle')}
                     </h2>
                     <button className={styles.closeBtn} onClick={onClose}>
                         ×
@@ -33,7 +33,7 @@ export default function PopUp({isOpen, onClose, title, children}) {
 
                 <div className={styles.footer}>
                     <NavLink onClick={() => onClose()} to={'/donat'} className={styles.donateBtn}>
-                        Перейти
+                        {t('translation:popButton')}
                     </NavLink>
                 </div>
             </div>
