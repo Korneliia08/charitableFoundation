@@ -9,16 +9,17 @@ import './assets/globalVariables.css';
 import "swiper/css";
 import "swiper/css/pagination";
 import PopUp from "./defaultPanel/staticComponents/popup/popup.jsx";
+import React from "react";
 
 function App(props) {
-
+    const [open, setOpen] = React.useState(true);
     return (
 
         <div className="App">
 
             <Provider store={store}>
                 <Router/>
-                <PopUp isOpen={true}/>
+                <PopUp isOpen={open} onClose={() => setOpen(false)}/>
                 <ToastContainer/>
             </Provider>
         </div>
