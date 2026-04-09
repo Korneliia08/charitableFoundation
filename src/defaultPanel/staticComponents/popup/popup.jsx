@@ -34,7 +34,7 @@ export default function PopUp({isOpen, onClose, title, children}) {
                                     <li>Комплектуючі для ударних моделей — мотори, рами, електроніка</li>
                                 </ul>
                                 <p>
-                                    Усе йде напряму хлопцям. Переказуйте сюди: <span className={styles.requisites}>[1111111]</span>.
+                                    Усе йде напряму хлопцям. Переказуйте сюди: <span className={styles.requisites}>IBAN: UA503348510000000026009236330</span>.
                                 </p>
                                 <p>Звіти — кожні два тижні, все відкрито.</p>
                                 <p>
